@@ -72,7 +72,7 @@
 
          <div class="footer-copyright">
            <div class="container">
-           © 2017-18 Codelabscrce,All Rights Reserved
+           © 2017-18 Pehchan,All Rights Reserved
            <a class="grey-text text-lighten-4 right" href="#!">Designed and Developed by Rathil Patel</a>
            </div>
          </div>
