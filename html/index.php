@@ -67,16 +67,19 @@
 
 <!-- parallax -->
 
-  <div class="parallax-container">
+  <div class="parallax-container" style="max-height: 180px;">
     <div class="parallax"><img src="../Images/para1.jpg"></div>
   </div>
-  <div class="section black">
+  <div style="padding: 0px 10px 0px 10px;">
+  	<div class="section black" style="min-height: 400px;">
     <div class="row container">
       <h2 class="header white-text">Parallax</h2>
       <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
     </div>
   </div>
-  <div class="parallax-container">
+  
+  </div>
+  <div class="parallax-container" style="max-height: 180px;">
     <div class="parallax"><img src="../Images/para2.jpg"></div>
   </div>
 <div class="block" style=" width: 100%">
