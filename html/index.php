@@ -40,82 +40,40 @@
 
 </head>
 <body >
-<br>
 
-<div style="position: top right; width: 100% background-color:#f2f2f2;">
+
+<!-- <div style="position: top right; width: 100% background-color:#f2f2f2;">
 <img src="../Images/pehchan.gif" style="height:100px;width:280px;">
 
-</div>
+</div> -->
 <?php require 'navbar.php' ?>
-<br>
-	<div class="slideshow clearfix" style="background-color: white; ">
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100%;  background-image: url('../pehchan/carousel/collage (7).png');background-size: contain; background-repeat: no-repeat;" class="slide--content">	</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100%;  background-image: url('../pehchan/carousel/collage (8).png');background-size: contain; background-repeat: no-repeat;" class="slide--content">	</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100%;  background-image: url('../pehchan/carousel/collage (9).png');background-size: contain; background-repeat: no-repeat;" class="slide--content">	</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100%;  background-image: url('../pehchan/carousel/collage (10).png');background-size: contain; background-repeat: no-repeat;" class="slide--content">	</div>
-
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-
-										<div style="height:100vh; width:100vw; background-image: url('../pehchan/carousel/collage (1).jpg');background-size: contain; background-repeat: no-repeat;" class="slide--content img-responsive"></div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-
-										<div style="height:100vh;  width:100%; background-image: url('../pehchan/carousel/collage (2).jpg');background-size: contain; background-repeat: no-repeat;" class="slide--content">	</div>
-
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100%;  background-image: url('../pehchan/carousel/collage (3).jpg');background-size: contain; background-repeat: no-repeat;" class="slide--content">	</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100vw;  background-image: url('../pehchan/carousel/collage (4).jpg');background-size: contain; background-repeat: no-repeat; margin-left: 15% " class="slide--content">	</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100%;  background-image: url('../pehchan/carousel/collage (5).jpg');background-size: contain; background-repeat: no-repeat;" class="slide--content">	</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="slide">
-										<div style="height:100vh;  width:100%;  background-image: url('../pehchan/carousel/collage (6).jpg');background-size: contain; background-repeat: no-repeat; margin-left: 10%" class="slide--content">	</div>
-
-									</div>
-								</div>
-
-															</div>
-							<div class="col-md-12">
-								 <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-								 </div>
-							</div>
+<div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!" style="background:url('https://lorempixel.com/800/400/food/1') center center no-repeat;background-size:cover;">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!" style="background:url('https://lorempixel.com/800/400/food/2') center center no-repeat;background-size:cover;">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!" style="background:url('https://lorempixel.com/800/400/food/3') center center no-repeat;background-size:cover;">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!" style="background:url('https://lorempixel.com/800/400/food/4') center center no-repeat;background-size:cover;">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
 
 <div class="parallax"></div>
 <div class="block1" style="height: 400px; width: 100%; ">
 	<div class="row">
-		<div class="col-md-offset-1 ">
-			<span class="h3">ABOUT US:</span>
+		<div class="col-md-offset-1 black">
+			<span class="h3 black-text">ABOUT US:</span>
 <p>Pehchan is one of the leading gifting firms in the corporate field. In a span of 8 progressive years,we have looked back only to see the smiling faces of our satisfied clients. At Pehchan, we strive at making 'customization' to gifting what 'touch screen' is to mobile phones.</p>
 <br>
 
@@ -145,21 +103,6 @@ Pehchan provides great items that have been developed with considerable thought 
 <div class="parallax1"></div>
 <div class="block" style="min-height: px; width: 100%">
 
-
-
-	<span style="color: white;">
-<br>
-<br>
-		<div class="row">
-		<div class="col-md-offset-1 col-md-10">
-			<div class="about">
-									<div class="about" style="padding-left: 20px;min-height: 200px;" >
-
-								<span class="h3">WHAT DO WE DO:</span>
-							<p>Pehchan is the one destination you need to make your pit stop in your journey towards successful merchandising and promotional branding. We offer you a wide range of products and variety of designs to choose from.</p>
-
-
-
-<?php require 'footer.php' ?>
+	<?php require 'footer.php' ?>
 </body>
 </html>

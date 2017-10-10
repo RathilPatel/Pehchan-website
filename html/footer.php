@@ -6,17 +6,15 @@
              <div class="col l12">
                <ul class="collapsible" data-collapsible="accordion">
                  <li>
-                   <div class="collapsible-header black text-black">First</div>
-                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.dihionvenfeobnfokbnenbokenbnknekb
-                      <br><br>sdklvnavkenbknbrdbrbreb
-                      <br><br>sv nfvnbjnffnbreonre</span></div>
-                 </li>
-                 <li>
-                   <div class="collapsible-header black">Second</div>
+                   <div class="collapsible-header black-text ">First</div>
                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                  </li>
                  <li>
-                   <div class="collapsible-header black">Third</div>
+                   <div class="collapsible-header black-text">Second</div>
+                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                 </li>
+                 <li>
+                   <div class="collapsible-header black-text">Third</div>
                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                  </li>
                </ul>
@@ -61,11 +59,6 @@
    <div class="col s10 offset-s1">
 
      <div class="row">
-
-      <!--  <div class="input-field col s12">
-         <i class="material-icons prefix">email</i>
-         <input id="email" type="email"  class="validate">
-           <label for="email" data-error="check your" data-success="right" >Email</label> -->
 <a style="width:100%;" class="waves-effect waves-light btn center indigo-text text-darken-4 white">Subscribe for Newletter</a>
 
 
@@ -76,7 +69,7 @@
      </div>
 
    </div>
- </div>
+
          <div class="footer-copyright">
            <div class="container">
            © 2017-18 Codelabscrce,All Rights Reserved

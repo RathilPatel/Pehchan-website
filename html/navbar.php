@@ -1,17 +1,26 @@
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="Product.html">Product</a>
-  <a href="contact.html">Contact</a>
-  <!-- <a href="about.html">About</a> -->
-  <a href="#">Our expert :+91 9820 3101 77</a>
-  <a href="#">Email: sales@mypehchan.com</a>
-
-  <div style="float: right;">
-   <a href="../pehchan/Catalog/CATALOG.rar">Download Brochure</a>
-  <a href="#" class="fa fa-facebook "></a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-instagram"></a>
-
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+<div class="navbar-fixed ">
+        <nav class="hide-on-med-and-down">
+   <div class="nav-wrapper">         <!-- grey lighten-1 -->
+       <a href="index.php" class="brand-logo black-text">CODELABScrce</a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="index.php" class="white-text">Home</a></li>
+       <li><a href="events.php"  class="white-text">Events</a></li>
+       <li><a href="newsletter.php"  class="white-text">Newsletter<span class="new badge"></span></a></li>
+       <li><a href="about.php"  class="white-text">About</a></li>
+     </ul>
+   </div>
+ </nav>
 </div>
+
+        <nav class="hide-on-large-only">
+   <div class="nav-wrapper">
+     <a href="index.php" class="brand-logo">CODELABScrce</a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+     <ul class="side-nav" id="mobile-demo">
+       <li><a href="index.php">Home</a></li>
+       <li><a href="events.php">Events</a></li>
+       <li><a href="newsletter.php">Newsletter<span class="new badge"></span></a></li>
+       <li><a href="about.php">About</a></li>
+     </ul>
+   </div>
+ </nav>
