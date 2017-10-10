@@ -69,7 +69,7 @@ body, html {
 }
 .parallax { 
     /* The image used */
-      background-image: url("../Images/1455221711935.jpg");
+      background-image: url("../Images/para1.jpg");
    
     /* Full height */
     height: 50%; 
@@ -96,7 +96,7 @@ body, html {
 
 .parallax1 { 
     /* The image used */
-   background-image: url("../Images/corporate-gold-coast-uniforms.jpg");
+   background-image: url("../Images/para2.jpg");
 
 
     /* Full height */
