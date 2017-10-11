@@ -8,6 +8,42 @@
 </head>
 <body>
 <?php require 'navbar.php' ?>
+<br>
+<br>
+<br>
+<div class="row">
+	<div class="col s6">
+		div
+
+	</div>
+
+</div>
+  <div onloadedmetadata="" class="row">
+    <form class="col s6 offset-s6">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+			<div class="input-field col s12">
+				<textarea id="Message" class="materialize-textarea"></textarea>
+				 <label for="Message">Message</label>
+			</div>
+    </form>
+  </div>
+
   <div class="container">
     <div class="row">
           <div class="col-md-12">
@@ -176,6 +212,6 @@ Mumbai - 400 050</p>
         </div>
 
 </div>
-<?php require 'footer.php' ?>	
+<?php require 'footer.php' ?>
 </body>
 </html>
