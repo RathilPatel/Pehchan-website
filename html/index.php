@@ -27,32 +27,48 @@
 	</style>
 </head>
 <body >
-
-
-
 </div>
 <?php require 'navbar.php' ?>
-   <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="../Images/pehchan.gif" style="width:1280px; height:380px; padding-top:20px;"> <!-- random image -->
+        <div class="caption center-align">
+					<!-- <img src="../Images/pehchan.gif" style="height:100px; width:280px;"> -->
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
   </div>
+<!-- <div class="carousel carousel-slider" style="max-height:400px;">
+	<a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+	<a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+	<a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+	<a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+</div> -->
 
 <!-- parallax -->
 
@@ -66,21 +82,12 @@
       <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
     </div>
   </div>
-
   </div>
   <div class="parallax-container" style="max-height: 180px;">
     <div class="parallax"><img src="../Images/para2.jpg"></div>
   </div>
 <div class="block" style=" width: 100%">
-
-
-
-
-
-
-
 <!--collapsible collapsible collapsible  -->
-
          <div class="container">
            <div class="row">
              <div class="col l12">
@@ -101,9 +108,6 @@
              </div>
            </div>
 				 </div>
-
-
-
 <!-- collapsible collapsible collapsible -->
 	<?php require 'footer.php' ?>
 	<?php require 'chat.php' ?>
