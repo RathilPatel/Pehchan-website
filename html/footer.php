@@ -2,24 +2,7 @@
 <footer class="page-footer">
 
          <div class="container">
-           <div class="row">
-             <div class="col l12">
-               <ul class="collapsible" data-collapsible="accordion">
-                 <li>
-                   <div class="collapsible-header black-text ">First</div>
-                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                 </li>
-                 <li>
-                   <div class="collapsible-header black-text">Second</div>
-                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                 </li>
-                 <li>
-                   <div class="collapsible-header black-text">Third</div>
-                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                 </li>
-               </ul>
-             </div>
-           </div>
+           
            <div class="row">
 
              <div class="col l3 offset-l1 s12">

@@ -3,7 +3,7 @@
 <head>
 	<title>Pehchan</title>
 <?php require 'header.php' ?>
-  
+
  	<style type="text/css">
 		#subscribe{
 				background-color: grey;
@@ -66,13 +66,45 @@
       <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
     </div>
   </div>
-  
+
   </div>
   <div class="parallax-container" style="max-height: 180px;">
     <div class="parallax"><img src="../Images/para2.jpg"></div>
   </div>
 <div class="block" style=" width: 100%">
 
+
+
+
+
+
+
+<!--collapsible collapsible collapsible  -->
+
+         <div class="container">
+           <div class="row">
+             <div class="col l12">
+               <ul class="collapsible" data-collapsible="accordion">
+                 <li>
+                   <div class="collapsible-header black-text ">First</div>
+                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                 </li>
+                 <li>
+                   <div class="collapsible-header black-text">Second</div>
+                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                 </li>
+                 <li>
+                   <div class="collapsible-header black-text">Third</div>
+                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+				 </div>
+
+
+
+<!-- collapsible collapsible collapsible -->
 	<?php require 'footer.php' ?>
 	<?php require 'chat.php' ?>
 </body>

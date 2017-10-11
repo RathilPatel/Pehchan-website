@@ -4,25 +4,7 @@
 	<title>Contact us!</title>
 
 
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
-	<script scr="../js/jquery-3.2.1.min.js"></script>
-	<script src="../bootstrap/js/bootstrap.min.js"></script> 
-  <script src="../js/script.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
-
-
+<?php require 'header.php' ?>
 </head>
 <body>
 <?php require 'navbar.php' ?>
@@ -33,8 +15,8 @@
               <div class="row" style="max-height: 70px;">
                 <div class="col-md-offset-1 col-md-9">
 <br>
-   <span class="h3" style="-top: 50px; padding-left: 40%"> Be one of us </span>  
-  
+   <span class="h3" style="-top: 50px; padding-left: 40%"> Be one of us </span>
+
 <button id="myBtn1" class="btn btn-md" onclick="location.href='https://goo.gl/forms/bKiwLipkJceSJl7V2'">Register</button>
 
 
@@ -63,7 +45,7 @@
          Pincode:<br>
        <input type="text" name="pincode" >
        GST Registeration no.:<br>
-       <input type="text" name="gstno" > 
+       <input type="text" name="gstno" >
        City:<br>
        <input type="text" name="state" >
        Type of Dealer:
@@ -94,7 +76,7 @@
   </div>
 
 </div>
-    
+
 
 
   </div>
@@ -111,7 +93,7 @@ var btn = document.getElementById("myBtn1");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -141,9 +123,9 @@ St. Martin Road, Off Turner Road,<br>
 Near Royal China and Union Bank,<br>
 Bandra West<br>
 Mumbai - 400 050</p>
-                        <b>Branch Office:</b><br> 
+                        <b>Branch Office:</b><br>
                         <p style="padding-left: 50px;">D-682, Malviya Nagar,<br>
-                        Jaipur-71<br></p> 
+                        Jaipur-71<br></p>
                         <b>Phone No.: </b><br>
                         <p style="padding-left: 50px;">+91 982.031.0177<br>
                         +91 961.961.0177<br>
@@ -154,16 +136,16 @@ Mumbai - 400 050</p>
                         surbhi@mypehchan.com<br>
                         deep@mypehchan.com<br>
                         </p>
-                </h5></div>   
+                </h5></div>
                    </div>
                   <div class="row">
                     <div class="col-md-12">
-                
+
                     </div>
-    
+
                   </div>
-                          
-                
+
+
                 </div>
                   <div class="col-md-5">
                    <h4>Contact Us!</h4>
@@ -177,23 +159,23 @@ Mumbai - 400 050</p>
                       Message:
                       <input type="textarea" name="Message" >
                       <button type="submit" id="btn1" class="btn  btn-block" style="margin-top: 10px; padding:10px;">Submit</button>
-                      
+
                     </form>
                   </div>
-                  
-          
-              </div>  
+
+
+              </div>
 
                 </div>
-              </div>  
-                
-                  
+              </div>
+
+
             </div>
           </div>
-          
+
         </div>
 
 </div>
-
+<?php require 'footer.php' ?>
 </body>
 </html>
