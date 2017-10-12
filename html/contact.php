@@ -9,18 +9,120 @@
 <body>
 <?php require 'navbar.php' ?>
 <br>
-<br>
-<br>
-<div class="row">
-	<div class="col s6">
-		div
-
-	</div>
-
-</div>
   <div onloadedmetadata="" class="row">
+
+
+		<div class="col s6">
+			<!-- Modal Trigger -->
+	 <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Register</a>
+
+	 <!-- Modal Structure -->
+	 <div id="modal1" class="modal modal-fixed-footer">
+		 <div class="modal-content">
+			 <h4>Register to connect with us!</h4>
+			 <form class="col s12">
+
+
+
+				<div class="row">
+					<div class="input-field col s12">
+		 <select>
+			 <option value="1">Vendor</option>
+			 <option value="2">Customer</option>
+		 </select>
+		 <label>Select type of User</label>
+	 </div>
+
+					<div class="input-field col s12">
+						<input id="first_name" type="text" class="validate">
+						<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field col s12">
+						<input id="last_name" type="text" class="validate">
+						<label for="last_name">Last Name</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="last_name" type="text" class="validate">
+						<label for="last_name">Address</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="last_name" type="text" class="validate">
+						<label for="last_name">Pincode</label>
+					</div>
+
+						<div class="input-field col s12">
+							<input id="last_name" type="text" class="validate">
+							<label for="last_name">City</label>
+						</div>
+
+						<div class="input-field col s12"
+						<input id="last_name" type="text" class="validate">
+						<label for="last_name">GST No.</label>
+						</div>
+
+					<div class="input-field col s12">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Type of Dealer</lab	el>
+					</div>
+
+					<div class="input-field col s12">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Bank name</lab	el>
+					</div>
+
+					<div class="input-field col s12">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Account number</lab	el>
+					</div>
+
+					<div class="input-field col s12">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Bank address</lab	el>
+					</div>
+
+					<div class="input-field col s12">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">IFSC number</lab	el>
+					</div>
+				</div>
+
+
+
+				<div class="input-field col s12">
+					<textarea id="Message" class="materialize-textarea validate"></textarea>
+					 <label for="Message">Message</label>
+				</div>
+			</form>
+
+		 </div>
+		 <div class="modal-footer">
+			 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+		 </div>
+	 </div>
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
     <form class="col s6 offset-s6">
       <div class="row">
+				<h3>FEEDBACK!</h3>
         <div class="input-field col s6">
           <input id="first_name" type="text" class="validate">
           <label for="first_name">First Name</label>
@@ -213,5 +315,6 @@ Mumbai - 400 050</p>
 
 </div>
 <?php require 'footer.php' ?>
+
 </body>
 </html>

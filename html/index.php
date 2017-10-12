@@ -111,5 +111,6 @@
 <!-- collapsible collapsible collapsible -->
 	<?php require 'footer.php' ?>
 	<?php require 'chat.php' ?>
+	
 </body>
 </html>
