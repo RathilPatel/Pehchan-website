@@ -3,6 +3,15 @@
 <head>
 	<title>Pehchan</title>
 <?php require 'header.php' ?>
+<!-- <script>
+    jQuery(window).load(function(){
+        jQuery(".hameid-loader-overlay").fadeIn(500);
+    });
+</script>
+<noscript>
+    <style>.hameid-loader-overlay { display: none; } </style>
+	</noscript> -->
+
 
  	<style type="text/css">
 		#subscribe{
@@ -27,7 +36,8 @@
 	</style>
 </head>
 <body >
-</div>
+	<div class="hameid-loader-overlay"></div>
+
 <?php require 'navbar.php' ?>
 
   <div class="slider">
@@ -72,7 +82,7 @@
 
 <!-- parallax -->
 
-  <div class="parallax-container" style="max-height: 180px;">
+  <div class="parallax-container" style="max-height: 250px;">
     <div class="parallax"><img src="../Images/para1.jpg"></div>
   </div>
   <div style="padding: 0px 10px 0px 10px;">
@@ -83,7 +93,7 @@
     </div>
   </div>
   </div>
-  <div class="parallax-container" style="max-height: 180px;">
+  <div class="parallax-container" style="max-height: 250px;">
     <div class="parallax"><img src="../Images/para2.jpg"></div>
   </div>
 <div class="block" style=" width: 100%">
@@ -91,7 +101,7 @@
          <div class="container">
            <div class="row">
              <div class="col l12">
-               <ul class="collapsible" data-collapsible="accordion">
+               <ul class="collapsible popout" data-collapsible="accordion">
                  <li>
                    <div class="collapsible-header black-text ">First</div>
                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
@@ -111,6 +121,6 @@
 <!-- collapsible collapsible collapsible -->
 	<?php require 'footer.php' ?>
 	<?php require 'chat.php' ?>
-	
+
 </body>
 </html>

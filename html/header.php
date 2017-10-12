@@ -10,3 +10,5 @@
 <!-- 	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
  -->
   <script src="js/script.js"></script>
+
+<link rel="stylesheet" href="../css/style.css">
