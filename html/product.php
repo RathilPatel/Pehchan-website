@@ -2,35 +2,7 @@
 <html>
 <head>
 	<title>Product</title>
-
-
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
-<!-- jQuery library -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
-	<script scr="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/script.js" type="text/javascript"></script>
-	<script src="../bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
-	<link rel="stylesheet" type="text/css" href="../CSS/materialize.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- 	 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script> -->
-
+	<?php require'header.php' ?>
  <style>
   #dropdown-links{
     font-size: 16px;
@@ -51,21 +23,39 @@
           background-color: #292222;
           padding-left: 1px;
       }
-      a{ 
+      a{
         left: 0;
         color: white;
       }
       a:hover{
         color:white;
       }
-    /* body{
-      background-image: url(../Images/color-2094431_1920.jpg);
-      background-size: cover;00000000000000000000
-     }*/
+
     </style>
 </head>
 <body>
-<br>
+	<?php require 'navbar.php' ?>
+
+	<nav>
+     <div class="nav-wrapper">
+       <ul id="nav-mobile" class="center hide-on-med-and-down">
+         <li><a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a></li>
+         <li><a href="badges.html">Components</a></li>
+         <li><a href="collapsible.html">JavaScript</a></li>
+       </ul>
+     </div>
+   </nav>
+
+	 <ul id='dropdown1' class='dropdown-content'>
+	    <li><a href="#!">one</a></li>
+	    <li><a href="#!">two</a></li>
+	    <li class="divider"></li>
+	    <li><a href="#!">three</a></li>
+	    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+	    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+	  </ul>
+
+
 
 <div style="position: top right; width: 100% background-color:#f2f2f2;">
 <img src="../Images/pehchan.gif" style="height:100px;width:280px; margin-bottom: 0px;">
@@ -77,25 +67,25 @@
   <!-- <a href="about.html">About</a> -->
   <a>Our expert :+91 9820 3101 77</a>
   <a>Email: sales@mypehchan.com</a>
- 
+
   <div style="float: right;">
    <a href="../pehchan/Catalog/CATALOG.rar">Download Brochure</a>
      <a href="#" class="fa fa-facebook "></a>
   <a href="#" class="fa fa-twitter"></a>
   <a href="#" class="fa fa-instagram"></a>
-    
+
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <div class="row">
 <div class="col-md-offset-5 col-md-6">
    <span style="font-size:32px;font-weight: normal; color:white; font-family: georgia;" >Products</span>
-</div>  
+</div>
 </div>
 
 <!-- qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq -->
 <div style=" color: white;">
-  
+
 <div id="navbar">
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="navbar-header">
@@ -109,14 +99,14 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown" style="margin-left: 170px; align-items: center;">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white ;font-size:16px;">Tshirts<b class="caret"></b></a> 
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white ;font-size:16px;">Tshirts<b class="caret"></b></a>
           <ul class="dropdown-menu" >
            <!--  <li class="kopie"><a href="#">Dropdown</a></li> -->
             <li><a href="Products/round.html" id="dropdown-links" style="color:white;padding-right:125px;">Round Neck</a></li>
             <li><a href="Products/polo.html" id="dropdown-links" style="color:white; padding-right:100px;">Polo/Colar Neck</a></li>
             <li><a href="#" id="dropdown-links" style="color:white; padding-right:160px;">Printed</a></li>
-           
-           
+
+
           </ul>
         </li>
         <li class="dropdown">
@@ -144,7 +134,7 @@
           <ul class="dropdown-menu">
             <!-- <li class="kopie"><a href="#">Dropdown2</a></li> -->
             <li><a href="Products/led.html" id="dropdown-links" style="color:white ; padding-right: 100px;">LED Tshirts</a></li>
-         
+
           </ul>
         </li>
 
@@ -164,7 +154,7 @@
             <!-- <li class="kopie"><a href="#">Dropdown2</a></li> -->
             <li><a href="Products/pendrives.html" id="dropdown-links" style="color:white;padding-right: 150px;">Pendrives</a></li>
             <li><a href="Products/powerbanks.html" id="dropdown-links" style="color:white ; padding-right:140px;">Powerbanks</a></li>
-         
+
           </ul>
         </li>
 
@@ -197,36 +187,36 @@
 
 
      <div class="row">
-        <div class="col-md-4"> 
+        <div class="col-md-4">
           <div class="title">
             <span class="h3" style="color: white">Tshirts</span>
             <hr style="margin-right: 285px; margin-top: 0px;">
           </div>
         </div>
-       
+
      </div>
      <div class="row" >
        <div class="col-md-2">
          <a href="Products/round.html">
             <img src="../pehchan/Tshirts/Round_Neck/r_1 (1).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Round Neck Tshirts</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/polo.html">
                <img src="../Images/p_n (72).jpg" class="img-responsive" style="height: 200px; width: 200px; background-size:contain">
-              
-            <span class="h4" style="padding-right:10px;" style="color: white">Polo Neck Tshirts</span>   
+
+            <span class="h4" style="padding-right:10px;" style="color: white">Polo Neck Tshirts</span>
          </a>
        </div>
-   
+
      </div>
 <br>
 <br>
 
     <div class="row">
-        <div class="col-md-4"> 
+        <div class="col-md-4">
           <div class="title">
             <span class="h3" style="color: white">Uniforms</span>
             <hr  style="margin-right: 260px; margin-top: 0px;">
@@ -237,45 +227,45 @@
        <div class="col-md-2">
          <a href="Products/security.html">
             <img src="../pehchan/Uniforms/Security/sec (58).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Security</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/hospitality.html">
             <img src="../pehchan/Uniforms/Hospitality/hosp (59).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Hospitality</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="#" class="notavailable">
             <img src="../pehchan/Uniforms/SchoolS/model-1753032.jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">School</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/uni_misc.html">
             <img src="../pehchan/Uniforms/Miscellaneous/misc (16).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Miscellaneous</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/polo.html">
                <img src="../pehchan/Uniforms/formals/formal (9).jpg" class="img-responsive" style="height: 200px; width: 200px; background-size:contain">
-               
-            <span class="h4" style="padding-right:10px;" style="color: white">Formals</span>   
+
+            <span class="h4" style="padding-right:10px;" style="color: white">Formals</span>
          </a>
        </div>
-   
+
      </div>
 <br>
 <br>
 
        <div class="row">
-        <div class="col-md-4"> 
+        <div class="col-md-4">
           <div class="title">
             <span class="h3" style="color: white">Corporate Gifting</span>
           <hr  style="margin-right: 175px; margin-top: 0px;">
@@ -283,46 +273,46 @@
         </div>
 </div>
       <div class="row" >
-        
+
        <div class="col-md-2">
          <a href="Products/frame.html">
             <img src="../pehchan/Corporate gifting/Frames/frame (49).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Frames Gift</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/crystal.html">
             <img src="../pehchan/Corporate gifting/Crystal/crystal3/crystal (78).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Crystal Gifts</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/bags.html">
             <img src="../pehchan/Corporate gifting/Bag/bag (1).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Bags</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/leather.html">
             <img src="../pehchan/Corporate gifting/Leather/leather (5).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Leather</span>
            </a>
        </div>
         <div class="col-md-2">
          <a href="Products/keychain.html">
             <img src="../pehchan/corporate gifting/keychain/key (1).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Keychain</span>
            </a>
        </div>
       <div class="col-md-2">
          <a href="Products/stationary.html">
             <img src="../pehchan/Corporate gifting/Stationary/st (39).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Office Stationary</span>
            </a>
        </div>
@@ -335,49 +325,49 @@
       <div class="col-md-2">
          <a href="Products/desktoparticle.html">
                <img src="../pehchan/Corporate gifting/Desktop_Articles/da (78).jpg" class="img-responsive" style="height: 200px; width: 200px; background-size:contain">
-               
-            <span class="h4" style="padding-right:10px;" style="color: white">Desktop Articles</span>   
+
+            <span class="h4" style="padding-right:10px;" style="color: white">Desktop Articles</span>
          </a>
        </div>
              <div class="col-md-2">
          <a href="Products/pen.html">
             <img src="../pehchan/Corporate gifting/Pen/pen (71).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Pens</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/giftsets.html">
             <img src="../pehchan/Corporate gifting/Gift_Set/gs (34).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Gifts Sets</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/sipper.html">
             <img src="../pehchan/Corporate gifting/Liquid Accessories/l_a (10).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Sipper Bottles</span>
            </a>
        </div>
-     
+
         <div class="col-md-2">
          <a href="Products/cg_misc.html">
             <img src="../pehchan/Corporate gifting/Miscellaneous/misc (59).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Miscellaneous</span>
            </a>
        </div>
      </div>
-    
-      
+
+
      </div>
 
      <br>
 <br>
 
     <div class="row">
-        <div class="col-md-4"> 
+        <div class="col-md-4">
           <div class="title">
             <span class="h3" style="color: white">Led T-Shirts</span>
             <hr  style="margin-right: 220px;  margin-top: 0px;">
@@ -388,7 +378,7 @@
        <div class="col-md-2">
          <a href="Products/led.html">
             <img src="../pehchan/Led Tshirts/l_s (5).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px; margin-top: 0px;" style="color: white">Led Tshirts</span>
            </a>
        </div>
@@ -398,7 +388,7 @@
 <br>
 
     <div class="row">
-        <div class="col-md-4"> 
+        <div class="col-md-4">
           <div class="title">
             <span class="h3" style="color: white">Sweatshirts and Jackets</span>
             <hr style="margin-top: 0px; margin-right: 90px;">
@@ -409,21 +399,21 @@
        <div class="col-md-2">
          <a href="Products/sweatshirts.html">
             <img src="../pehchan/Sweatshirts & jackets/Hooodies&Sweatshirts/h_s (1).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Sweatshirts</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/jackets.html">
             <img src="../pehchan/Sweatshirts & jackets/Jackets/jack (9).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Jackets</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/hoodies.html">
             <img src="../pehchan/Sweatshirts & jackets/Hooodies&Sweatshirts/h_s (3).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Hoodies</span>
            </a>
        </div>
@@ -434,7 +424,7 @@
 <br>
 
  <div class="row">
-        <div class="col-md-4"> 
+        <div class="col-md-4">
           <div class="title">
             <span class="h3" style="color: white">IT Products</span>
             <hr  style="margin-right: 230px; margin-top: 0px;">
@@ -445,14 +435,14 @@
        <div class="col-md-2">
          <a href="Products/pendrives.html">
             <img src="../pehchan/Pendrives & Powerbanks/Pendrives/pd (1).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Pendrives</span>
            </a>
        </div>
        <div class="col-md-2">
          <a href="Products/powerbanks.html">
             <img src="../pehchan/Pendrives & Powerbanks/Powerbank/pb (2).jpg" class="img-responsive" style="height: 200px; width: 200px;background-size:contain;">
-           
+
           <span class="h4" style="padding-left:10px;" style="color: white">Powerbanks</span>
            </a>
        </div>
@@ -460,7 +450,7 @@
 
 
 
-
+<?php require 'footer.php' ?>
 <script type="text/javascript">
   $(document).on("click",".notavailable",function(){
  alert("We will upload that category soon ");
