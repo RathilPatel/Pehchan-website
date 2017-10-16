@@ -26,6 +26,13 @@
 
 				<div class="row">
 					<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Choose Type of Client</option>
+							<option value="1">Vendor</option>
+							<option value="2">Customer</option>
+						</select>
+					</div>
+					<div class="input-field col s12">
 						<input id="first_name" type="text" class="validate">
 						<label for="first_name">First Name</label>
 					</div>
