@@ -1,0 +1,104 @@
+﻿/* Lightbox */
+
+#lightBox {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 20000;
+}
+
+#overlay {
+	background: #333;
+	background: rgba(0,0,0,0.8);
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	z-index: 10000;
+}
+
+#lightBox .container {
+	background: #FFF;
+	display: inline-block;
+	padding: 0.9em;
+	position: relative;
+}
+
+#lightBox .image {
+	background: url(../media/lightbox/ajax-loader.gif) no-repeat center center #FFF;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+#lightBox .image img {
+	display: block;
+}
+
+#lightBox .navigatory {
+	bottom: 0;
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: background-position 0.1s linear;
+	z-index: 2;
+}
+
+#lightBox #nextImage {
+	background: url(../media/lightbox/right-tab.png) no-repeat 100% center;
+	background-position: calc(100% - 1em) center;
+	left: 66%;
+}
+
+#lightBox #nextImage:hover {
+	background-position: calc(100% - 0.5em) center;
+}
+
+#lightBox #nextImage:active {
+	background-position: calc(100% - 0em) center;
+}
+
+#lightBox #prevImage {
+	background: url(../media/lightbox/left-tab.png) no-repeat 0 center;
+	background-position: calc(0% + 1em) center;
+	right: 66%;
+}
+
+#lightBox #prevImage:hover {
+	background-position: calc(0% + 0.5em) center;
+}
+
+#lightBox #prevImage:active {
+	background-position: calc(0% + 0em) center;
+}
+
+#lightBox .data {
+	display: block;
+	padding: 0.9em 0 0 0;
+}
+
+#lightBox .leftData, #lightBox .rightData {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+
+#closeBtn {
+	background: url(../media/lightbox/close.png) center no-repeat #FFF;
+	border-radius: 50%;
+	height: 50px;
+	position: absolute;
+	right: -25px;
+	right: calc(-25px - 0.45em);
+	top: -25px;
+	top: calc(-25px - 0.45em);
+	width: 50px;
+	z-index: 3;
+}
