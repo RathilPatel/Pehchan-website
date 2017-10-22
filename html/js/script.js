@@ -49,4 +49,8 @@ $(document).ready(function(){
 $(document).ready(function() {
     $('select').material_select();
   });
-        
+
+
+  $(document).ready(function(){
+    $('.lightBox').lightBox();
+  });

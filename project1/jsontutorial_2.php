@@ -13,18 +13,33 @@
   <script type="text/javascript">
   function ajax_get_json(folder){
   var hr = new XMLHttpRequest();
-  hr.open("POST","json_gallery_data.php",true);
-  hr.setRequestHeader("Content-type", "application/json");
+  // hr.open("POST","json_gallery_data.php",true);
+  // hr.setRequestHeader("Content-type", "application/json");
   hr.onreadystatechange = function() {
     if(hr.readyState == 4 && hr.status == 200) {
-      var data = JSON.parse(hr.responseText);
-      var results = document.getElementById("results");
+      // var data = JSON.parse(hr.responseText);
+      var results = document.getElementById("row");
       results.innerHTML= "";
-      for (var obj in data){
-        if(d[o].src){
-                  results.innerHTML += '<div class="materialboxed"><img src="'+d[o].src+'" ></div>'
+      <?php
+
+        $dir = glob('folder+{*.jpg,*.png,*.gif}',GLOB_BRACE);
+      ?>
+      <?php
+        foreach ($dir as $value) {
+          ?>
+          <div class="col s2" >
+            <a href="<?php echo $value;?>" class="lightBox">
+              <img src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:200px; width:153px; padding:5px 5px 5px 5px;" >
+            </a>
+
+          </div>
+
+
+          <?php
         }
-      }
+        ?>
+
+
     }
   }
   hr.send(null);
@@ -34,21 +49,19 @@
 
 </head>
 <body>
-  <div id="res">
-    <div class="col s2" id="results">
-      <?php
-      $src=
-        foreach () {
-        '<div class="materialboxed"><img src="'. $src .'"></div>'
-        }
+  <div class="row">
+  <div class="col s10 offset-s1">
+    <div class="row">
 
-
-         ?>
-    </div>
-    <h1>hello</h1>
-    <script type="text/javascript">
-      ajax_get_json(gallery1);
-    </script>
   </div>
+  </div>
+  </div>
+
+  <div id="res">
+<a href="#" onclick="ajax_get_json(gallery1/)">gallery1</a>
+<a href="#" onclick="ajax_get_json(gallery2/)">gallery2</a>
+
+  </div>
+
 </body>
 </html>
