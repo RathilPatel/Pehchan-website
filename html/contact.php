@@ -108,30 +108,33 @@
 
 		</div>
 
-    <form class="col s6 offset-s6">
+    <form class="col s6 offset-s6" action="feedback.php" method="POST">
       <div class="row">
-				<h3>FEEDBACK!</h3>
+
+				<h3 class="center">FEEDBACK!</h3>
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
+          <input id="first_name" type="text" class="validate" name="first_name" required>
           <label for="first_name">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
+          <input id="last_name" type="text" class="validate" name="last_name" required>
           <label for="last_name">Last Name</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validate"name="email" required>
           <label for="email">Email</label>
         </div>
       </div>
+
 			<div class="input-field col s12">
-				<textarea id="Message" class="materialize-textarea"></textarea>
+				<textarea id="Message" class="materialize-textarea" name="message" required></textarea>
 				 <label for="Message">Message</label>
 			</div>
-			<a class="waves-effect waves-light btn"style="width:100%;" >Submit</a>
+			<input type="submit" name="Submit" value="Submit" class="waves-effect waves-light btn"style="width:100%;" >
+
     </form>
   </div>
 <?php require 'footer.php' ?>
