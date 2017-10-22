@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+  function ajax_get_json(){
+  var hr = new XMLHttpRequest();
+  hr.open("GET", "my_json_list.php", true);
+  hr.setRequestHeader("Content-type", "application/json");
+  hr.onreadystatechange = function() {
+    if(hr.readyState == 4 && hr.status == 200) {
+      var data = JSON.parse(hr.responseText);
+      var results = document.getElementById("results");
+      results.innerHTML= "";
+      for (var obj in data){
+        results.innerHTML += data[obj].user+" is in my list <br />";
+      }
+          // results.innerHTML = data.user+" is "+data.age+" yrs old and lives in "+data.country;
+    }
+  }
+  hr.send(null);
+  results.innerHTML = "requesting...";
+}
+  </script>
+
+</head>
+<body>
+  <div id="results">
+    <h1>hello</h1>
+    <script type="text/javascript">
+      ajax_get_json();
+    </script>
+  </div>
+</body>
+</html>

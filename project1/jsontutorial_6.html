@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style type="text/css">
+    body{margin: 0px; background: #000; color: #ccc;}
+    div#thumbnailbox { position:fixed; float:left; margin-top: 400px; overflow: auto; width: 100%; background: #292929;}
+    div#thumbnailbox > div {width: 100px; height: 80px; margin: 10px ; cursor: pointer;}
+    div#thumbnailbox > div > img {width: 100px;}
+    div#pictureframe {  position:fixed; left: 540px; top:50px; width: 700px; height: 500px;}
+  </style>
+  <script type="text/javascript">
+  function ajax_json_gallery(folder){
+    var thumbnailbox = document.getElementById("thumbnailbox");
+    var pictureframe = document.getElementById("pictureframe")
+  var hr = new XMLHttpRequest();
+  hr.open("POST", "json_gallery_data.php", true);
+  hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  hr.onreadystatechange = function() {
+    if(hr.readyState == 4 && hr.status == 200) {
+      var d = JSON.parse(hr.responseText);
+      pictureframe.innerHTML = "<img src='"+d.img1.src+"'>";
+      thumbnailbox.innerHTML= "";
+      for (var o in d){
+          if(d[o].src){
+              thumbnailbox.innerHTML += '<div onclick="putinframe(\'' +d[o].src+'\')"><img src="'+d[o].src+'" ><\div>'
+          }
+      }
+    }
+  }
+  hr.send("folder="+folder);
+  thumbnailbox.innerHTML = "requesting...";
+}
+function putinframe(src){
+  var pictureframe = document.getElementById("pictureframe");
+  pictureframe.innerHTML = '<img src="'+src+'">';
+
+}
+  </script>
+</head>
+<body>
+  <!-- <div id="pagetop"></div> -->
+  <div id="thumbnailbox"></div>
+  <div id="pictureframe"></div>
+  <script type="text/javascript">  ajax_json_gallery('gallery1');</script>
+  
+</body>
+</html>

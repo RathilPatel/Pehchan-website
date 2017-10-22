@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+      var obj1 = {user:"rats", age:22, country:"UK"};
+      var obj2 = {user:"aku", age:34, country:"India"};
+      var obj3 = {user:"ash", age:12, country:"Australia"};
+      var obj4 = {u1:obj1, u2:obj2, u3:obj3};
+      document.write(obj2.user+" is "+ obj2.age+" yrs old and lives in "+obj2.country);
+      obj2.country = "lol India";
+      document.write("<hr>");
+      document.write(obj2.user+" is "+ obj2.age+" yrs old and lives in "+obj2.country);
+      document.write("<hr>");
+      document.write(obj4.u2.country);
+      document.write("<hr>");
+      var meats = ["beaf","pork","lamb"];
+      var fruits = ["apple","orange", "grape","plumb"];
+      var obj5 = {arr:meats, arr2:fruits};
+      document.write(obj5.arr[1]);
+      document.write("<hr>");
+  </script>
+
+</head>
+<body>
+</body>
+</html>

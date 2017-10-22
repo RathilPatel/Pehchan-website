@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    body{margin: 0px; background: #000; color: #ccc;}
+    div#pagetop { position: fixed; background: #333; padding: 20px; font-size: 36px; width: 100%; border-bottom: #000 1px solid;}
+    div#thumbnailbox { float:left; margin-top: 82px; width: 120px; background: #292929;}
+    div#thumbnailbox > div {width: 100px; height: 80px; overflow: hidden ; margin: 10px ; cursor: pointer;}
+    div#thumbnailbox > div > img {width: 100px;}
+    div #pictureframe {  position:fixed; left: 140px; top:400px; width: 700px; height: 500px;}
+  </style>
+  <script type="text/javascript">
+  function ajax_json_gallery(folder){
+    document.getElementById("pagetop").innerHTML = "Dynamic JSON Ajax PHP Driven Image Gallery";
+    var thumbnailbox = document.getElementById("thumbnailbox");
+    var pictureframe = document.getElementById("pictureframe")
+  var hr = new XMLHttpRequest();
+  hr.open("POST", "json_gallery_data.php", true);
+  hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  hr.onreadystatechange = function() {
+    if(hr.readyState == 4 && hr.status == 200) {
+      var d = JSON.parse(hr.responseText);
+      pictureframe.innerHTML = "<img src='"+d.img1.src+"'>";
+      thumbnailbox.innerHTML= "";
+      for (var o in d){
+          if(d[o].src){
+              thumbnailbox.innerHTML += '<div onclick="putinframe(\'' +d[o].src+'\')"><img src="'+d[o].src+'" ><\div>'
+          }
+      }
+          // results.innerHTML = data.user+" is "+data.age+" yrs old and lives in "+data.country;
+    }
+  }
+  hr.send("folder="+folder);
+  thumbnailbox.innerHTML = "requesting...";
+}
+function putinframe(src){
+  var pictureframe = document.getElementById("pictureframe");
+  pictureframe.innerHTML = '<img src="'+src+'">';
+
+}
+  </script>
+</head>
+<body>
+  <div id="pagetop"></div>
+  <div id="thumbnailbox"></div>
+  <div id="pictureframe"></div>
+  <script type="text/javascript">  ajax_json_gallery('../playingsports');</script>
+</body>
+</html>

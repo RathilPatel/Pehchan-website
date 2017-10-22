@@ -36,6 +36,7 @@
 	</style>
 </head>
 <body >
+
 	<div class="hameid-loader-overlay"></div>
 
 <?php require 'navbar.php' ?>
@@ -96,14 +97,14 @@
   <div class="parallax-container" style="max-height: 250px;">
     <div class="parallax"><img src="../Images/para2.jpg"></div>
   </div>
-<div class="block" style=" width: 100%">
+<div class="block red lighten-2" style=" width: 100%">
 <!--collapsible collapsible collapsible  -->
          <div class="container">
            <div class="row">
              <div class="col l12">
                <ul class="collapsible popout" data-collapsible="accordion">
                  <li>
-                   <div class="collapsible-header black-text center">TSHIRTS</div>
+                   <div class="collapsible-header black-text center ">TSHIRTS</div>
                    <div class="collapsible-body">
 										 <span>
 											 Ready Stock for Plain T-shirts <br>
