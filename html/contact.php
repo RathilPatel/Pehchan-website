@@ -20,9 +20,7 @@
 	 <div id="modal1" class="modal modal-fixed-footer">
 		 <div class="modal-content">
 			 <h4>Register to connect with us!</h4>
-			 <form class="col s12">
-
-
+			 <form class="col s12" action="registerclient.php" method="post">
 
 				<div class="row">
 					<div class="input-field col s12">
@@ -102,7 +100,8 @@
 
 		 </div>
 		 <div class="modal-footer">
-			 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+			 <input type="submit" name="Submit1" value="Submit" class="waves-effect waves-light btn"style="width:100%;" >
+			 <!-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a> -->
 		 </div>
 	 </div>
 
