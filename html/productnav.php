@@ -17,7 +17,7 @@
   </ul>
 
   <ul id='cgifts' class='dropdown-content'>
-    <li><a href="#" id="frame">Frames</a></li>
+    <li><a href="#" id="frame" onclick="press("Products/frames.php")">Frames</a></li>
     <li><a href="#" id="crystal">Crystal Gifts</a></li>
     <li><a href="#" id="leather">Leather Gifts</a></li>
     <li><a href="#!" id="apparels">Apparels</a></li>

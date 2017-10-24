@@ -16,5 +16,6 @@ else {
   exit();
 }
 
+phpmail($email,"feedback Successfull",THANK YOU FOR YOU FEEDbACK WE WILL GET WITH YOU,rathilvasani@gmail.com);
 
 ?>

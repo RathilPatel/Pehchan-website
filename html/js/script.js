@@ -55,171 +55,160 @@ $(document).ready(function() {
     $('.lightBox').lightBox();
   });
 
-  var preloader;
+      // jQuery(window).load(function(){
+      //     // jQuery("#preloader").fadeIn();
+  		// 		$('#preloader').fadeOut()});
+      //
+      // });
 
-  function preload(opacity) {
-      if(opacity <= 0) {
-          showContent();
-      }
-      else {
-          preloader.style.opacity = opacity;
-          window.setTimeout(function() { preload(opacity - 0.05) }, 100);
-      }
-  }
+$(document).ready(function() {
 
-  function showContent() {
-      preloader.style.display = 'none';
-      document.getElementById('content').style.display = 'block';
-  }
+  $("#round").onclick(function(){
 
-  document.addEventListener("DOMContentLoaded", function () {
-      preloader = document.getElementById('preloader');
-      preload(1);
+  $("#content").load("Products/round.php");
+
   });
 
-$("#round").onclick(function(){
+  $("#polo").onclick(function(){
 
-$("#content").load("Products/round.php");
+  $("#content").load("Products/polo.php");
 
-});
+  });
 
-$("#polo").onclick(function(){
 
-$("#content").load("Products/polo.php");
+  $("#frame").onclick(function(){
 
-});
+  $("#content").load("Products/frames.php");
 
+  });
 
-$("#frame").onclick(function(){
+  $("#crystal").onclick(function(){
 
-$("#content").load("Products/frames.php");
+  $("#content").load("Products/crystal.php");
 
-});
+  });
+  $("#leather").onclick(function(){
 
-$("#crystal").onclick(function(){
+  $("#content").load("Products/leather.php");
 
-$("#content").load("Products/crystal.php");
+  });
 
-});
-$("#leather").onclick(function(){
+  $("#bags").onclick(function(){
 
-$("#content").load("Products/leather.php");
+  $("#content").load("Products/bag.php");
 
-});
+  });
 
-$("#bags").onclick(function(){
+  $("#stationary").onclick(function(){
 
-$("#content").load("Products/bag.php");
+  $("#content").load("Products/stationary.php");
 
-});
+  });
 
-$("#stationary").onclick(function(){
+  $("#gold").onclick(function(){
 
-$("#content").load("Products/stationary.php");
+  $("#content").load("Products/goldfoil.php");
 
-});
+  });
 
-$("#gold").onclick(function(){
+  $("#gifts").onclick(function(){
 
-$("#content").load("Products/goldfoil.php");
+  $("#content").load("Products/giftsets.php");
 
-});
+  });
 
-$("#gifts").onclick(function(){
+  $("#pen").onclick(function(){
 
-$("#content").load("Products/giftsets.php");
+  $("#content").load("Products/pen.php");
 
-});
+  });
 
-$("#pen").onclick(function(){
+  $("#sipper").onclick(function(){
 
-$("#content").load("Products/pen.php");
+  $("#content").load("Products/sipper.php");
 
-});
+  });
 
-$("#sipper").onclick(function(){
+  $("#keychain").onclick(function(){
 
-$("#content").load("Products/sipper.php");
+  $("#content").load("Products/keychain.php");
 
-});
+  });
 
-$("#keychain").onclick(function(){
+  $("#desktop").onclick(function(){
 
-$("#content").load("Products/keychain.php");
+  $("#content").load("Products/desktopparticle.php");
 
-});
+  });
 
-$("#desktop").onclick(function(){
+  $("#cg_misc").onclick(function(){
 
-$("#content").load("Products/desktopparticle.php");
+  $("#content").load("Products/cg_misc.php");
 
-});
+  });
 
-$("#cg_misc").onclick(function(){
+  $("#led").onclick(function(){
 
-$("#content").load("Products/cg_misc.php");
+  $("#content").load("Products/led.php");
 
-});
+  });
 
-$("#led").onclick(function(){
+  $("#sweatshirts").onclick(function(){
 
-$("#content").load("Products/led.php");
+  $("#content").load("Products/sweatshirts.php");
 
-});
+  });
+  $("#jacket").onclick(function(){
 
-$("#sweatshirts").onclick(function(){
+  $("#content").load("Products/jackets.php");
 
-$("#content").load("Products/sweatshirts.php");
+  });
+  $("#hoodies").onclick(function(){
 
-});
-$("#jacket").onclick(function(){
+  $("#content").load("Products/hoodies.php");
 
-$("#content").load("Products/jackets.php");
+  });
+  $("#pendrive").onclick(function(){
 
-});
-$("#hoodies").onclick(function(){
+  $("#content").load("Products/pendrives.php");
 
-$("#content").load("Products/hoodies.php");
+  });
+  $("#powerbank").onclick(function(){
 
-});
-$("#pendrive").onclick(function(){
+  $("#content").load("Products/powerbanks.php");
 
-$("#content").load("Products/pendrives.php");
+  });
+  $("#it_misc").onclick(function(){
 
-});
-$("#powerbank").onclick(function(){
+  $("#content").load("Products/it_misc.php");
 
-$("#content").load("Products/powerbanks.php");
+  });
+  $("#school").onclick(function(){
 
-});
-$("#it_misc").onclick(function(){
+  $("#content").load("Products/school.php");
 
-$("#content").load("Products/it_misc.php");
+  });
+  $("#hospital").onclick(function(){
 
-});
-$("#school").onclick(function(){
+  $("#content").load("Products/hospitality.php");
 
-$("#content").load("Products/school.php");
+  });
+  $("#formal").onclick(function(){
 
-});
-$("#hospital").onclick(function(){
+  $("#content").load("Products/formal.php");
 
-$("#content").load("Products/hospitality.php");
+  });
+  $("#security").onclick(function(){
 
-});
-$("#formal").onclick(function(){
+  $("#content").load("Products/security.php");
 
-$("#content").load("Products/formal.php");
+  });
 
-});
-$("#security").onclick(function(){
+  $("#uni_misc").onclick(function(){
 
-$("#content").load("Products/security.php");
+  $("#content").load("Products/uni_misc.php");
 
-});
+  });
 
-$("#uni_misc").onclick(function(){
-
-$("#content").load("Products/uni_misc.php");
 
 });
