@@ -3,12 +3,12 @@
 <head>
 	<title>Pehchan</title>
 <?php require 'header.php' ?>
-<!-- <script>
+<script>
     jQuery(window).load(function(){
         jQuery(".hameid-loader-overlay").fadeIn(500);
     });
 </script>
-<noscript>
+<!-- <noscript>
     <style>.hameid-loader-overlay { display: none; } </style>
 	</noscript> -->
 
@@ -36,7 +36,6 @@
 	</style>
 </head>
 <body >
-
 	<div class="hameid-loader-overlay"></div>
 
 <?php require 'navbar.php' ?>

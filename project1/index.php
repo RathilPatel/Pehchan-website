@@ -2,7 +2,11 @@
 <head>
 <?php require '../html/header.php' ?>
 
-
+<script type="text/javascript">
+$(document).ready(function(){
+$('.materialboxed').materialbox();
+});
+</script>
 </head>
 <body>
 
@@ -16,10 +20,10 @@
 <?php
   foreach ($dir as $value) {
     ?>
-    <div class="col s2" >
-      <a href="<?php echo $value;?>" class="lightBox">
+    <div class="col s2 materialboxed" >
+      <!-- <a href="<?php echo $value;?>" class="lightBox"> -->
         <img src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:200px; width:153px; padding:5px 5px 5px 5px;" >
-      </a>
+      <!-- </a> -->
 
     </div>
 
