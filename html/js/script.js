@@ -65,148 +65,148 @@ $(document).ready(function() {
 
   $("#round").click(function(){
 
-  $("#content").load("Products/round.php");
+    getDataFromUrl("round.php");
 
   });
 
   $("#polo").click(function(){
 
-  $("#content").load("Products/polo.php");
+    getDataFromUrl("polo.php");
 
   });
 
 
   $("#frame").click(function(){
 
-//  $("#content").load("Products/frames.php");
-  getDataFromUrl("Products/frames.php");
+//  $("#content").load("frames.php");
+  getDataFromUrl("frames.php");
   });
 
   $("#crystal").click(function(){
 
-  $("#content").load("Products/crystal.php");
+    getDataFromUrl("crystal.php");
 
   });
   $("#leather").click(function(){
 
-  $("#content").load("Products/leather.php");
+    getDataFromUrl("leather.php");
 
   });
 
   $("#bags").click(function(){
 
-  $("#content").load("Products/bag.php");
+    getDataFromUrl("bag.php");
 
   });
 
   $("#stationary").click(function(){
 
-  $("#content").load("Products/stationary.php");
+    getDataFromUrl("stationary.php");
 
   });
 
   $("#gold").click(function(){
 
-  $("#content").load("Products/goldfoil.php");
+    getDataFromUrl("goldfoil.php");
 
   });
 
   $("#gifts").click(function(){
 
-  $("#content").load("Products/giftsets.php");
+    getDataFromUrl("giftsets.php");
 
   });
 
   $("#pen").click(function(){
 
-  $("#content").load("Products/pen.php");
+    getDataFromUrl("pen.php");
 
   });
 
   $("#sipper").click(function(){
 
-  $("#content").load("Products/sipper.php");
+    getDataFromUrl("sipper.php");
 
   });
 
   $("#keychain").click(function(){
 
-  $("#content").load("Products/keychain.php");
+    getDataFromUrl("keychain.php");
 
   });
 
   $("#desktop").click(function(){
 
-  $("#content").load("Products/desktopparticle.php");
+    getDataFromUrl("desktopparticle.php");
 
   });
 
   $("#cg_misc").click(function(){
 
-  $("#content").load("Products/cg_misc.php");
+    getDataFromUrl("cg_misc.php");
 
   });
 
   $("#led").click(function(){
 
-  $("#content").load("Products/led.php");
+    getDataFromUrl("led.php");
 
   });
 
   $("#sweatshirts").click(function(){
 
-  $("#content").load("Products/sweatshirts.php");
+    getDataFromUrl("sweatshirts.php");
 
   });
   $("#jacket").click(function(){
 
-  $("#content").load("Products/jackets.php");
+    getDataFromUrl("jackets.php");
 
   });
   $("#hoodies").click(function(){
 
-  $("#content").load("Products/hoodies.php");
+    getDataFromUrl("hoodies.php");
 
   });
   $("#pendrive").click(function(){
 
-  $("#content").load("Products/pendrives.php");
+    getDataFromUrl("pendrives.php");
 
   });
   $("#powerbank").click(function(){
 
-  $("#content").load("Products/powerbanks.php");
+    getDataFromUrl("powerbanks.php");
 
   });
   $("#it_misc").click(function(){
 
-  $("#content").load("Products/it_misc.php");
+    getDataFromUrl("it_misc.php");
 
   });
   $("#school").click(function(){
 
-  $("#content").load("Products/school.php");
+    getDataFromUrl("school.php");
 
   });
   $("#hospital").click(function(){
 
-  $("#content").load("Products/hospitality.php");
+    getDataFromUrl("hospitality.php");
 
   });
   $("#formal").click(function(){
 
-  $("#content").load("Products/formal.php");
+    getDataFromUrl("formal.php");
 
   });
   $("#security").click(function(){
 
-  $("#content").load("Products/security.php");
+    getDataFromUrl("security.php");
 
   });
 
   $("#uni_misc").click(function(){
 
-  $("#content").load("Products/uni_misc.php");
+    getDataFromUrl("uni_misc.php");
 
   });
 
