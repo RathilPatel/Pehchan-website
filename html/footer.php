@@ -1,4 +1,4 @@
-
+<?php require 'header.php';?>
 <footer class="page-footer">
 
          <div class="container">
@@ -42,8 +42,10 @@
    <div class="col s10 offset-s1">
 
      <div class="row">
-<a style="width:100%;" class="waves-effect waves-light btn center indigo-text text-darken-4 white">Subscribe for Newletter</a>
+<a style="width:100%;" class="waves-effect waves-light btn modal-trigger center indigo-text text-darken-4 white" href="#subscribe">Subscribe for Newsletter</a>
 
+
+       <!-- Modal Structure -->
 
        </div>
        <div class="col s1">
@@ -60,7 +62,6 @@
            </div>
          </div>
        </footer>
-
        <!--Start of Tawk.to Script-->
        <script type="text/javascript">
        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

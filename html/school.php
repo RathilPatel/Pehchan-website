@@ -1,7 +1,6 @@
-
   <?php
 
-    $dir = glob('../pehchan/Tshirst/Round_Neck/{*.jpg,*.png,*.gif}',GLOB_BRACE);
+    $dir = glob('../pehchan/Uniforms/Schools/{*.jpg,*.png,*.gif}',GLOB_BRACE);
   ?>
   <div class="row">
   <div class="col s10 offset-s1">

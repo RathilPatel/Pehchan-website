@@ -3,24 +3,7 @@
 <head>
 	<title>Pehchan</title>
 
-	<!-- jQuery library -->
-	<!-- Compiled and minified CSS -->
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	  <!-- Compiled and minified JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- 	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
-	 -->
-	  <script src="js/script.js"></script>
-	<script src="js/jquery-lightbox.0.41.min.js"></script>
-	<link rel="stylesheet" href="../css/lightbox.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-
-
-
+<?php require 'header.php'; ?>
  	<style type="text/css">
 		#subscribe{
 				background-color: grey;
@@ -51,7 +34,7 @@
   <div class="slider">
     <ul class="slides">
       <li>
-        <img src="../Images/pehchan.gif" style="width:1280px; height:380px; padding-top:20px;"> <!-- random image -->
+        <img src="../Images/pehchan.gif" style="width:1145px; height:400px; "> <!-- random image -->
         <div class="caption center-align">
 					<!-- <img src="../Images/pehchan.gif" style="height:100px; width:280px;"> -->
           <h3>This is our big Tagline!</h3>
@@ -59,24 +42,73 @@
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <img src="../pehchan/carousel/collage (1).jpg"> <!-- random image -->
         <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <!-- <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <img src="../pehchan/carousel/collage (2).jpg"> <!-- random image -->
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
+			<li>
+        <img src="../pehchan/carousel/collage (3).jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+			<li>
+        <img src="../pehchan/carousel/collage (4).jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <!-- <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+      <li>
+        <img src="../pehchan/carousel/collage (5).jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <!-- <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+			<li>
+        <img src="../pehchan/carousel/collage (6).jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <!-- <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+			<li>
+        <img src="../pehchan/carousel/collage (7).jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <!-- <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+			<li>
+        <img src="../pehchan/carousel/collage (8).jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <!-- <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+			<li>
+        <img src="../pehchan/carousel/collage (9).jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <!-- <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+			<li>
+        <img src="../pehchan/carousel/collage (10).jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <!-- <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
         </div>
       </li>
     </ul>
