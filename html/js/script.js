@@ -1,7 +1,7 @@
-   $(document).ready(function(e){
-
- document.addEventListener('contextmenu', event => event.preventDefault());
-});
+//    $(document).ready(function(e){
+//
+//  document.addEventListener('contextmenu', event => event.preventDefault());
+// });
 
 
 $(document).ready(function(){
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     $(document).ready(function(){
   $('.slider').slider();
-$('.slider').indicator(false);
+//  $('.slider').indicator(false);
 });
 
 $(document).ready(function(){
@@ -63,148 +63,148 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-  $("#round").onclick(function(){
+  $("#round").click(function(){
 
   $("#content").load("Products/round.php");
 
   });
 
-  $("#polo").onclick(function(){
+  $("#polo").click(function(){
 
   $("#content").load("Products/polo.php");
 
   });
 
 
-  $("#frame").onclick(function(){
+  $("#frame").click(function(){
 
-  $("#content").load("Products/frames.php");
-
+//  $("#content").load("Products/frames.php");
+  getDataFromUrl("Products/frames.php");
   });
 
-  $("#crystal").onclick(function(){
+  $("#crystal").click(function(){
 
   $("#content").load("Products/crystal.php");
 
   });
-  $("#leather").onclick(function(){
+  $("#leather").click(function(){
 
   $("#content").load("Products/leather.php");
 
   });
 
-  $("#bags").onclick(function(){
+  $("#bags").click(function(){
 
   $("#content").load("Products/bag.php");
 
   });
 
-  $("#stationary").onclick(function(){
+  $("#stationary").click(function(){
 
   $("#content").load("Products/stationary.php");
 
   });
 
-  $("#gold").onclick(function(){
+  $("#gold").click(function(){
 
   $("#content").load("Products/goldfoil.php");
 
   });
 
-  $("#gifts").onclick(function(){
+  $("#gifts").click(function(){
 
   $("#content").load("Products/giftsets.php");
 
   });
 
-  $("#pen").onclick(function(){
+  $("#pen").click(function(){
 
   $("#content").load("Products/pen.php");
 
   });
 
-  $("#sipper").onclick(function(){
+  $("#sipper").click(function(){
 
   $("#content").load("Products/sipper.php");
 
   });
 
-  $("#keychain").onclick(function(){
+  $("#keychain").click(function(){
 
   $("#content").load("Products/keychain.php");
 
   });
 
-  $("#desktop").onclick(function(){
+  $("#desktop").click(function(){
 
   $("#content").load("Products/desktopparticle.php");
 
   });
 
-  $("#cg_misc").onclick(function(){
+  $("#cg_misc").click(function(){
 
   $("#content").load("Products/cg_misc.php");
 
   });
 
-  $("#led").onclick(function(){
+  $("#led").click(function(){
 
   $("#content").load("Products/led.php");
 
   });
 
-  $("#sweatshirts").onclick(function(){
+  $("#sweatshirts").click(function(){
 
   $("#content").load("Products/sweatshirts.php");
 
   });
-  $("#jacket").onclick(function(){
+  $("#jacket").click(function(){
 
   $("#content").load("Products/jackets.php");
 
   });
-  $("#hoodies").onclick(function(){
+  $("#hoodies").click(function(){
 
   $("#content").load("Products/hoodies.php");
 
   });
-  $("#pendrive").onclick(function(){
+  $("#pendrive").click(function(){
 
   $("#content").load("Products/pendrives.php");
 
   });
-  $("#powerbank").onclick(function(){
+  $("#powerbank").click(function(){
 
   $("#content").load("Products/powerbanks.php");
 
   });
-  $("#it_misc").onclick(function(){
+  $("#it_misc").click(function(){
 
   $("#content").load("Products/it_misc.php");
 
   });
-  $("#school").onclick(function(){
+  $("#school").click(function(){
 
   $("#content").load("Products/school.php");
 
   });
-  $("#hospital").onclick(function(){
+  $("#hospital").click(function(){
 
   $("#content").load("Products/hospitality.php");
 
   });
-  $("#formal").onclick(function(){
+  $("#formal").click(function(){
 
   $("#content").load("Products/formal.php");
 
   });
-  $("#security").onclick(function(){
+  $("#security").click(function(){
 
   $("#content").load("Products/security.php");
 
   });
 
-  $("#uni_misc").onclick(function(){
+  $("#uni_misc").click(function(){
 
   $("#content").load("Products/uni_misc.php");
 

@@ -1,7 +1,7 @@
 
   <?php
 
-    $dir = glob('../../pehchan/Corporate gifting/Miscellaneous/{*.jpg,*.png,*.gif}',GLOB_BRACE);
+    $dir = glob('../pehchan/Corporate gifting/Miscellaneous/{*.jpg,*.png,*.gif}',GLOB_BRACE);
   ?>
   <div class="row">
   <div class="col s10 offset-s1">
@@ -19,13 +19,4 @@
 
       <?php
     }
-    ?>  <!-- ----------------------------------------------------------------------------------- -->
-
-
-<script type="text/javascript">
-  $(document).on("click",".notavailable",function(){
- alert("We will upload that category soon ");
-});
-</script>
-</body>
-</html>
+    ?>  

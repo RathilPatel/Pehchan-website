@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>Product</title>
+
 	<?php require'header.php' ?>
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 
 	function press(src) {
 	  var xmlhttp = new XMLHttpRequest();
@@ -16,7 +17,7 @@
 
 	}
 
-	</script>
+	</script> -->
 
 
 </head>
@@ -25,13 +26,13 @@
 
 
 
+	<?php require 'productnav.php' ?>
+
 
 <div id="content">
 
 </div>
 
-
-<?php require 'productnav.php' ?>
 
 <?php require 'footer.php' ?>
 <script type="text/javascript">
@@ -40,7 +41,25 @@
 });
 
 
-$("#content").load("producthome.php");
+//$("#content").load("producthome.php");
+</script>
+<script>
+function getDataFromUrl(urlWithContent)
+{
+	// jQuery async request
+	$.ajax(
+	{
+			url: urlWithContent,
+			dataType: "html",
+			success: function(data) {
+																	return $('#content').html(data);
+															},
+			error: function(e)
+			{
+					alert('Error: ' + e);
+			}
+	});
+}
 </script>
 </body>
 </html>
