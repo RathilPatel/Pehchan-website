@@ -1,4 +1,9 @@
 
+<div class="productname">
+  <h2>BAGS</h2>
+
+</div>
+
 <?php
 
   $dir = glob('../pehchan/Corporate gifting/Bag/{*.jpg,*.png,*.gif}',GLOB_BRACE);
@@ -10,7 +15,7 @@
   foreach ($dir as $value) {
     ?>
     <div class="col s2" >
-      <a href="<?php echo $value;?>" class="lightBox">
+      <a href="<?php echo $value;?>">
         <img src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:200px; width:153px; padding:5px 5px 5px 5px;" >
       </a>
 

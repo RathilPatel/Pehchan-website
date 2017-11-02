@@ -4,10 +4,6 @@
 // });
 
 
-$(document).ready(function(){
-   $('.collapsible').collapsible();
- });
-
  $(document).ready(function(){
       $('.carousel.carousel-slider').carousel({fullWidth: true});
     });
@@ -51,15 +47,7 @@ $(document).ready(function() {
   });
 
 
-  $(document).ready(function(){
-    $('.lightBox').lightBox();
-  });
 
-      // jQuery(window).load(function(){
-      //     // jQuery("#preloader").fadeIn();
-  		// 		$('#preloader').fadeOut()});
-      //
-      // });
 
 $(document).ready(function() {
 

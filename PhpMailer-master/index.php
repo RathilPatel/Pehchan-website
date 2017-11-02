@@ -13,11 +13,11 @@ $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
 $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 $mail->Port       = 587;                   // set the SMTP port
 
-$mail->Username   = "Russel Gaze";  // GMAIL username
-$mail->Password   = "sundaY101";            // GMAIL password, Some times if two step varification enabled in this mail id, Mail will not be sent.
+$mail->Username   = "Rathil Vasani";  // GMAIL username
+$mail->Password   = "sundaY05";            // GMAIL password, Some times if two step varification enabled in this mail id, Mail will not be sent.
 
-$mail->From       = "russelgaze123@gmail.com";
-$mail->FromName   = "Russel Gaze";
+$mail->From       = "rathilvasani@gmail.com";
+$mail->FromName   = "Rathil Vasani";
 $mail->Subject    = "This is the subject";
 $mail->AltBody    = "This is the body when user views in plain text format"; //Text Body
 $mail->WordWrap   = 50; // set word wrap
