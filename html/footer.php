@@ -1,4 +1,3 @@
-<?php require 'header.php';?>
 <footer class="page-footer">
            <div class="row">
 
@@ -33,7 +32,7 @@
                 </ul>
              </div>
            </div>
-         </div>
+      
           <div class="row">
 
    <div class="col s10 offset-s1">
@@ -59,4 +58,3 @@
            </div>
          </div>
        </footer>
-  

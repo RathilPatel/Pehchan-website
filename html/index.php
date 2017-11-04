@@ -26,7 +26,7 @@
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
-      <li> 	
+      <li>
         <img src="../pehchan/carousel/collage (1).jpg"> <!-- random image -->
         <div class="caption left-align">
           <!-- <h3>Left Aligned Caption</h3>
@@ -223,9 +223,6 @@ Pehchan provides great items that have been developed with considerable thought 
              </div>
            </div>
 				 </div>
-
-<!-- collapsible collapsible collapsible -->
-<?php require 'collapse.php'; ?>
 
 	<?php require 'footer.php' ?>
 	<?php require 'chat.php' ?>
