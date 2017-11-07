@@ -9,6 +9,11 @@
     });
 
 
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+    });
+
+
 $(document).ready(function(){
      $('.parallax').parallax();
    });
@@ -46,9 +51,6 @@ $(document).ready(function() {
     $('select').material_select();
   });
 
-
-
-
 $(document).ready(function() {
 
   $("#round").click(function(){
@@ -66,8 +68,8 @@ $(document).ready(function() {
 
   $("#frame").click(function(){
 
-//  $("#content").load("frames.php");
-  getDataFromUrl("frames.php");
+    getDataFromUrl("frames.php");
+
   });
 
   $("#crystal").click(function(){
