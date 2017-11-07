@@ -20,7 +20,7 @@
     <li><a href="#" id="frame" onclick="press("Products/frames.php")">Frames</a></li>
     <li><a href="#" id="crystal">Crystal Gifts</a></li>
     <li><a href="#" id="leather">Leather Gifts</a></li>
-    <li><a href="#!" id="apparels">Apparels</a></li>
+    <li><a href="#" id="apparels">Apparels</a></li>
     <li><a href="#" id="bag">Bags</a></li>
     <li><a href="#" id="stationary">Office Stationary</a></li>
     <li><a href="#" id="gold">Gold Foil Article</a></li>
