@@ -52,7 +52,7 @@ font-family: "Noto Serif";
 .pagetiletitle{
   margin-right: 10%;
   margin-left: 10%;
-  text-align: center;
+  /*text-align: center;*/
   vertical-align: middle;
 
   font-style: normal;
@@ -61,18 +61,18 @@ font-variant-caps: normal;
 font-variant-numeric: normal;
 font-weight: normal;
 font-stretch: normal;
-font-size: 48px;
+font-size: 56px;
 line-height: 48px;
 font-family: "Noto Serif";
 }
-.pagetiledec{
+.pagetiledesc{
   font-style: normal;
 font-variant-ligatures: normal;
 font-variant-caps: normal;
 font-variant-numeric: normal;
 font-weight: normal;
 font-stretch: normal;
-font-size: 18px;
+font-size: 20px;
 line-height: 36px;
 font-family: "Noto Serif";
 }
