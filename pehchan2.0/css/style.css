@@ -1,9 +1,3 @@
-.navigation{
-  position:relative;
-  left: 0;
-  bottom: 0;
-}
-
 
 .pageicon{
   height:150px;
@@ -85,14 +79,27 @@ font-family: "Noto Serif";
 }
 
 .contactme{
+
+  margin-left: 20%;
+  margin-right: 2%;
+  /*text-align: center;*/
+  vertical-align: middle;
+  font-family: "Open Sans";
   font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
   font-weight: 800;
-  font-stretch: normal;
   font-size: 60px;
   line-height: 1em;
-  font-family: "Open Sans";
+  font-size-adjust: none;
+  font-stretch: normal;
+  -x-system-font: none;
+  font-feature-settings: normal;
+  font-language-override: normal;
+  font-kerning: auto;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
 
 }

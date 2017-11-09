@@ -2,8 +2,6 @@
     $(document).ready(function(){
       $('.parallax').parallax();
       $('.modal').modal();
-      // $("#pushdown").hide();
-        $(".button-collapse").sideNav();
     });
 
       $(document).ready(function(){
@@ -11,4 +9,10 @@
           top: 0,
           offset: 0
         });
+      });
+
+      
+      $(document).ready(function(){
+        $(".button-collapse").sideNav();
+
       });
