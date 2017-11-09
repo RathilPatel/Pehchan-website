@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Pehchan</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  	 <script src="../../materialize/js/materialize.min.js"></script>
-
-  	   <link rel="stylesheet" href="../../materialize/css/materialize.min.css">
-  	  <script src="../js/script.js"></script>
-
-  	<link rel="stylesheet" href="../css/style.css">
+  <?php require '../headerandfooter/header.php'; ?>
   </head>
   <body style="background-color:#e0e0e0;">
     <div class="parallax-container">
-      <div class="parallax responsive-img"><img src="../images/10722.jpg"></div>
-      <div id="pushdown">
-         <img src="../image/pehchan.gif" style="height:100px; width:280px;">
+      <div class="parallax ">
+        <img src="../images/10722.jpg">
+
+
       </div>
+ <img src="../images/pehchan.gif" class="animate bounceInDown" style="height:100px; width:280px; left:40%; top:100px;" >
+ <div class="navigation" style="position:absolute; top:100;left:30%;">
+             <?php require 'navbar.php'; ?>
+ </div>
+
+
     </div>
+
     <div class="white">
     	<div class="section" style="min-height: 400px; padding-top:10%;">
   		      <div class="row">
@@ -72,17 +73,17 @@
 
     <div class="white  " style="margin-top:1%; padding-top:5%;">
       <div class="row">
-        <div class="col l7">
+        <div class="col l7 hide-on-med-and-down">
           <img src="../images/formal.jpg" alt="formals " style="max-width:100%; height:auto;  margin:-15px -15px -15px -15px;">
         </div>
-        <div class="col l5">
+        <div class="col l5 offset-s1 s10">
 
           <div class="pagetiletitle">
               <h4>Formals Attire</h4>
           </div>
 
           <hr>
-          <div class="pagetiledesc">
+          <div class="pagetiledesc flow-text">
             <span>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT.
                PRAESENT VESTIBULUM MOLESTIE LACUS.
                AENEAN NONUMMY HENDRERIT MAURIS. PHASELLUS PORTA.
@@ -93,7 +94,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col l5">
+        <div class="col l5 offset-s1 s10">
           <div class="pagetiletitle">
               <h4>Formals Attire</h4>
           </div>
@@ -107,15 +108,15 @@
                </span>
           </div>
         </div>
-        <div class="col l7">
+        <div class="col l7 hide-on-med-and-down">
       <img src="../images/gift.jpg" alt="" style="max-width:100%; height:auto;  margin:-11px -15px -15px 0px;">
         </div>
       </div>
       <div class="row">
-        <div class="col l7">
+        <div class="col l7 hide-on-med-and-down">
           <img src="../images/gift.jpg" alt="" style="max-width:100%; height:auto; margin:-11px -15px -8px -15px;">
         </div>
-        <div class="col l5">
+        <div class="col l5 offset-s1 s10">
           <div class="pagetiletitle">
                 <h4>Formals Attire</h4>
           </div>
@@ -132,6 +133,10 @@
         </div>
 
       </div>
+    </div>
+    <div class="white" style="margin-top:1%; padding-top:4%">
+
+        <p class="contactme">Contact Me</p>
     </div>
   </body>
 </html>
