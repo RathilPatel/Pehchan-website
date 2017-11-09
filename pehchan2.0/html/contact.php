@@ -136,7 +136,7 @@
           }
         </script>
   </head>
-  <body  onload="document.getElementById('message').focus()">
+  <body  onload="document.getElementById('message').focus()" style="background-color:#e0e0e0;">
     <div class="parallax-container " style="max-height:20%;">
       <div class="parallax-text">
         <p>Pehchan</p>
@@ -147,14 +147,160 @@
       </div>
     </div>
     <?php require 'navbar.php'; ?>
-    <div class="row">
+    <div onloadedmetadata="" class="row">
+
+
       <div class="col l6 s12">
+        <!-- Modal Trigger -->
+     <a class="waves-effect black white-text btn modal-trigger register" href="#modal1">Register</a>
+
+     <!-- Modal Structure -->
+     <div id="modal1" class="modal modal-fixed-footer">
+       <div class="modal-content">
+         <h4>Register to connect with us!</h4>
+         <form class="col s12" action="registerclient.php" method="post">
+
+          <div class="row">
+            <div class="input-field col s12">
+              <select name="Type">
+                <option value="" disabled selected>Choose Type of Client</option>
+                <option value="Vendor">Vendor</option>
+                <option value="Customer">Customer</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+              <input id="Name" type="text" name="Name" class="validate"   onblur="validateLength(1, 50, this, document.getElementById('message_help1'))" >
+              <label for="Name">Full Name</label>
+              <span id="message_help1" class="help"></span>
+
+            </div>
+
+            <div class="input-field col s12">
+              <input id="Address" type="text" name="Address" class="validate"  onblur="validateLength(1, 50, this, document.getElementById('message_help2'))" >
+              <label for="Address">Address</label>
+              <span id="message_help2" class="help"></span>
+
+            </div>
+
+            <div class="input-field col s12">
+              <input id="Pincode" type="text" name="Pincode" class="validate"           onblur="validateZipCode(this, document.getElementById('zipcode_help'))" >
+              <label for="Pincode">Pincode</label>
+              <span id="zipcode_help" class="help"></span>
+            </div>
+
+              <div class="input-field col s12">
+                <input id="City" type="text" name="City" class="validate" onblur="validateLength(1, 20, this, document.getElementById('message_help3'))">
+                <label for="City">City</label>
+                <span id="message_help3" class="help"></span>
+
+              </div>
+
+              <div class="input-field col s12">
+              <input id="GST" type="text" name="GST" class="validate"   onblur="validateGST(this, document.getElementById('GST_help'))" >
+              <label for="GST">GST No.</label>
+              <span id="GST_help" class="help"></span>
+
+              </div>
+
+            <div class="input-field col s12">
+            <input id="Typeofdealer" type="text" name="Typeofdealer" class="validate" onblur="validateLength(1, 20, this, document.getElementById('message_help4'))">
+            <label for="Typeofdealer">Type of Dealer</label>
+            <span id="message_help4" class="help"></span>
+
+            </div>
+
+            <div class="input-field col s12">
+              <input id="PANNumber" type="text" name="PANNumber" class="validate"   onblur="validatePAN(this, document.getElementById('PAN_help'))">
+              <label for="PANNumber">PAN Number (if not registered under GST)</label>
+                  <span id="PAN_help" class="help"></span>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="Contactperson" type="text" name="Contactperson" class="validate">
+              <label for="Contactperson">Contact Person</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="contact" type="text" name="contact" class="validate" onblur="validatePhone(this, document.getElementById('phone_help'))">
+              <label for="contact">Contact</label>
+              <span id="phone_help" class="help"></span>
+
+            </div>
+
+            <div class="input-field col s12">
+              <input id="Email" type="email" name="Email" class="validate">
+              <label for="Email">Email</label>
+            </div>
+
+            <div class="input-field col s12">
+            <input id="Bankname" type="text" name="Bankname" class="validate">
+            <label for="Bankname">Bank name</label>
+            </div>
+
+            <div class="input-field col s12">
+            <input id="Accountno" type="text" name="Accountno" class="validate"   onblur="validateAccount(this, document.getElementById('account_help'))">
+            <label for="Accountno">Account number</label>
+             <span id="account_help" class="help"></span>
+            </div>
+
+            <div class="input-field col s12">
+            <input id="branchaddress" type="text" name="branchaddress" class="validate">
+            <label for="branchaddress">Bank address</label>
+
+            </div>
+
+            <div class="input-field col s12">
+            <input id="IFSC" type="text" name="IFSC" class="validate"  onblur="validateIFSC(this, document.getElementById('IFSC_help'))">
+            <label for="IFSC">IFSC number</label>
+                    <span id="IFSC_help" class="help"></span>
+            </div>
+          </div>
+          <input type="submit" name="Submit1" value="Submit" class="waves-effect waves-light btn"style="width:100%;" >
+
+        </form>
+
+       </div>
+       <!-- <div class="modal-footer">
+         <input type="submit" name="Submit1" value="Submit" class="waves-effect waves-light btn"style="width:100%;" >
+         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+       </div> -->
+     </div>
 
       </div>
-      <div class="col l6 s12">
 
-      </div>
+      <form class="col l6 s12" action="feedback.php" method="POST">
+        <div class="row">
+
+          <h3 class="center">FEEDBACK!</h3>
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate" name="first_name" required>
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" name="last_name" required>
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate"name="email" required>
+            <label for="email">Email</label>
+          </div>
+        </div>
+
+        <div class="input-field col s12">
+          <textarea id="Message" class="materialize-textarea" name="message" required></textarea>
+           <label for="Message">Message</label>
+        </div>
+        <input type="submit" name="Submit" value="Submit" class="btn black white-text"style="width:100%;" >
+
+
+      </form>
     </div>
-    <?php require '../headerandfooter/footer.php'; ?>
+    <div class="" style="margin-top:1%;">
+            <?php require '../headerandfooter/footer.php'; ?>
+    </div>
+
   </body>
 </html>
