@@ -113,7 +113,7 @@
       </div>
       <div class="row">
         <div class="col l7 hide-on-med-and-down">
-          <img src="../images/gift.jpg" alt="" style="max-width:100%; height:auto; margin:-11px -15px -8px -15px;">
+          <img src="../images/gift.jpg" alt="" style="max-width:100%; height:auto; margin:-11px -15px 10px -15px;">
         </div>
         <div class="col l5 offset-s1 s10 animated slideInRight">
           <div class="pagetiletitle">
