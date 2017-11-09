@@ -5,13 +5,13 @@
     });
 
       $(document).ready(function(){
-        $('.navigation').pushpin({
+        $('.navi').pushpin({
           top: 0,
           offset: 0
         });
       });
 
-      
+
       $(document).ready(function(){
         $(".button-collapse").sideNav();
 

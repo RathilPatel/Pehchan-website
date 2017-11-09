@@ -1,18 +1,24 @@
 <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper black white-text">
 
-      <a href="#" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
       <ul class=" hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Products</a></li>
+        <li><a href="collapsible.html">NNM<span class="new badge white black-text"></span></a></li>
+        <li><a href="mobile.html">Contact</a></li>
       </ul>
+      <ul class="right">
+                <li><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
+                <li> <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> </li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+      </ul>
+
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Products</a></li>
+        <li><a href="collapsible.html">NNM<span class="new badge"></span></a></li>
+        <li><a href="mobile.html">Contact</a></li>
       </ul>
     </div>
   </nav>
