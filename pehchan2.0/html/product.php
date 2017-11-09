@@ -7,5 +7,7 @@
   </head>
   <body>
     <?php require 'navbar.php'; ?>
+    <?php require 'productnav.php';?>
+    <?php require '../headerandfooter/footer.php'; ?>
   </body>
 </html>
