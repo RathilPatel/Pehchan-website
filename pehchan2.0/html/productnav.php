@@ -12,46 +12,46 @@
  </nav>
 
  <ul id='tshirts' class='dropdown-content'>
-    <li><a href="#" id="round">Round Neck</a></li>
-    <li><a href="#" id="polo">Polo/Collar</a></li>
+    <li><a href="#" id="round" class="black-text">Round Neck</a></li>
+    <li><a href="#" id="polo"class="black-text">Polo/Collar</a></li>
   </ul>
 
   <ul id='cgifts' class='dropdown-content'>
-    <li><a href="#" id="frame" onclick="press("Products/frames.php")">Frames</a></li>
-    <li><a href="#" id="crystal">Crystal Gifts</a></li>
-    <li><a href="#" id="leather">Leather Gifts</a></li>
-    <li><a href="#" id="apparels">Apparels</a></li>
-    <li><a href="#" id="bag">Bags</a></li>
-    <li><a href="#" id="stationary">Office Stationary</a></li>
-    <li><a href="#" id="gold">Gold Foil Article</a></li>
-    <li><a href="#" id="gifts">Gift sets</a></li>
-    <li><a href="#" id="pen">Pens</a></li>
-    <li><a href="#" id="sipper">Sipper	Bottles</a></li>
-    <li><a href="#" id="keychain">Keychains</a></li>
-    <li><a href="#" id="desktop">Desktop Article</a></li>
-    <li><a href="#" id="cg_misc">Miscellaneous</a></li>
+    <li><a href="#" id="frame" class="black-text">Frames</a></li>
+    <li><a href="#" id="crystal" class="black-text">Crystal Gifts</a></li>
+    <li><a href="#" id="leather" class="black-text">Leather Gifts</a></li>
+    <li><a href="#" id="apparels" class="black-text">Apparels</a></li>
+    <li><a href="#" id="bag" class="black-text">Bags</a></li>
+    <li><a href="#" id="stationary" class="black-text">Office Stationary</a></li>
+    <li><a href="#" id="gold" class="black-text">Gold Foil Article</a></li>
+    <li><a href="#" id="gifts" class="black-text">Gift sets</a></li>
+    <li><a href="#" id="pen" class="black-text">Pens</a></li>
+    <li><a href="#" id="sipper" class="black-text">Sipper	Bottles</a></li>
+    <li><a href="#" id="keychain" class="black-text">Keychains</a></li>
+    <li><a href="#" id="desktop" class="black-text">Desktop Article</a></li>
+    <li><a href="#" id="cg_misc" class="black-text">Miscellaneous</a></li>
   </ul>
   <ul id='led' class='dropdown-content'>
-    <li><a href="#" id="led">LED Tshirts</a></li>
+    <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
 
   </ul>
   <ul id='snj' class='dropdown-content'>
-    <li><a href="#" id="sweatshirts">Sweatshirts</a></li>
-    <li><a href="#" id="jacket">Jackets</a></li>
-    <li><a href="#" id="hoodies">Hoodies</a></li>
+    <li><a href="#" id="sweatshirts" class="black-text">Sweatshirts</a></li>
+    <li><a href="#" id="jacket" class="black-text">Jackets</a></li>
+    <li><a href="#" id="hoodies" class="black-text">Hoodies</a></li>
   </ul>
 
   <ul id='it' class='dropdown-content'>
-    <li><a href="#" id="pendrive">Pendrives</a></li>
-    <li><a href="#" id="powerbank">Powerbanks</a></li>
-    <li><a href="#" id="it_misc">Miscellaneous</a></li>
+    <li><a href="#" id="pendrive" class="black-text">Pendrives</a></li>
+    <li><a href="#" id="powerbank" class="black-text">Powerbanks</a></li>
+    <li><a href="#" id="it_misc" class="black-text">Miscellaneous</a></li>
   </ul>
 
   <ul id='uniform' class='dropdown-content'>
-    <li><a href="#" id="school">School Uniforms</a></li>
-    <li><a href="#" id="hospital">Hospitality Uniforms</a></li>
-    <li><a href="#" id="formal">Formals</a></li>
-    <li><a href="#" id="security">Security Uniforms</a></li>
-    <li><a href="#" id="uni_misc">Miscellaneous</a></li>
+    <li><a href="#" id="school" class="black-text">School Uniforms</a></li>
+    <li><a href="#" id="hospital" class="black-text">Hospitality Uniforms</a></li>
+    <li><a href="#" id="formal" class="black-text">Formals</a></li>
+    <li><a href="#" id="security" class="black-text">Security Uniforms</a></li>
+    <li><a href="#" id="uni_misc" class="black-text"  >Miscellaneous</a></li>
 
   </ul>

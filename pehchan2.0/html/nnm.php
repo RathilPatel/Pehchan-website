@@ -6,8 +6,9 @@
     <?php require '../headerandfooter/header.php'; ?>
     <style media="screen">
       body{
-        background: url("../images/shoes.jpg");
-        position: cover;
+        background: url("../images/fashion.jpg");
+        background-repeat:no-repeat;
+  background-size:cover;
 
 
       }
@@ -22,16 +23,19 @@
         border-color: white;
 
       }
+
     </style>
   </head>
   <body>
 <?php require 'navbar.php'; ?>
-<div class="animated slideInDown coming white-text">
+<div class="animated slideInDown coming ">
+    <img src="" alt="">
    <h1>
+
      <span>Coming Soon</span>
      <form class="" action="notify.php" method="post">
-       <input id="text1" type="text" name="email" placeholder="we'll notify you when its ready">
-       <input type="submit" class="btn black white-text" style="width:100%;" >
+       <input id="text1" type="text" name="email" placeholder="we'll notify you when its ready" class="black-text">
+       <input type="submit" class="btn black white-text" style="width:100%;" id="button">
     </form>
    </h1>
   </div>
