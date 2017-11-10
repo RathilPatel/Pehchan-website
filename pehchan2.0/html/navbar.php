@@ -10,7 +10,7 @@
       </ul>
       <ul class="right">
                 <li><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
-                <li> <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> </li>
+                <li onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
       </ul>
 
