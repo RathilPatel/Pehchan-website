@@ -136,3 +136,7 @@ font-family: "Noto Serif";
   text-align: center;
   vertical-align: middle;
 }
+
+.center{
+    vertical-align: middle;
+}

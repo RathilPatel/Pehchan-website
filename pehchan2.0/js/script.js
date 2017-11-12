@@ -189,5 +189,9 @@
 
         });
 
+        $("#product").click(function(){
 
+          getDataFromUrl("producthome.php");
+
+        });
       });

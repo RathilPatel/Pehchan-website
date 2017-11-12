@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <?php require '../headerandfooter/header.php'; ?>
 
         <script type="text/javascript">
@@ -137,7 +139,7 @@
         </script>
   </head>
   <body  onload="document.getElementById('message').focus()" style="background-color:#e0e0e0;">
-    <div class="parallax-container " style="max-height:20%;">
+    <!-- <div class="parallax-container " style="max-height:20%;">
       <div class="parallax-text">
         <p>Pehchan</p>
         <p>Reflect Your identity</p>
@@ -145,14 +147,19 @@
       <div class="parallax " style="max-height:20%;">
         <img src="../images/10722.jpg" >
       </div>
-    </div>
+    </div> -->
     <?php require 'navbar.php'; ?>
     <div onloadedmetadata="" class="row">
 
 
-      <div class="col l6 s12">
+      <div class="col l6 s12 ">
+        <div class="register">
+          <h1>Want to be a part of Pehchan Family!</h1>
+          <a class="waves-effect black white-text btn modal-trigger animated infinity pulse" href="#modal1">Register Here</a>
+        </div>
         <!-- Modal Trigger -->
-     <a class="waves-effect black white-text btn modal-trigger register" href="#modal1">Register</a>
+
+
 
      <!-- Modal Structure -->
      <div id="modal1" class="modal modal-fixed-footer">
@@ -255,7 +262,7 @@
                     <span id="IFSC_help" class="help"></span>
             </div>
           </div>
-          <input type="submit" name="Submit1" value="Submit" class="waves-effect waves-light btn"style="width:100%;" >
+          <input type="submit" name="Submit1" value="Submit" class="btn black white-text"style="width:100%;" >
 
         </form>
 
@@ -271,7 +278,7 @@
       <form class="col l6 s12" action="feedback.php" method="POST">
         <div class="row">
 
-          <h3 class="center">FEEDBACK!</h3>
+          <h3 class="center">Business Suggestion</h3>
           <div class="input-field col s6">
             <input id="first_name" type="text" class="validate" name="first_name" required>
             <label for="first_name">First Name</label>

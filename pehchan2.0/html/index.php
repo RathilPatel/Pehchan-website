@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <title>Pehchan</title>
   <?php require '../headerandfooter/header.php'; ?>
+  <style media="screen">
+    p{
+      vertical-align: middle;
+    }
+  </style>
   </head>
   <body style="background-color:#e0e0e0;">
-    <div class="parallax-container" style="position:relative;">
+    <div class="parallax-container" style="position:relative; height:400px;">
       <div class="parallax " style="position:absolute;">
         <img src="../images/10722.jpg">
 
@@ -20,7 +25,7 @@
   </div>
 
     <div class="white">
-    	<div class="section" style="min-height: 400px; padding-top:10%;">
+    	<div class="section" style="min-height: 400px; padding-top:5%;">
   		      <div class="row">
               <div class="col l4 offset-s1 s10 animated slideInLeft" style="margin-bottom:5%;">
                 <div class="red lighten-4" style="height:100%; padding:10px 10px 10px 10px;">

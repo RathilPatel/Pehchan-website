@@ -1,8 +1,10 @@
 <footer class="page-footer white">
            <div class="row">
-
+<div class="center">
              <div class="col l3 offset-l1 offset-s1 s3">
+
                <h5 class="black-text">Address</h5>
+               <hr>
                <ul>
                  <p class="black-text">Room No. 4, Ground Floor,
          Behind Dr. Farooqui's (Same Compound)
@@ -14,6 +16,8 @@
              </div>
               <div class="col l3 offset-l1 offset-s1 s3">
                <h5 class="black-text">Important Links</h5>
+               <hr>
+
                <ul>
                  <li><a class="black-text" href="about.php">All Products</a></li>
                  <li><a class="black-text" href="#!">Download Catalog</a></li>
@@ -23,6 +27,7 @@
              </div>
              <div class="col l3 offset-l1 offset-s1 s3">
                <h5 class="black-text">Talk to us!</h5>
+               <hr>
                <ul>
                  <li><a class="black-text" href="#!">+91 982 031 0177</a></li>
                  <li><a class="black-text" href="#!">+91 961 961 0177</a></li>
@@ -32,11 +37,12 @@
                 </ul>
              </div>
            </div>
+           </div>
 
           <div class="row">
 
    <div class="col s10 offset-s1 black-text animated slideInUp">
-             <span class="contactme">Contact Me!</span> <a href="#" class="btn black whitw-text">DROP ME A MESSAGE</a>
+             <span class="contactme">Contact Me!</span> <a href="https://tawk.to/chat/5a03f432bb0c3f433d4c8168/default/?$_tawk_popout=true" class="btn black whitw-text">DROP ME A MESSAGE</a>
 
 
      </div>

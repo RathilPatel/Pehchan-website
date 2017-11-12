@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>NNM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <?php require '../headerandfooter/header.php'; ?>
     <style media="screen">
       body{
