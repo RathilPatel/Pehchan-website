@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    #main-nav > ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #999;
+  position: absolute;
+}
+
+#main-nav > ul  > li {
+  float: left;
+  background-color: #000;
+}
+
+.main-nav-sub {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav > ul  > li+li {
+  border-left: 1px solid #999;
+}
+
+.main-nav-sub > li  {
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+  background-color: #000;
+}
+
+.main-nav-sub > li:first-child {
+  border-top: 1px solid #999;
+}
+
+#main-nav > ul > li > a,
+.main-nav-sub > li > a {
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+  color: #fff;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+#main-nav > ul > li:hover > a {
+  color: #000;
+  background-color: #fff;
+}
+
+.main-nav-sub > li:hover > a {
+  color: #000;
+  background-color: #fff;
+}
+
+.main-nav-sub {
+  position: absolute;
+  z-index: -999;
+  opacity: 0;
+      filter: alpha(opacity=0); /* IE older versions */
+      zoom: 1;  /* IE older versions */
+}
+
+#main-nav > ul > li:hover > .main-nav-sub {
+  z-index: 100;
+  opacity: 1;
+      filter: alpha(opacity=100); /* IE older versions */
+      zoom: 1;  /* IE older versions */
+
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+    </style>
+  </head>
+  <body>
+    <nav id="main-nav">
+<ul>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a>
+        <ul class="main-nav-sub">
+        <li><a href="#">Menu 2.1</a></li>
+        <li><a href="#">Menu 2.2</a></li>
+        <li><a href="#">Menu 2.3</a></li>
+        <li><a href="#">Menu 2.4</a></li>
+        <li><a href="#">Menu 2.5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Menu 3</a>
+        <ul class="main-nav-sub">
+        <li><a href="#">Menu 3.1</a></li>
+        <li><a href="#">Menu 3.2</a></li>
+        <li><a href="#">Menu 3.3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Menu 4</a></li>
+    <li><a href="#">Menu 5</a>
+        <ul class="main-nav-sub">
+        <li><a href="#">Menu 5.1</a></li>
+        <li><a href="#">Menu 5.2</a></li>
+        <li><a href="#">Menu 5.3</a></li>
+        <li><a href="#">Menu 5.4</a></li>
+        </ul>
+    </li>
+</ul>
+</nav>
+
+  </body>
+</html>

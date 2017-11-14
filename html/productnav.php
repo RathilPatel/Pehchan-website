@@ -1,5 +1,5 @@
 <nav>
-   <div class="nav-wrapper">
+   <div class="nav-wrapper black">
      <ul id="nav-mobile" class="center hide-on-med-and-down">
        <li><a class='dropdown-link' href='#' data-activates='tshirts'>Tshirts</a></li>
        <li><a class='dropdown-link' href='#' data-activates='cgifts'>Corporate Gifting</a></li>
