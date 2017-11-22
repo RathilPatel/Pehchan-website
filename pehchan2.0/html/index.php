@@ -32,7 +32,7 @@
               <div class="col l4 offset-s1 s10 animated slideInLeft" style="margin-bottom:5%;">
                 <div class="red lighten-4" style="height:100%; padding:10px 10px 10px 10px;">
                   <div class="white-text">
-                    <img src="../images/page1_icon1.png" alt=" Page Icon 1" class="pageicon">
+                    <img src="../images/page1_icon1.png" alt=" Page Icon 1" class="pageicon hide-on-med-and-down">
                   </div>
                   <div class="black-text flow-text pageicondetail" style="align-item">
                     <h4 class="grey-text text-darken-3"> CUSTOMISED TSHIRTS AND UNIFORMS</h4>
