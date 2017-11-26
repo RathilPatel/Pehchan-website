@@ -35,7 +35,7 @@
    <h1><span>Coming Soon</span> </h1>
      <form class="" action="notify.php" method="post">
        <input id="text1" type="text" name="email" placeholder="we'll notify you when its ready" class="black-text">
-       <input type="submit" class="btn black white-text" style="width:100%;" id="button">
+       <input type="submit" class="btn black white-text disabled" style="width:100%;" id="button">
     </form>
    </h1>
   </div>

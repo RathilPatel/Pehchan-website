@@ -262,7 +262,7 @@
                     <span id="IFSC_help" class="help"></span>
             </div>
           </div>
-          <input type="submit" name="Submit1" value="Submit" class="btn black white-text"style="width:100%;" >
+          <input type="submit" name="Submit1" value="Submit" class="btn black white-text disabled"style="width:100%;" >
 
         </form>
 
@@ -300,7 +300,7 @@
           <textarea id="Message" class="materialize-textarea" name="message" required></textarea>
            <label for="Message">Message</label>
         </div>
-        <input type="submit" name="Submit" value="Submit" class="btn black white-text"style="width:100%;" >
+        <input type="submit" name="Submit" value="Submit" class="btn black white-text disabled"style="width:100%;" >
 
 
       </form>
