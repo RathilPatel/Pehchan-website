@@ -13,8 +13,12 @@
 
  <ul id='tshirts' class='dropdown-content'>
     <li><a href="#" id="round" class="black-text">Round Neck</a></li>
-    <li><a href="#" id="polo"class="black-text">Polo/Collar</a></li>
+    <li><a href="#" id="polo" class="black-text">Polo/Collar</a></li>
   </ul>
+
+  <ul id='led' class='dropdown-content'>
+     <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
+   </ul>
 
   <ul id='cgifts' class='dropdown-content'>
     <li><a href="#" id="frame" class="black-text">Frames</a></li>
@@ -31,10 +35,8 @@
     <li><a href="#" id="desktop" class="black-text">Desktop Article</a></li>
     <li><a href="#" id="cg_misc" class="black-text">Miscellaneous</a></li>
   </ul>
-  <ul id='led' class='dropdown-content'>
-    <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
 
-  </ul>
+
   <ul id='snj' class='dropdown-content'>
     <li><a href="#" id="sweatshirts" class="black-text">Sweatshirts</a></li>
     <li><a href="#" id="jacket" class="black-text">Jackets</a></li>

@@ -1,8 +1,4 @@
 
-<div class="productname">
-  <h2>BAGS</h2>
-
-</div>
 
 <?php
 
