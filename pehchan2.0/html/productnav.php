@@ -13,11 +13,11 @@
 
  <ul id='tshirts' class='dropdown-content'>
     <li><a href="#" id="round" class="black-text">Round Neck</a></li>
-    <li><a href="#" id="polo"class="black-text">Polo/Collar</a></li>
+    <li><a href="#" id="polo" class="black-text">Polo/Collar</a></li>
   </ul>
 
   <ul id='led' class='dropdown-content'>
-     <li><a href="#" id="round" class="black-text">LED Tshirts</a></li>
+     <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
    </ul>
 
   <ul id='cgifts' class='dropdown-content'>
