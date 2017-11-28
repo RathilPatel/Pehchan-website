@@ -1,3 +1,15 @@
+
+  <div class="fixed-action-btn vertical"style="left:23px; right:unset;">
+    <a class="btn-floating btn-large black left pulse">
+      <i class="large material-icons fa fa-thumbs-o-up"></i>
+    </a>
+    <ul>
+      <li onclick="window.open('https://in.pinterest.com/mypehchan/pins/','_blank')"><a class="btn-floating red"><i class="material-icons fa fa-pinterest-p"></i></a></li>
+      <li onclick="window.open('https://www.instagram.com/mypehchan/','_blank')"><a class="btn-floating pink"><i class="material-icons fa fa-instagram"></i></a></li>
+      <li onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><a class="btn-floating indigo darken-3"><i class="material-icons fa fa-facebook-official"></i></a></li>
+      <li onclick="window.open('https://twitter.com/mypehchan','_blank')"><a class="btn-floating blue"><i class="material-icons fa fa-twitter"></i></a></li>
+    </ul>
+  </div>
 <footer class="page-footer white">
            <div class="row">
 <div class="center">
@@ -22,6 +34,9 @@
                  <li><a class="black-text" href="about.php">All Products</a></li>
                  <li><a class="black-text" href="#!">Download Catalog</a></li>
                  <li><a class="black-text" href="#!">Facebook</a></li>
+                 <li><a class="black-text" href="#!">Twitter</a></li>
+                 <li><a class="black-text" href="#!">Instagram</a></li>
+                 <li><a class="black-text" href="#!">Pinterest</a></li>
 
                </ul>
              </div>

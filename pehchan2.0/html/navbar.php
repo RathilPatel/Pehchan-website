@@ -13,8 +13,10 @@
       </ul>
       <ul class="right hide-on-med-and-down">
                 <li><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
-                <li onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><i class="fa fa-facebook-official" aria-hi0dden="true"></i></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+
+
+
+
       </ul>
       <ul class="side-nav" id="mobile-demo">
 

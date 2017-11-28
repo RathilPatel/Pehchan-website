@@ -156,3 +156,23 @@ a.link:hover{
 .title-link{
   font-weight: bold;
 }
+
+
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 20px;
+    color: #26a69a;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+
+.title-link li>a{
+  font-size: 20px;
+  color: #26a69a;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+
+}
