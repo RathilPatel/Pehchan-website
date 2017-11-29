@@ -33,7 +33,7 @@
 
 
 
-  <ul id='products' class='dropdown-content' style="font-size:16px; width:auto;">
+  <ul id='products' class='dropdown-content' style="font-size:16px;   width: 90% !important;">
     <div class="row" style="width:100%; overflow:auto;">
       <div class="col l3">
         <div class="pronav">

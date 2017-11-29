@@ -48,13 +48,6 @@
 
         });
 
-        $("#polo").click(function(){
-
-          getDataFromUrl("polo.php");
-
-        });
-
-
         $("#frame").click(function(){
 
       //  $("#content").load("frames.php");
@@ -129,6 +122,12 @@
         $("#led").click(function(){
 
           getDataFromUrl("led.php");
+
+        });
+
+        $("#polo").click(function(){
+
+          getDataFromUrl("polo.php");
 
         });
 
