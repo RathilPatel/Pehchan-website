@@ -8,24 +8,18 @@
        <li><a class='dropdown-link' href='#' data-activates='it'>IT Products</a></li>
        <li><a class='dropdown-link' href='#' data-activates='uniform'>Uniforms</a></li>
      </ul>
-   </div> 
+   </div>
  </nav>
 
- <ul id='tshirts' class='dropdown-content'>
-    <li><a href="#" id="round" class="black-text">Round Neck</a></li>
-    <li><a href="#" id="polo" class="black-text">Polo/Collar</a></li>
-  </ul>
+<ul id="tshirts" class="dropdown-content">
+  <li><a href="#" id="round">Round neck</a></li>
+</ul>
 
-  <ul id='led' class='dropdown-content'>
+<ul id='led' class='dropdown-content'>
      <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
-   </ul>
-   <ul id='led' class='dropdown-content'>
-      <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
-    </ul>
-      <ul id='led' class='dropdown-content'>
-         <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
-       </ul>
-  <ul id='cgifts' class='dropdown-content'>
+</ul>
+
+<ul id='cgifts' class='dropdown-content'>
     <li><a href="#" id="frame" class="black-text">Frames</a></li>
     <li><a href="#" id="crystal" class="black-text">Crystal Gifts</a></li>
     <li><a href="#" id="leather" class="black-text">Leather Gifts</a></li>
@@ -39,7 +33,7 @@
     <li><a href="#" id="keychain" class="black-text">Keychains</a></li>
     <li><a href="#" id="desktop" class="black-text">Desktop Article</a></li>
     <li><a href="#" id="cg_misc" class="black-text">Miscellaneous</a></li>
-  </ul>
+</ul>
 
 
   <ul id='snj' class='dropdown-content'>
@@ -60,5 +54,4 @@
     <li><a href="#" id="formal" class="black-text">Formals</a></li>
     <li><a href="#" id="security" class="black-text">Security Uniforms</a></li>
     <li><a href="#" id="uni_misc" class="black-text"  >Miscellaneous</a></li>
-<li> <a href="#" id="bag">bagssss</a> </li>
   </ul>

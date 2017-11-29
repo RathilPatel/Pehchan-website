@@ -42,149 +42,9 @@
 
       $(document).ready(function() {
 
-        $("#round").click(function(){
-
-          getDataFromUrl("round.php");
-
-        });
-
-        $("#frame").click(function(){
-
-      //  $("#content").load("frames.php");
-        getDataFromUrl("frames.php");
-        });
-
-        $("#crystal").click(function(){
-
-          getDataFromUrl("crystal.php");
-
-        });
-        $("#leather").click(function(){
-
-          getDataFromUrl("leather.php");
-
-        });
-
-        $("#bags").click(function(){
-
-          getDataFromUrl("bag.php");
-
-        });
-
-        $("#stationary").click(function(){
-
-          getDataFromUrl("stationary.php");
-
-        });
-
-        $("#gold").click(function(){
-
-          getDataFromUrl("goldfoil.php");
-
-        });
-
-        $("#gifts").click(function(){
-
-          getDataFromUrl("giftsets.php");
-
-        });
-
-        $("#pen").click(function(){
-
-          getDataFromUrl("pen.php");
-
-        });
-
-        $("#sipper").click(function(){
-
-          getDataFromUrl("sipper.php");
-
-        });
-
-        $("#keychain").click(function(){
-
-          getDataFromUrl("keychain.php");
-
-        });
-
-        $("#desktop").click(function(){
-
-          getDataFromUrl("desktopparticle.php");
-
-        });
-
-        $("#cg_misc").click(function(){
-
-          getDataFromUrl("cg_misc.php");
-
-        });
-
         $("#led").click(function(){
 
           getDataFromUrl("led.php");
-
-        });
-
-        $("#polo").click(function(){
-
-          getDataFromUrl("polo.php");
-
-        });
-
-        $("#sweatshirts").click(function(){
-
-          getDataFromUrl("sweatshirts.php");
-
-        });
-        $("#jacket").click(function(){
-
-          getDataFromUrl("jackets.php");
-
-        });
-        $("#hoodies").click(function(){
-
-          getDataFromUrl("hoodies.php");
-
-        });
-        $("#pendrive").click(function(){
-
-          getDataFromUrl("pendrives.php");
-
-        });
-        $("#powerbank").click(function(){
-
-          getDataFromUrl("powerbanks.php");
-
-        });
-        $("#it_misc").click(function(){
-
-          getDataFromUrl("it_misc.php");
-
-        });
-        $("#school").click(function(){
-
-          getDataFromUrl("school.php");
-
-        });
-        $("#hospital").click(function(){
-
-          getDataFromUrl("hospitality.php");
-
-        });
-        $("#formal").click(function(){
-
-          getDataFromUrl("formal.php");
-
-        });
-        $("#security").click(function(){
-
-          getDataFromUrl("security.php");
-
-        });
-
-        $("#uni_misc").click(function(){
-
-          getDataFromUrl("uni_misc.php");
 
         });
 
@@ -192,5 +52,10 @@
 
           getDataFromUrl("producthome.php");
 
+        });
+
+        $("#round").click(function(){
+
+            getDataFromUrl("led.php");
         });
       });
