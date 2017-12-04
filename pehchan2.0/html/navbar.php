@@ -62,11 +62,8 @@
           </ul>
           <ul>
             <li> <a href="#" class="title-link">LED Tshirt</a></li>
-            <li><a href="#" id="it_misc" class="black-text links" style="font-size:12px;">LED Tshirts</a></li>
+            <li><a href="#" id="led" class="black-text links" style="font-size:12px;">LED Tshirts</a></li>
           </ul>
-
-
-
         </div>
 
       </div>

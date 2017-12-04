@@ -76,7 +76,7 @@
 
 
 
-      <div class="content">
+      <div id="content">
 
       </div>
 
@@ -116,7 +116,11 @@
 
 
     $("#led").click(function(){
-        getDataFromUrl("bag.php");
+        getDataFromUrl("led.php");
+    });
+
+    $("#bag").click(function(){
+      getDataFromUrl("bag.php");
     });
     </script>
   </body>
