@@ -50,12 +50,12 @@
 
         $("#product").click(function(){
 
-          getDataFromUrl("producthome.php");
+          getDataFromUrl("producthome.html");
 
         });
 
         $("#round").click(function(){
 
-            getDataFromUrl("led.php");
+$("#content").load("round.php");
         });
       });

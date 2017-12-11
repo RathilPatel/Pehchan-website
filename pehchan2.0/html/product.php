@@ -34,7 +34,7 @@
     }
     </script>
     <script type="text/javascript">
-    	$("#content").load("producthome.html");
+    	$("#content").load("polo.php");
     </script>
   </body>
 </html>
