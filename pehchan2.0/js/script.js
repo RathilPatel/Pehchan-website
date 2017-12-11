@@ -33,6 +33,11 @@
       });
 
 
+          jQuery(window).load(function(){
+              jQuery(".hameid-loader-overlay").fadeOut(500);
+          });
+  
+
       $(document).ready(function() {
           $('select').material_select();
         });
@@ -41,6 +46,10 @@
 
 
       $(document).ready(function() {
+
+        $("#frame").click(function(){
+          $("#content").load("frame.php");
+        });
 
         $("#led").click(function(){
 

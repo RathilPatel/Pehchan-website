@@ -3,22 +3,26 @@
      <ul id="nav-mobile" class="center ">
        <li><a class='dropdown-link' href='#' data-activates='tshirts'>Tshirts</a></li>
        <li><a class='dropdown-link' href='#' data-activates='cgifts'>Corporate Gifting</a></li>
-       <li><a class='dropdown-link' href='#' data-activates='led'>LED Tshirt</a></li>
        <li><a class='dropdown-link' href='#' data-activates='snj'>Sweatshirt & Jackets</a></li>
        <li><a class='dropdown-link' href='#' data-activates='it'>IT Products</a></li>
        <li><a class='dropdown-link' href='#' data-activates='uniform'>Uniforms</a></li>
+       <li><a class='dropdown-link' href='#' data-activates='led'>LED Tshirt</a></li>
+
      </ul>
    </div>
  </nav>
 
 <ul id="tshirts" class="dropdown-content">
   <li><a href="#" id="round" >Round neck</a></li>
+  <li><a href="#" id="round" >Polo/Collar neck </a></li>
+
 </ul>
 
-<ul id='led' class='dropdown-content'>
-     <li><a href="#" id="led" class="black-text">LED Tshirts</a></li>
-</ul>
+<ul id="led" class="dropdown-content">
+  <li><a href="#" id="round" >Round neck</a></li>
+  <li><a href="#" id="round" >Polo/Collar neck </a></li>
 
+</ul>
 <ul id='cgifts' class='dropdown-content'>
     <li><a href="#" id="frame" class="black-text">Frames</a></li>
     <li><a href="#" id="crystal" class="black-text">Crystal Gifts</a></li>
