@@ -141,18 +141,19 @@ font-family: "Noto Serif";
     vertical-align: middle;
 }
 
-.links{
-  font-size:large;
-  font-weight: 900;
+.links a{
+  font-size: 28px;
+   color: #26a69a;
+   display: block;
+   line-height: 22px;
+   padding: 14px 16px;
 
+  }
 
-
-}
-a.link:hover{
-  background-color: black;
-  text-color:white;
-}
-
-.title-link{
-  font-weight: bold;
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 20px;
+    color: #26a69a;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
 }

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pehchan</title>
+    <title>Pehchan-Corporate Gifting & Customised Tshirts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <?php require '../headerandfooter/header.php'; ?>
@@ -10,9 +10,19 @@
     p{
       vertical-align: middle;
     }
+    .hameid-loader-overlay {
+        width: 100%;
+        height: 100%;
+        background: url('../images/preloader.gif') center no-repeat #FFF;
+        z-index: 99999;
+        position: fixed;
+    }
   </style>
+
   </head>
   <body style="background-color:#e0e0e0;">
+    <!-- <div class="hameid-loader-overlay"></div> -->
+    
     <div class="parallax-container" style="position:relative; height:400px;">
       <div class="parallax " style="position:absolute;">
         <img src="../images/10722.jpg">
@@ -193,6 +203,10 @@
     <div class="white" style="margin-top:1%; padding-top:4%">
         <?php require '../headerandfooter/footer.php'; ?>
     </div>
-
+<script type="text/javascript">
+jQuery(window).load(function(){
+    jQuery(".hameid-loader-overlay").fadeIn(500);
+});
+</script>
   </body>
 </html>

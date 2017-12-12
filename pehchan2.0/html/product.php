@@ -10,10 +10,18 @@
   <body>
     <?php require 'navbar.php'; ?>
     <?php require 'productnav.php';?>
+<div class="row">
+  <div class="col l2">
 
+  </div>
+  <div class="col l10">
     <div id="content">
 
     </div>
+
+  </div>
+
+</div>
     <?php require '../headerandfooter/footer.php'; ?>
     <script>
     function getDataFromUrl(urlWithContent)

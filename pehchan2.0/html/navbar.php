@@ -13,8 +13,10 @@
       </ul>
       <ul class="right hide-on-med-and-down">
                 <li><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
-                <li onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><i class="fa fa-facebook-official" aria-hi0dden="true"></i></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+
+
+
+
       </ul>
       <ul class="side-nav" id="mobile-demo">
 
@@ -31,7 +33,7 @@
 
 
 
-  <ul id='products' class='dropdown-content' style="font-size:16px; width:auto;">
+  <ul id='products' class='dropdown-content' style="font-size:16px;   width: 90% !important;">
     <div class="row" style="width:100%; overflow:auto;">
       <div class="col l3">
         <div class="pronav">
@@ -60,11 +62,8 @@
           </ul>
           <ul>
             <li> <a href="#" class="title-link">LED Tshirt</a></li>
-            <li><a href="#" id="it_misc" class="black-text links" style="font-size:12px;">LED Tshirts</a></li>
+            <li><a href="#" id="led" class="black-text links" style="font-size:12px;">LED Tshirts</a></li>
           </ul>
-
-
-
         </div>
 
       </div>
