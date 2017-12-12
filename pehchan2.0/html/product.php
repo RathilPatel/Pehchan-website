@@ -52,7 +52,7 @@ function polo() {
   $("#content").load("polo.php");
 }
 function frame() {
-  $("#content").load("frame.php");
+  $("#content").load("frames.php");
 }
 function crystal(){
   $("#content").load("crystal.php");
