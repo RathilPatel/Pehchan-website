@@ -1,0 +1,116 @@
+/*
+Darkbox
+*/
+[data-darkbox],
+[data-darkbox-group]{
+  cursor: pointer;
+}
+
+/* #darkbox (shows large images as bg-image) */
+#darkbox{
+  color:#fff;
+  font: 14px/1.4 sans-serif;
+  position: fixed;
+  z-index: 999999;
+  top: 24px; /* since we cannot use padding */
+  left: 24px;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(0,0,0, 0.8) none no-repeat 50% 50% / contain;
+  box-shadow: 0 0 0 24px rgba(0,0,0, 0.8);
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  opacity: 0; 
+  visibility: hidden;
+}
+
+#darkbox.show{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover action elements styles */
+#darkbox a:hover{
+  color: #0bf;
+  border-color: #0bf;
+}
+
+/*prev next buttons*/
+#darkbox_prev,
+#darkbox_next{
+  cursor: pointer;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  margin-top: -15px;
+  border: 0px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+
+#darkbox_prev{
+  left: -6px;
+  border-width: 0 0 3px 3px;
+}
+
+#darkbox_next{
+  right: -6px;
+  border-width: 3px 3px 0 0;
+}
+
+/* Description */
+#darkbox_description{
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  text-align: right;
+  text-shadow: 0 1px 1px #000;
+}
+
+/* Stats counter */
+#darkbox_stats{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Close button */
+#darkbox_close{
+  position: absolute;
+  top: -8px;
+  right: 0px;
+}
+#darkbox_close:after{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2.2em;
+  content: "\2A2F";
+  cursor: pointer;
+}
+
+/* Spinner */
+#darkbox:before{
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  margin: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: inset -2px 0 0 2px #fff;
+  -webkit-animation: darkboxRotate 1.5s linear infinite; 
+          animation: darkboxRotate 1.5s linear infinite; 
+}
+#darkbox.spinner:before{
+  visibility: visible;
+  opacity: 1;
+}
+@-webkit-keyframes darkboxRotate{ to{-webkit-transform: rotate(360deg); } }
+@keyframes         darkboxRotate{ to{        transform: rotate(360deg); } }
