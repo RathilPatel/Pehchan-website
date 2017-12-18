@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <img src="images/man.png" alt="man login icon">
-      <form class="" action="login.php" method="post">
+      <form class="" action="connection/login.php" method="post">
     <div class="form-input">
           <input type="text" name="username" value="" placeholder="Username">
     </div>
