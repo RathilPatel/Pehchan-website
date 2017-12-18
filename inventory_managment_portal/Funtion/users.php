@@ -1,5 +1,5 @@
 <?php
-include '../Connection/DBH.php';
+include '../Connection/dbh.php';
 
 /*function user_exists($username,$type){
 
@@ -63,12 +63,11 @@ if($type == 1){
 }
 /*/
 function login($username,$password,$type){
-$con = mysqli_connect("localhost","root","","ooes");
+$con = mysqli_connect("localhost","root","","Pehchan");
  //$username = user_id_from_username($username);
 
  $username = $username;
  $password = $password;
- $type = $type;
 
 if($type == 1){
 		$sql="SELECT COUNT(username) FROM student where username='$username' AND password='$password'";
