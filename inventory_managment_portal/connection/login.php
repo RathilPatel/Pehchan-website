@@ -1,7 +1,7 @@
 <?php
 include 'init.php';
 
-   $username=$_POST["username"];
+/*   $username=$_POST["username"];
    $pass=$_POST["password"];
    $password=md5($pass);
    if(empty($username) == true || empty($password) == true)
@@ -16,6 +16,32 @@ include 'init.php';
         }
         else{
          $_SESSION['username'] = $login;
+            $_SESSION['']
                        header('Location: ../succes.php');
      }
-   }
+   }*/
+
+if (isset($_POST['username']) and isset($_POST['password'])) {
+    $username = $_POST['username'];
+    $pass = $_POST['password'];
+    $password = md5($pass);
+    if(empty($username) == true || empty($password) == true) {
+        $errors[] = 'You need to Enter Username and password';
+    }
+    else {
+        $query = "SELECT * FROM `Inventory_login` WHERE Username='$username' and Password='$password'";
+        $result = mysqli_query($con, $query) or die(mysqli_error($con));
+        $count = mysqli_num_rows($result);
+
+        if ($count == 1) {
+            $_SESSION['username'] = $username;
+            header('Location: ../succes.php');
+        }
+        else {
+            header('Location: ../fail.php');
+            $errors[] = "Invalid Login Credentials.";
+        }
+    }
+}
+
+?>
