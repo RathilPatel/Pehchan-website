@@ -13,7 +13,7 @@
                             <div class="card-image">
                                 <a href="<?php echo $value;?>" class="lightBox">
                                     
-                                    <img class="fancybox" src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:200px; width:250px; padding-left:40px;">
+                                    <img class="fancybox" src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:200px; width:250px;">
                                 
                                 </a>
                                 
