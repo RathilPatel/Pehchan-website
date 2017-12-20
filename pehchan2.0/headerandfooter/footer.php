@@ -9,7 +9,7 @@
         <li onclick="window.open('https://twitter.com/mypehchan','_blank')"><a class="btn-floating blue"><i class="material-icons fa fa-twitter"></i></a></li>
     </ul>
 </div>
-<footer class="page-footer white">
+<footer class="page-footer grey lighten-3">
     <div class="row">
         <div class="center">
             <div class="col l3 offset-l1 s12">
@@ -17,7 +17,7 @@
                 <h5 class="black-text">Address</h5>
                 <hr>
                 <ul>
-                    <p class="black-text">Room No. 4, Ground Floor, Behind Dr. Farooqui's (Same Compound) St. Martin Road, Off Turner Road, Near Royal China and Union Bank, Bandra West Mumbai - 400 050</p>
+                    <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>.
                 </ul>
             </div>
             <div class="col l3 offset-l1 s12">
@@ -51,7 +51,7 @@
     <div class="row">
 
         <div class="col l10 offset-l1 s12  black-text animated slideInUp">
-            <span class="contactme">Contact Me!</span> <a href="https://tawk.to/chat/5a03f432bb0c3f433d4c8168/default/?$_tawk_popout=true" class="btn black whitw-text">DROP ME A MESSAGE</a>
+            <span class="contactme">Contact Us!</span> <a href="https://tawk.to/chat/5a03f432bb0c3f433d4c8168/default/?$_tawk_popout=true" class="btn black whitw-text">DROP US A MESSAGE</a>
 
 
         </div>
