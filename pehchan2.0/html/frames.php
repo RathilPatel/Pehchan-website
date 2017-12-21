@@ -9,13 +9,13 @@
                 <?php
   foreach ($dir as $value) {
     ?>
-                    <div class="col s6 l3">
+                    <div class="col l3">
                         <div class="z-depth-4">
                         <div class="card" >
                             <div class="card-image" >
                                 <a href="<?php echo $value;?>">
-                                <a class="fancybox" href="<?php echo $value;?>" data-type="image" data-caption="This is a caption" data-fancybox="group2" data-width="500" data-height="500">
-                                    <img src="<?php echo $value; ?>" alt="<?php echo $value; ?>">
+                                <a class="fancybox" href="<?php echo $value;?>" data-type="image" data-caption="This is a caption" data-fancybox="group2">
+                                    <img src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:300px; width:300px; padding:40px;" >
                                 </a>
 
                                 </a>

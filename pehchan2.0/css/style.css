@@ -1,110 +1,98 @@
-
-.pageicon{
-  height:150px;
-  width: 150px;
-  margin-top:-60px;
-margin-left: 35%;
+.preloader-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 900;
 }
 
-.pageicondetail{
-  margin-right: 10%;
-  margin-left: 10%;
-  text-align: center;
-  vertical-align: middle;
+#content {
+    display: none;
+}
 
-  font-style: normal;
-font-variant-ligatures: normal;
-font-variant-caps: normal;
-font-variant-numeric: normal;
-font-weight: normal;
-font-stretch: normal;
-font-size: 40px;
-line-height: 48px;
-font-family: "Noto Serif";
+.pageicon {
+    height: 150px;
+    width: 150px;
+    margin-top: -60px;
+    margin-left: 35%;
+}
+
+.pageicondetail {
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    vertical-align: middle;
+
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Noto Serif";
 
 }
-hr{
-border-width: 2px;
-border-color:#655a59;
+
+hr {
+    border-width: 2px;
+    border-color: #655a59;
 
 }
-h4{
-  color: #625656;
+
+h4 {
+    color: #625656;
 }
-.pageicondesc{
-  font-style: normal;
-font-variant-ligatures: normal;
-font-variant-caps: normal;
-font-variant-numeric: normal;
-font-weight: normal;
-font-stretch: normal;
-font-size: 18px;
-line-height: 36px;
-font-family: "Noto Serif";
-  /*font-size: 20px;
+
+.pageicondesc {
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 18px;
+    line-height: 36px;
+    font-family: "Noto Serif";
+    /*font-size: 20px;
   line-height: 35px;*/
 }
 
-.btn{
-  border-color: black;
+.btn {
+    border-color: black;
 }
 
 
-.pagetiletitle{
-  margin-right: 10%;
-  margin-left: 10%;
-  /*text-align: center;*/
-  vertical-align: middle;
+.pagetiletitle {
+    margin-right: 10%;
+    margin-left: 10%;
+    /*text-align: center;*/
+    vertical-align: middle;
 
-  font-style: normal;
-font-variant-ligatures: normal;
-font-variant-caps: normal;
-font-variant-numeric: normal;
-font-weight: normal;
-font-stretch: normal;
-font-size: 56px;
-line-height: 48px;
-font-family: "Noto Serif";
-}
-.pagetiledesc{
-  font-style: normal;
-font-variant-ligatures: normal;
-font-variant-caps: normal;
-font-variant-numeric: normal;
-font-weight: normal;
-font-stretch: normal;
-font-size: 20px;
-line-height: 36px;
-font-family: "Noto Serif";
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 56px;
+    line-height: 48px;
+    font-family: "Noto Serif";
 }
 
-.contactme{
-
-  margin-left: 20%;
-  margin-right: 2%;
-  /*text-align: center;*/
-  vertical-align: middle;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1em;
-  font-size-adjust: none;
-  font-stretch: normal;
-  -x-system-font: none;
-  font-feature-settings: normal;
-  font-language-override: normal;
-  font-kerning: auto;
-  font-variant-alternates: normal;
-  font-variant-caps: normal;
-  font-variant-east-asian: normal;
-  font-variant-ligatures: normal;
-  font-variant-numeric: normal;
-  font-variant-position: normal;
-
+.pagetiledesc {
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: "Noto Serif";
 }
 
-.parallax-text{
+.contactme {
 
     margin-left: 20%;
     margin-right: 2%;
@@ -130,27 +118,54 @@ font-family: "Noto Serif";
 
 }
 
-.register{
-  margin-right: 10%;
-  margin-left: 10%;
-  text-align: center;
-  vertical-align: middle;
+.parallax-text {
+
+    margin-left: 20%;
+    margin-right: 2%;
+    /*text-align: center;*/
+    vertical-align: middle;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1em;
+    font-size-adjust: none;
+    font-stretch: normal;
+    -x-system-font: none;
+    font-feature-settings: normal;
+    font-language-override: normal;
+    font-kerning: auto;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+
 }
 
-.center{
+.register {
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
     vertical-align: middle;
 }
 
-.links a{
-  font-size: 28px;
-   color: #26a69a;
-   display: block;
-   line-height: 22px;
-   padding: 14px 16px;
+.center {
+    vertical-align: middle;
+}
 
-  }
+.links a {
+    font-size: 28px;
+    color: #26a69a;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
 
-.dropdown-content li>a, .dropdown-content li>span {
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
     font-size: 20px;
     color: #26a69a;
     display: block;
