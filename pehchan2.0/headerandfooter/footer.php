@@ -12,12 +12,12 @@
 <footer class="page-footer grey lighten-3">
     <div class="row">
         <div class="center">
-            <div class="col l3 offset-l1 s12">
+            <div class="col l3 s12">
 
                 <h5 class="black-text">Address</h5>
                 <hr>
                 <ul>
-                    <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>.
+                    <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>
                 </ul>
             </div>
             <div class="col l3 offset-l1 s12">

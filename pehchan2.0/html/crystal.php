@@ -9,6 +9,7 @@
     foreach ($dir as $value) {
       ?>
                     <div class="col s6 l3">
+                        <div class="z-depth-4">
                         <div class="card">
                             <div class="card-image">
                                 <a href="<?php echo $value;?>">
@@ -25,6 +26,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
 
 

@@ -10,11 +10,12 @@
   foreach ($dir as $value) {
     ?>
                     <div class="col s6 l3">
-                        <div class="card">
+                        <div class="z-depth-4">
+                        <div class="card" >
                             <div class="card-image" >
                                 <a href="<?php echo $value;?>">
-                                <a class="fancybox" href="<?php echo $value;?>" data-caption="This is a caption" data-fancybox="group2">
-                                    <img src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:250px; width:350px">
+                                <a class="fancybox" href="<?php echo $value;?>" data-type="image" data-caption="This is a caption" data-fancybox="group2" data-width="500" data-height="500">
+                                    <img src="<?php echo $value; ?>" alt="<?php echo $value; ?>">
                                 </a>
 
                                 </a>
@@ -26,6 +27,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
 
                     <?php
