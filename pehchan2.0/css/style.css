@@ -1,4 +1,4 @@
-.preloader-wrapper {
+/*.preloader-wrapper {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -7,7 +7,7 @@
 
 #content {
     display: none;
-}
+}*/
 
 .pageicon {
     height: 150px;
@@ -30,7 +30,7 @@
     font-stretch: normal;
     font-size: 40px;
     line-height: 48px;
-    font-family: "Noto Serif";
+    font-family: "Noto Serif";  
 
 }
 
