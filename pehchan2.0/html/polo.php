@@ -12,9 +12,9 @@
                         <div class="card">
                             <div class="card-image">
                                 <a href="<?php echo $value;?>" class="lightBox">
-                                    
-                                    <img class="fancybox" src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:200px; width:250px;">
-                                
+                                    <a class="fancybox" href="<?php echo $value;?>" data-caption="This is a caption" data-fancybox="group2">
+                                    <img class="fancybox" src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:300px; width:300px;">
+                                    </a>
                                 </a>
                                 
                                 <div class="card-content">
