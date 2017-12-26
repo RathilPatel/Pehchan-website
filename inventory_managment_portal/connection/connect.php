@@ -1,10 +1,8 @@
 <?php
-$con = mysqli_connect("server242.web-hosting.com","mypenynj_rathil","123456789","mypenynj_pehchan");
+$con = mysqli_connect("localhost","root","","Pehchan");
 $_SESSION['username'] = $usr;
 
-if(!$con){
-
-
+if(!$con) {s
     die("Connection Failed :" .mysqli_connect_error());
 }
 
