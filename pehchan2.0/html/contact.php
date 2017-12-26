@@ -177,7 +177,7 @@
                                 </select>
                             </div>
                             <div class="input-field col s12">
-                                <input id="Name" type="text" name="Name" class="validate" onblur="validateLength(1, 50, this, document.getElementById('message_help1'))">
+                                <input id="Name" type="text" name="Name" class="validate" onblur="validateLength(1, 50, this, document.getElementById('message_help1'))" required>
                                 <label for="Name">Full Name</label>
                                 <span id="message_help1" class="help"></span>
 
@@ -211,14 +211,14 @@
                             </div>
 
                             <div class="input-field col s12">
-                                <input id="Typeofdealer" type="text" name="Typeofdealer" class="validate" onblur="validateLength(1, 20, this, document.getElementById('message_help4'))">
+                                <input id="Typeofdealer" type="text" name="Typeofdealer" class="validate" onblur="validateLength(1, 20, this, document.getElementById('message_help4'))" required>
                                 <label for="Typeofdealer">Type of Dealer</label>
                                 <span id="message_help4" class="help"></span>
 
                             </div>
 
                             <div class="input-field col s12">
-                                <input id="PANNumber" type="text" name="PANNumber" class="validate" onblur="validatePAN(this, document.getElementById('PAN_help'))">
+                                <input id="PANNumber" type="text" name="PANNumber" class="validate" onblur="validatePAN(this, document.getElementById('PAN_help'))" required>
                                 <label for="PANNumber">PAN Number (if not registered under GST)</label>
                                 <span id="PAN_help" class="help"></span>
                             </div>
@@ -229,7 +229,7 @@
                             </div>
 
                             <div class="input-field col s12">
-                                <input id="contact" type="text" name="contact" class="validate" onblur="validatePhone(this, document.getElementById('phone_help'))">
+                                <input id="contact" type="text" name="contact" class="validate" onblur="validatePhone(this, document.getElementById('phone_help'))" required>
                                 <label for="contact">Contact</label>
                                 <span id="phone_help" class="help"></span>
 
