@@ -1,6 +1,6 @@
 <?php
 include 'init.php';
-
+error_reporting(1);
 if (isset($_POST['username']) and isset($_POST['password'])) {
     $username = $_POST['username'];
     $pass = $_POST['password'];
@@ -14,6 +14,7 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
         $count = mysqli_num_rows($result);
 
         if ($count == 1) {
+              session_start();
             $_SESSION['username'] = $username;
 
             if(isset($_SESSION['username'])) {
@@ -25,7 +26,7 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
 
         }
         else {
-            header('Location: ../fail.php');
+            header('Location: ../index.php');
             $errors[] = "Invalid Login Credentials.";
         }
     }
