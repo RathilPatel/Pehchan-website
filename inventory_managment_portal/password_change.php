@@ -1,6 +1,6 @@
 
   <div class="col l9" >
-    <div class="password-form">
+    <div class="container">
       <form class="" name="login-form" onsubmit="required()" action="connection/login.php" method="post">
         <div class="row">
           <div class="col l12">

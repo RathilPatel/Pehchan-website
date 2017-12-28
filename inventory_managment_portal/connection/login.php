@@ -27,6 +27,7 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
         }
         else {
             header('Location: ../index.php');
+            $Credentials = false;
             $errors[] = "Invalid Login Credentials.";
         }
     }
