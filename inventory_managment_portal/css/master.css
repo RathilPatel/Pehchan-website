@@ -70,3 +70,9 @@ a:hover{
   color: coral;
   font-weight: bold;
 }
+
+
+
+#password-form{
+    width: 50%; height: 50%; top: 25%; margin: 0 auto; position: relative;
+}

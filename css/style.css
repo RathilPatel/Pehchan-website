@@ -15,3 +15,6 @@
     overflow: visible;
     background: url('../Images/preloader.gif') no-repeat center center;
  }*/
+ #content{
+    background-image: url("../images/background.jpeg");
+}
