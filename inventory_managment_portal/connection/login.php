@@ -21,7 +21,7 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
                 //$sDate = date("Y-m-d H:i:s");
                 $sql = "insert into Session_details (`Username`) VALUES ('$username')";
                 mysqli_query($con, $sql);
-                header('Location: ../succes.php');
+                header('Location: ../Dashboard.php');
             }
 
         }

@@ -3,6 +3,7 @@
 
 <script src=" ../materialize/js/materialize.min.js"></script>
 <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+<script src="js/script.js"></script>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/animate.css">
 <link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css">

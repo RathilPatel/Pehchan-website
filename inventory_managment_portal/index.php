@@ -31,7 +31,7 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
           define("someUnguessableVariable", "anotherUnguessableVariable");
 
           if(isset($_SESSION['username']) && $_SESSION['username'] != ''){
-            header ("Location: vendor_detail_form.php");
+            header ("Location: Dashboard.php");
             exit;
            }
   else {
