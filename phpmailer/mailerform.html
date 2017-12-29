@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mass Mailer</title>
+</head>
+<body>
+	<form action="email.php" method="POST">
+		<h3>Form</h3>
+		<!-- <input type="text" name=""> -->
+
+		<select name="category">
+           	<option value="" disabled selected>Choose Type of Client</option>
+            <option value="vendor">Vendor</option>
+            <option value="client">Client</option>
+        </select>
+<br>
+<br>
+        <input type="file" name="attachment" accept="application/pdf, .jpg, .png, .gif ,.JPG, .JPEG, .PNG, .GIF" multiple>
+<br>
+<br>
+        <input type="submit" name="Submit" value="Send Mail">
+
+	</form>
+</body>
+</html>

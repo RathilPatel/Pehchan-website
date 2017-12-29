@@ -12,7 +12,7 @@
  </nav>
 
  <ul id='tshirts' class='dropdown-content'>
-    <li><a href="#" id="round"  class="black-text" onclick="round()">Round Neck</a></li>
+    <li><a href="#" id="round" class="black-text" onclick="round()">Round Neck</a></li>
     <li><a href="#" id="polo" class="black-text" onclick="polo()">Polo/Collar</a></li>
   </ul>
 
@@ -26,14 +26,13 @@
     <li><a href="#" id="gold" class="black-text" onclick="gold()">Gold Foil Article</a></li>
     <li><a href="#" id="gifts" class="black-text" onclick="gifts()">Gift sets</a></li>
     <li><a href="#" id="pen" class="black-text" onclick="pen()">Pens</a></li>
-    <li><a href="#" id="sipper" class="black-text" onclick="sipper()">Sipper	Bottles</a></li>
+    <li><a href="#" id="sipper" class="black-text" onclick="sipper()">Sipper Bottles</a></li>
     <li><a href="#" id="keychain" class="black-text" onclick="keychain()">Keychains</a></li>
     <li><a href="#" id="desktop" class="black-text" onclick="desktop()">Desktop Article</a></li>
     <li><a href="#" id="cg_misc" class="black-text" onclick="cg_misc()">Miscellaneous</a></li>
   </ul>
   <ul id='led' class='dropdown-content'>
     <li><a href="#" id="led" class="black-text" onclick="led()">LED Tshirts</a></li>
-
   </ul>
   <ul id='snj' class='dropdown-content'>
     <li><a href="#" id="sweatshirts" class="black-text" onclick="sweatshirts()">Sweatshirts</a></li>
