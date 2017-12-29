@@ -21,16 +21,33 @@
               <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div></li>
             <li><a href="#!" onclick="changepassword()">Change Password</a></li>
-            <li><a href="#!" class="dropdown-button" data-activates="users">User Profiles</a></li>
+            <li>
+
+
+              <ul class="collapsible collapsible-accordion">
+                  <li>
+                      <a class="collapsible-header waves-effect waves-blue" style="margin-left:15px" >User Profiles</a>
+                      <div class="collapsible-body">
+                          <ul >
+                            <li><a href="#user_add" onclick="adduser()"  style="margin-left:15px"> Add User</a></li>
+                            <li><a href="#" onclick="deluser()" style="margin-left:15px">Delete User</a></li>
+                            <li><a href="#" onclick="viewuser()"style="margin-left:15px"> View User</a></li>
+                            <li><a href="#" onclick="modi_user()"style="margin-left:15px"> Modify User</a></li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+
+
+
+
+            </li>
 
             <li><a class="waves-effect" href="#!" onclick="addvendor()">Add Vendor</a></li>
             <li><a class="waves-effect" href="#!" onclick="searchvendor()">Search Vendor</a></li>
             <li><a class="waves-effect" href="../inventory_managment_portal/connection/logout.php">Logout</a></li>
-            <ul id="users" class="dropdown-content">
-              <li><a href="#user_add" onclick="adduser()"></a> Add User</li>
-              <li><a href="#"></a> Delete User</li>
-              <li><a href="#"></a> View User</li>
-              <li><a href="#"></a> Modify User</li>
+            <ul id="users" class="">
+
             </ul>
           </ul>
       </div>
@@ -51,6 +68,13 @@ $("#content").load("vendor_form.php");
 $("#content").load("vendor_search.php");
 
       }
+      function deluser(){
+
+      }
+      function viewuser(){
+
+      }
+      function 
     </script>
   </body>
 </html>
