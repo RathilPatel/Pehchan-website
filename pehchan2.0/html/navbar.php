@@ -2,9 +2,8 @@
     <div class="nav-wrapper black white-text">
         <a href="#!" class="brand-logo hide-on-large-only"> <img src="../images/pehchanlogowhite.gif" alt="Pehchan Reflect Your Identity" style="height:50px; width:180px;"> </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            <ul class="hide-on-med-and-down ">
-
-                <li><a href="index.php">Home</a></li>
+        <ul class="hide-on-med-and-down ">
+            <li><a href="index.php">Home</a></li>
             <li><a href="product.php" id="product" class="dropdown-link" data-activates="products">Products</a></li>
             <li><a href="nnm.php">NNM<span class="new badge white black-text"></span></a></li>
             <li><a href="contact.php">Contact</a></li>
@@ -13,15 +12,30 @@
             <li><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-
             <li><a href="index.php">Home</a></li>
-            <li><a href="product.php">Products</a></li>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header waves-effect waves-blue" style="margin-left:15px" >Products</a>
+                        <div class="collapsible-body" style="margin-left:20px">
+                            <ul>
+                                <li><a class="waves-effect waves-blue" href="#">T-Shirts</a></li>
+                                <li><a class="waves-effect waves-blue" href="#">Corporate Gifting</a> </li>
+                                <li><a class="waves-effect waves-blue" href="#">Sweatshirts & Jackets</a> </li>
+                                <li><a class="waves-effect waves-blue" href="#">IT Products</a> </li>
+                                <li><a class="waves-effect waves-blue" href="#">Uniforms</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
             <li><a href="nnm.php">NNM<span class="new badge"></span></a></li>
             <li><a href="contact.php">Contact</a></li>
             <li class="hide-on-med-and-down"><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
             <li class="black-text hide-on-med-and-down" onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</li>
             <li class="back-text hide-on-med-and-down"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a>Instagram </li>
-        </ul>    </div>
+        </ul>
+    </div>
 </nav>
 
 
@@ -96,10 +110,7 @@
                 <li><a href="#" id="formal" class="black-text links" style="font-size:12px;">Formals</a></li>
                 <li><a href="#" id="security" class="black-text links" style="font-size:12px;">Security Uniforms</a></li>
                 <li><a href="#" id="uni_misc" class="black-text links" style="font-size:12px;">Miscellaneous</a></li>
-
             </ul>
-
-
         </div>
     </div>
 </ul>
