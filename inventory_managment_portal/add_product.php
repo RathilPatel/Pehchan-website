@@ -3,19 +3,22 @@ $connect = mysqli_connect("localhost", "root", "sundaY05@", "Pehchan");
 if(isset($_POST["submit"]))
 {
 $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-$pcode = $_POST[""];
-$pdesc = $_POST[""];
-$pname = $_POST[""];
-$gsm = $_POST[""];
-$mou = $_POST[""];
-$price = $_POST[""];
-$sampleprice = $_POST[""];
-$query = "INSERT INTO products(product_id,product_name,description,image,sample_price,mou,price) VALUES ('$pcode','$pname','$pdesc','$file','$smapleprice','$mou','$price','$gsm')";
+$pcode = $_POST["pcode"];
+$pdesc = $_POST["pdesc"];
+$pname = $_POST["pname"];
+$gsm = $_POST["gsm"];
+$mou = $_POST["mou"];
+$price = $_POST["oprice"];
+$sampleprice = $_POST["sprice"];
+$query = "INSERT INTO Products(`product_id`,`product_name`,`description`,`image`,`sample_price`,`mou,price`) VALUES ('$pcode','$pname','$pdesc','$file','$smapleprice','$mou','$price','$gsm')";
 if(mysqli_query($connect, $query))
 {
    echo '<script>alert("Image Inserted into Database")</script>';
 }
 }
+
+
+
 ?>
 
 
@@ -26,7 +29,7 @@ if(mysqli_query($connect, $query))
     <form class=""  method="POST" enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s6">
-           <input id="product_code" type="text" name="Pcode" class="validate">
+           <input id="product_code" type="text" name="pcode" class="validate">
            <label for="product_code">Product Code</label>
          </div>
          <div class="input-field col s6">
@@ -36,28 +39,28 @@ if(mysqli_query($connect, $query))
        </div>
        <div class="row">
           <div class="input-field col s6">
-            <input id="email" type="text" name="email" class="validate">
+            <input id="email" type="text" name="gsm" class="validate">
             <label for="email">GSM</label>
           </div>
            <div class="input-field col s6 ">
-             <input id="email" type="text" name="email" class="validate">
+             <input id="email" type="text" name="mou" class="validate">
              <label for="email">MOU</label>
            </div>
          </div>
          <div class="row">
             <div class="input-field col s6">
-              <input id="email" type="text" name="email" class="validate">
+              <input id="email" type="text" name="oprice" class="validate">
               <label for="email">Price</label>
             </div>
              <div class="input-field col s6">
-               <input id="email" type="text" name="email" class="validate">
+               <input id="email" type="text" name="sprice" class="validate">
                <label for="email">Sample price</label>
              </div>
            </div>
 
 <div class="row">
 <div class="input-field col s12">
-  <textarea id="textarea1" class="materialize-textarea"></textarea>
+  <textarea id="textarea1" class="materialize-textarea" name="pdesc"></textarea>
   <label for="textarea1">Description</label>
 </div>
 </div>
