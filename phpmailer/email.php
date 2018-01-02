@@ -3,18 +3,18 @@
 	use PHPMailer\PHPMailer\Exception;
 	$servername = "localhost";
 	$username = "root";
-	$password = "";
+	$password = "sundaY05@";
 	$dbname = "Pehchan";
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
 
 	if ($conn->connect_error) {
     	die("Connection failed: " . $conn->connect_error);
-	} 
+	}
 	//echo "Connected successfully";
 	$category = $_POST['category'];
-	//$attachment = $_FILES['attachment']['name'];
-	$attachment = '/home/shyamal/Downloads/linearpredictivecodingoshaughnessy1988.pdf';
+	$attachment = $_FILES['attachment']['tmp_name'];
+	//$attachment = '/home/shyamal/Downloads/linearpredictivecodingoshaughnessy1988.pdf';
 	$query = "select Name, email, status from mailer where status='subscribed' and category='$category'";
 	$result = $conn->query($query);
 
@@ -23,7 +23,7 @@
 		$email = $row['email'];
 		$status = $row['status'];
 		$category1 = $row['category'];
-        
+
 
 		require 'vendor/autoload.php';
 		$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
@@ -54,7 +54,7 @@
 		    //Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
 		    $mail->Subject = 'Test';
-		    $mail->Body    = 'Test<br><br> <a href = "unsubscribe.html">Unsubscribe</a>'; 
+		    $mail->Body    = 'Test<br><br> <a href = "unsubscribe.html">Unsubscribe</a>';
 		    // <a href = "http://www.testing.mypehchan.com/unsubscribe.html" >Unsubscribe</a>
 		    //$mail->AltBody = strip_tags($body);
 
@@ -65,7 +65,7 @@
 				echo "Message not sent";
 			}
 
-		} 
+		}
 		catch (Exception $e) {
 		    echo 'Mailer Error: ' . $mail->ErrorInfo;
 		}

@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,10 +46,10 @@
       <div id="content">
 
 
-      </div>
+
     </div>
 
-    <script>
+    <!-- <script type="text/javascript">
     $(document).ready(function(){
          $('#submit').click(function(){
               var image_name = $('#image').val();
@@ -72,8 +70,8 @@
               }
          });
     });
-
-
+    </script> -->
+    <script>
     function addproduct(){
       $("#content").load("add_product.php");
     }
