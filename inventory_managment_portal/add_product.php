@@ -1,39 +1,82 @@
+<?php
+$connect = mysqli_connect("localhost", "root", "sundaY05@", "Pehchan");
+if(isset($_POST["submit"]))
+{
+$file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
+$pcode = $_POST[""];
+$pdesc = $_POST[""];
+$pname = $_POST[""];
+$gsm = $_POST[""];
+$mou = $_POST[""];
+$price = $_POST[""];
+$sampleprice = $_POST[""];
+$query = "INSERT INTO products(product_id,product_name,description,image,sample_price,mou,price) VALUES ('$pcode','$pname','$pdesc','$file','$smapleprice','$mou','$price','$gsm')";
+if(mysqli_query($connect, $query))
+{
+   echo '<script>alert("Image Inserted into Database")</script>';
+}
+}
+?>
+
+
 <div class="col l9">
 
-  <h1>ADDING a NEW USER TO THE</h1>
+  <h1>ADDING PRODUCT</h1>
   <div class="">
-    <form class="" action="addinguser.php" method="post">
+    <form class=""  method="POST" enctype="multipart/form-data">
       <div class="row">
          <div class="input-field col s6">
-           <input id="first_name" type="text" name="fname" class="validate">
-           <label for="first_name">First Name</label>
+           <input id="product_code" type="text" name="Pcode" class="validate">
+           <label for="product_code">Product Code</label>
          </div>
          <div class="input-field col s6">
-           <input id="last_name" type="text" name="lname" class="validate">
-           <label for="last_name">Last Name</label>
+           <input id="product_name" type="text" name="pname" class="validate">
+           <label for="product_name">Product Name</label>
          </div>
        </div>
        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" name="email" class="validate">
-            <label for="email">Email</label>
+          <div class="input-field col s6">
+            <input id="email" type="text" name="email" class="validate">
+            <label for="email">GSM</label>
           </div>
-        </div>
-        <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" name="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <p>
-        <input class="with-gap" name="group1" type="radio" id="test1"  />
-        <label for="test1">Admin</label>
-      </p>
-      <p>
-        <input class="with-gap" name="group1" type="radio" id="test3"  />
-        <label for="test3">Employee</label>
-      </p>
-      <input type="submit" name="submit" value="Submit" class="waves-effect waves-light btn">
+           <div class="input-field col s6 ">
+             <input id="email" type="text" name="email" class="validate">
+             <label for="email">MOU</label>
+           </div>
+         </div>
+         <div class="row">
+            <div class="input-field col s6">
+              <input id="email" type="text" name="email" class="validate">
+              <label for="email">Price</label>
+            </div>
+             <div class="input-field col s6">
+               <input id="email" type="text" name="email" class="validate">
+               <label for="email">Sample price</label>
+             </div>
+           </div>
+
+<div class="row">
+<div class="input-field col s12">
+  <textarea id="textarea1" class="materialize-textarea"></textarea>
+  <label for="textarea1">Description</label>
+</div>
+</div>
+       <div class="row">
+         <div class="col s12">
+           <div class="file-field input-field">
+              <div class="btn">
+                <span>Choose File</span>
+                <input type="file" id="image" name="image">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+          </div>
+         </div>
+       </div>
+
+
+      <input type="submit" name="submit" value="Submit" id="submit" class="waves-effect waves-light btn">
 
     </form>
 

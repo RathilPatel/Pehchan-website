@@ -1,6 +1,6 @@
 <div class="col l9">
 
-  <h1>ADDING a NEW USER TO THE</h1>
+  <h1>ADDING A NEW USER</h1>
   <div class="">
     <form class="" action="addinguser.php" method="post">
       <div class="row">

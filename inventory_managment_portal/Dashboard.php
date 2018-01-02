@@ -1,17 +1,3 @@
-<?php
-
-if (isset($_POST['submit'])) {
-  # code...
-  $target =   "images/".basename($_FILES['image']['name']);
-
-
-}
-
-
- ?>
-
-
-
 
 
 
@@ -36,14 +22,14 @@ if (isset($_POST['submit'])) {
               <a href="#!name"><span class="white-text name">John Doe</span></a>
               <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div></li>
-            <li><a href="Password changing " onclick="changepassword()">Change Password</a></li>
+            <li><a href="#" onclick="changepassword()"> Change Password </a></li>
             <li>
               <ul class="collapsible collapsible-accordion">
                   <li>
                       <a class="collapsible-header waves-effect waves-blue" style="margin-left:15px" >User Profiles</a>
                       <div class="collapsible-body">
                           <ul >
-                            <li><a href="#user_add" onclick="adduser()"  style="margin-left:15px"> Add User</a></li>
+                            <li><a href="#" onclick="adduser()"  style="margin-left:15px"> Add User</a></li>
                             <li><a href="#" onclick="deluser()" style="margin-left:15px">Delete User</a></li>
                             <li><a href="#" onclick="viewuser()"style="margin-left:15px"> View User</a></li>
                             <li><a href="#" onclick="modi_user()"style="margin-left:15px"> Modify User</a></li>
@@ -59,95 +45,8 @@ if (isset($_POST['submit'])) {
           </ul>
       </div>
 
-
-      <div id="content">
-        <?php
- $connect = mysqli_connect("localhost", "root", "sundaY05@", "Pehchan");
- if(isset($_POST["submit"]))
- {
-      $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-      $pcode = $_POST[""];
-      $pdesc = $_POST[""];
-      $pname = $_POST[""];
-      $gsm = $_POST[""];
-      $mou = $_POST[""];
-      $price = $_POST[""];
-      $sampleprice = $_POST[""];
-      $query = "INSERT INTO products(product_id,product_name,description,image,sample_price,mou,price) VALUES ('$pcode','$pname','$pdesc','$file','$smapleprice','$mou','$price','$gsm')";
-      if(mysqli_query($connect, $query))
-      {
-           echo '<script>alert("Image Inserted into Database")</script>';
-      }
- }
- ?>
-
-
-      </div>
       <div id="content">
 
-        <div class="col l9">
-
-          <h1>ADDING PRODUCT</h1>
-          <div class="">
-            <form class=""  method="POST" enctype="multipart/form-data">
-              <div class="row">
-                 <div class="input-field col s6">
-                   <input id="product_code" type="text" name="Pcode" class="validate">
-                   <label for="product_code">Product Code</label>
-                 </div>
-                 <div class="input-field col s6">
-                   <input id="product_name" type="text" name="pname" class="validate">
-                   <label for="product_name">Product Name</label>
-                 </div>
-               </div>
-               <div class="row">
-                  <div class="input-field col s6">
-                    <input id="email" type="text" name="email" class="validate">
-                    <label for="email">GSM</label>
-                  </div>
-                   <div class="input-field col s6 ">
-                     <input id="email" type="text" name="email" class="validate">
-                     <label for="email">MOU</label>
-                   </div>
-                 </div>
-                 <div class="row">
-                    <div class="input-field col s6">
-                      <input id="email" type="text" name="email" class="validate">
-                      <label for="email">Price</label>
-                    </div>
-                     <div class="input-field col s6">
-                       <input id="email" type="text" name="email" class="validate">
-                       <label for="email">Sample price</label>
-                     </div>
-                   </div>
-
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Description</label>
-        </div>
-      </div>
-               <div class="row">
-                 <div class="col s12">
-                   <div class="file-field input-field">
-                      <div class="btn">
-                        <span>Choose File</span>
-                        <input type="file" id="image" name="image">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
-                      </div>
-                  </div>
-                 </div>
-               </div>
-
-
-              <input type="submit" name="submit" value="Submit" id="submit" class="waves-effect waves-light btn">
-
-            </form>
-
-          </div>
-        </div>
 
       </div>
     </div>
@@ -173,13 +72,12 @@ if (isset($_POST['submit'])) {
               }
          });
     });
-    </script>
 
-    <script type="text/javascript">
+
     function addproduct(){
       $("#content").load("add_product.php");
     }
-      function changepassword(){
+      function  changepassword(){
         $("#content").load("password_change.php");
       }
       function adduser(){
@@ -198,7 +96,10 @@ $("#content").load("vendor_search.php");
       function viewuser(){
 
       }
-      function
+      function addproduct(){
+        $('#content').load("add_product.php");
+
+      }
     </script>
   </body>
 </html>
