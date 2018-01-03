@@ -13,9 +13,8 @@
 	} 
 	//echo "Connected successfully";
 	$category = $_POST['category'];
-	//$attachment = $_FILES['attachment']['name'];
-	$attachment = '/home/shyamal/Downloads/linearpredictivecodingoshaughnessy1988.pdf';
-	$query = "select Name, email, status from mailer where status='subscribed' and category='$category'";
+	//$attachment = '/home/shyamal/Downloads/linearpredictivecodingoshaughnessy1988.pdf';
+	$query = "select Name, email, status, category from mailer where status='subscribed' and category='$category'";
 	$result = $conn->query($query);
 
 	while($row = $result->fetch_assoc()) {
@@ -40,21 +39,18 @@
 
 		    //Recipients
 		    $mail->setFrom('makwanashyamal11596@gmail.com', 'Shyamal Makwana');
-
 		    $mail->addAddress($email);
-		    $mail->AddAttachment($attachment);
-
-		    /*$mail->addAddress('makwanashyamal96@gmail.com');
-		    $mail->addAddress('shyamal.m@somaiya.edu');  */
-			//$mail->addAddress('rathilvasani@gmail.com');		       // Add a recipient
-
+            $file_to_attach = $_FILES['attachment']['tmp_name'];
+            $filename=$_FILES['attachment']['name'];
+            $mail->AddAttachment($file_to_attach , $filename);
+            //$mail->AddAttachment($attachment);
 
 		    /*$body = "<p><strong>Dear Student,</strong><br><br> This notice is regarding regular practicals that will be starting from second week of December i.e <b>11th December 2017</b>All practicals are important. So, its compulsory for all management students to attend the practicals which will be having internal marks that will be added in your semester assessments.<br><br><b>Notice:</b><br>Only those students will be allowed to attend the practicals, those who will be having <b>100%</b> attendance in lectures. So, kindly please attend the lectures.<br><br>Thanks & Regards<br>NMIMS GLOBAL ACCESS SCHOOL FOR CONTINUING EDUCATION<br><br><br><br><b>This is machine generated email. Please do not reply to the message.</b></p>";*/
 
 		    //Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
 		    $mail->Subject = 'Test';
-		    $mail->Body    = 'Test<br><br> <a href = "unsubscribe.html">Unsubscribe</a>'; 
+		    $mail->Body    = 'Test<br><br> <a href = "http://www.testing.mypehchan.com/unsubscribe.html">Unsubscribe</a>';
 		    // <a href = "http://www.testing.mypehchan.com/unsubscribe.html" >Unsubscribe</a>
 		    //$mail->AltBody = strip_tags($body);
 
