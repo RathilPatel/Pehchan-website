@@ -12,15 +12,23 @@
 <footer class="page-footer grey lighten-3">
     <div class="row">
         <div class="center">
-            <div class="col l3 s12">
+            <div class="col l4 s12">
+              <div class="row">
+                <div class="col l10">
+                  <h5 class="black-text">Address</h5>
+                  <hr>
+                  <ul>
+                      <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>
+                  </ul>
 
-                <h5 class="black-text">Address</h5>
-                <hr>
-                <ul>
-                    <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>
-                </ul>
+                </div>
+              </div>
+
+              </div>
+              <div>
             </div>
-            <div class="col l3 offset-l1 s12">
+            <div class="col l3 12">
+              <div class="col l12 offset-l2">
                 <h5 class="black-text">Important Links</h5>
                 <hr>
 
@@ -33,17 +41,25 @@
                     <li><a class="black-text" href="#!">Pinterest</a></li>
 
                 </ul>
+
+              </div>
             </div>
             <div class="col l3 offset-l1 s12">
-                <h5 class="black-text">Talk to us!</h5>
-                <hr>
-                <ul>
-                    <li><a class="black-text" href="#!">+91 982 031 0177</a></li>
-                    <li><a class="black-text" href="#!">+91 961 961 0177</a></li>
-                    <li><a class="black-text" href="#!">surbhi@mypehchan.com</a></li>
-                    <li><a class="black-text" href="#!">deep@mypehchan.com</a></li>
-                    <li><a class="black-text" href="#!">sales@mypehchan.com</a></li>
-                </ul>
+              <div class="row">
+                <div class="col l12 offset-l4">
+                  <h5 class="black-text">Talk to us!</h5>
+                  <hr>
+                  <ul>
+                      <li><a class="black-text" href="#!">+91 982 031 0177</a></li>
+                      <li><a class="black-text" href="#!">+91 961 961 0177</a></li>
+                      <li><a class="black-text" href="#!">surbhi@mypehchan.com</a></li>
+                      <li><a class="black-text" href="#!">deep@mypehchan.com</a></li>
+                      <li><a class="black-text" href="#!">sales@mypehchan.com</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
             </div>
         </div>
     </div>
