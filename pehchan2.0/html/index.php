@@ -52,7 +52,7 @@ From round to polo-necks and plain to printed, watch as we bring your
 design to life with our state of the art technology, extensive variety and
 an eye for detail making the most basic corporate T-shirts look great
 and feel greater.</h5>
-                    <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a>
+                    <!-- <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a> -->
                   </div>
 
                 </div>
@@ -64,14 +64,10 @@ and feel greater.</h5>
 
                   </div>
                   <div class="black-text flow-text pageicondetail" style="align-text">
-                    <h4 class="grey-text text-darken-3">PROMOTIONAL MERCHANDISE</h4>
+                    <h4 class="grey-text text-darken-3" style="margin-bottom:60px;">PROMOTIONAL MERCHANDISE</h4>
                     <hr>
-                    <h5 class="grey-text text-darken-1 pageicondesc">Gone are the days when you could congratulate a friend on a new business
-with a box of laddoos . Now is the time you spend your money on something
-more practical and less edible. With a wide range of office stationery, fancy
-writing instruments, desktop articles and gift sets, you'll never run out of
-options.</h5>
-  <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a>
+                    <h5 class="grey-text text-darken-1 pageicondesc">                            </h5>
+  <!-- <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a> -->
                   </div>
                 </div>
 
@@ -83,10 +79,15 @@ options.</h5>
 
                   </div>
                   <div class="black-text pageicondetail" style="align-item">
-                    <h4 class="grey-text text-darken-3">CORPORATE GIFTING</h4>
+                    <h4 class="grey-text text-darken-3" style="margin-bottom:60px;">CORPORATE GIFTING</h4>
                     <hr>
-                    <h5 class="grey-text text-darken-1 pageicondesc">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM MOLESTIE LACUS. AENEAN NONUMMY</h5>
-  <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a>                  </div>
+                    <h5 class="grey-text text-darken-1 pageicondesc">Gone are the days when you could congratulate a friend on a new business
+with a box of laddoos . Now is the time you spend your money on something
+more practical and less edible. With a wide range of office stationery, fancy
+writing instruments, desktop articles and gift sets, you'll never run out of
+options.</h5>
+  <!-- <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a>    -->
+               </div>
                 </div>
               </div>
 
@@ -177,11 +178,11 @@ We cater to all kinds of uniform needs.
           </div>
           <hr>
           <div class="pagetiledesc">
-            <span>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT.
-               PRAESENT VESTIBULUM MOLESTIE LACUS.
-               AENEAN NONUMMY HENDRERIT MAURIS. PHASELLUS PORTA.
-                FUSCE VARIUS MI. LOREM IPSUM DOLOR SIT AMET,
-                 CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM MOLESTIE
+            <span>Gone are the days when you could congratulate a friend on a new business
+with a box of laddoos . Now is the time you spend your money on something
+more practical and less edible. With a wide range of office stationery, fancy
+writing instruments, desktop articles and gift sets, you'll never run out of
+options.
                </span>
           </div>
         </div>
@@ -191,13 +192,13 @@ We cater to all kinds of uniform needs.
       </div>
       <div class="row">
         <div class="col l7 hide-on-med-and-down">
-          <img src="../images/gift.jpg" alt="" style="max-width:100%; height:auto; margin:-11px -15px 10px -15px;">
+          <img src="../images/Banner 3.jpg" alt="" style="max-width:100%; height:auto; margin:-11px -15px 10px -15px;">
         </div>
         <div class="col l5 offset-s1 s10 animated slideInRight">
-          <div class="pagetiletitle">
-                <h4>Formals Attire</h4>
+          <div class="PROMOTIONAL GIFTS">
+                <h4>PROMOTIONAL MERCHANDISE</h4>
           </div>
-          <hr>  
+          <hr>
           <div class="pagetiledesc">
             <span>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT.
                PRAESENT VESTIBULUM MOLESTIE LACUS.
@@ -226,7 +227,7 @@ We cater to all kinds of uniform needs.
           </div>
         </div>
         <div class="col l7 hide-on-med-and-down">
-      <img src="../images/gift.jpg" alt="" style="max-width:100%; height:auto;  margin:-11px -15px -15px 0px;">
+      <img src="../images/Banner 4.jpg" alt="" style="max-width:100%; height:auto;  ">
         </div>
       </div>
 
