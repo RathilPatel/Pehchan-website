@@ -66,7 +66,7 @@ and feel greater.</h5>
                   <div class="black-text flow-text pageicondetail" style="align-text">
                     <h4 class="grey-text text-darken-3" style="margin-bottom:60px;">PROMOTIONAL MERCHANDISE</h4>
                     <hr>
-                    <h5 class="grey-text text-darken-1 pageicondesc">                            </h5>
+                    <h5 class="grey-text text-darken-1 pageicondesc"> Promote your brand using our high quality promotional merchandise with a lot of option to attract audience of all field.Providing a wide range of products from electronics to professional gifting sets. All the products are made with high quality materials to serve you with best experience.                         </h5>
   <!-- <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a> -->
                   </div>
                 </div>
@@ -106,7 +106,11 @@ options.</h5>
                   <div class="black-text flow-text pageicondetail" style="align-item">
                     <h4 class="grey-text text-darken-3"> CUSTOMISED TSHIRTS AND UNIFORMS</h4>
                     <hr>
-                    <h5 class="grey-text text-darken-1 pageicondesc">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM MOLE</h5>
+                    <h5 class="grey-text text-darken-1 pageicondesc">The identity of Pehchan is incomplete without the mention of t-shirts.
+From round to polo-necks and plain to printed, watch as we bring your
+design to life with our state of the art technology, extensive variety and
+an eye for detail making the most basic corporate T-shirts look great
+and feel greater.</h5>
                     <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a>
                   </div>
 
@@ -121,7 +125,10 @@ options.</h5>
                   <div class="black-text flow-text pageicondetail" style="align-text">
                     <h4 class="grey-text text-darken-3">PROMOTIONAL MERCHANDISE</h4>
                     <hr>
-                    <h5 class="grey-text text-darken-1 pageicondesc">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM MOLESTIE LACUS. AENEAN NONUMMY</h5>
+                    <h5 class="grey-text text-darken-1 pageicondesc"> Promote your brand using our high quality promotional merchandise with
+                       a lot of option to attract audience of all field.
+                      Providing a wide range of products from electronics to professional gifting sets.
+                       All the products are made with high quality materials to serve you with best experience.</h5>
   <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a>
                   </div>
                 </div>
@@ -136,7 +143,11 @@ options.</h5>
                   <div class="black-text pageicondetail" style="align-item">
                     <h4 class="grey-text text-darken-3">CORPORATE GIFTING</h4>
                     <hr>
-                    <h5 class="grey-text text-darken-1 pageicondesc">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM MOLESTIE LACUS. AENEAN NONUMMY</h5>
+                    <h5 class="grey-text text-darken-1 pageicondesc">Gone are the days when you could congratulate a friend on a new business
+with a box of laddoos . Now is the time you spend your money on something
+more practical and less edible. With a wide range of office stationery, fancy
+writing instruments, desktop articles and gift sets, you'll never run out of
+options</h5>
   <a href="#" class="btn transparent black-text" style="border-color:black; margin-bottom:10%; margin-top:10%; ">READ MORE</a>                  </div>
                 </div>
               </div>
@@ -162,10 +173,7 @@ options.</h5>
             <span>With a view that you can achieve anything if you dress for it,
 we bring you a wide range of apparels like Shirts, suits, waist
 coat, trousers, neck ties, boiler suits amongst almost an endless
-range of Uniforms for different needs.
-Uniforms are an important part of an organization. Repay the
-members of your organization by giving them a sense of
-belongingness.
+range of Uniforms for different needs
 We cater to all kinds of uniform needs.
                </span>
           </div>
@@ -200,11 +208,10 @@ options.
           </div>
           <hr>
           <div class="pagetiledesc">
-            <span>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT.
-               PRAESENT VESTIBULUM MOLESTIE LACUS.
-               AENEAN NONUMMY HENDRERIT MAURIS. PHASELLUS PORTA.
-                FUSCE VARIUS MI. LOREM IPSUM DOLOR SIT AMET,
-                 CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM MOLESTIE
+            <span> Promote your brand using our high quality promotional merchandise with
+              a lot of option to attract audience of all field.
+              Providing a wide range of products from electronics to professional gifting sets.
+               All the products are made with high quality materials to serve you with best experience.
                </span>
           </div>
 
@@ -218,11 +225,13 @@ options.
           </div>
           <hr>
           <div class="pagetiledesc">
-            <span>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT.
-               PRAESENT VESTIBULUM MOLESTIE LACUS.
-               AENEAN NONUMMY HENDRERIT MAURIS. PHASELLUS PORTA.
-                FUSCE VARIUS MI. LOREM IPSUM DOLOR SIT AMET,
-                 CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM MOLESTIE
+            <span>
+Uniforms are an important part of an organization. Repay the
+members of your organization by giving them a sense of
+belongingness.
+
+
+We cater to all kinds of uniform needs.
                </span>
           </div>
         </div>
