@@ -8,11 +8,11 @@
                 <?php
   foreach ($dir as $value) {
     ?>
-                    <div class="col s3">
+                    <div class="col s3"><!--
                         <div class="card">
-                            <div class="card-image">
-                                <a href="<?php echo $value;?>" class="lightBox">
-                                    <a class="fancybox" href="<?php echo $value;?>" data-caption="This is a caption" data-fancybox="group2">
+                            <div class="card-image">-->
+                                <a href="<?php echo $value;?>">
+                                    <a class="fancybox" href="<?php echo $value;?>" data-fancybox="group2">
                                     <img class="fancybox" src="<?php echo $value; ?>" alt="<?php echo $value; ?>" style="height:300px; width:300px;">
                                     </a>
                                 </a>
@@ -21,8 +21,8 @@
                                     <p> </p>
                                 </div>
 
-                            </div>
-                        </div>
+                            <!--</div>
+                        </div>-->
                     </div>
 
     <?php
