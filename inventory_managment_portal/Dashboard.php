@@ -7,7 +7,7 @@
     <?php require 'headerandfooter/header.php'; ?>
   </head>
   <body>
-
+<?php require '../Function/user.php' ?>
 
     <div class="row">
       <div class="col l3">
@@ -49,7 +49,7 @@
 
     </div>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function(){
          $('#submit').click(function(){
               var image_name = $('#image').val();
@@ -70,7 +70,7 @@
               }
          });
     });
-    </script> -->
+    </script>
     <script>
     function addproduct(){
       $("#content").load("add_product.php");

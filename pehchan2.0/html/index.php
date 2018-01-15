@@ -29,7 +29,7 @@
 
 
       </div>
- <img src="../images/pehchan.gif" class="animated slideInDown" img style="height:100px; width:280px; position:absolute; left:10%; top:100px;" >
+ <!-- <img src="../images/pehchan.gif" class="animated slideInDown" img style="height:100px; width:280px; position:absolute; left:10%; top:100px;" > -->
 
   </div>
   <div>
