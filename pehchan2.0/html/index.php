@@ -144,7 +144,7 @@
         </div>
     </div>
 
-    <div class="white  " style="margin-top:1%; padding-top:5%;">
+    <div class="white hide-on-med-and-down" style="margin-top:1%; padding-top:5%; ">
         <div class="row">
             <div class="col l7 hide-on-med-and-down">
                 <img src="../images/formal.jpg" alt="formals " style="max-width:100%; height:auto;  margin:-15px -15px -15px -15px;">
@@ -223,7 +223,7 @@ We cater to all kinds of uniform needs.
                 </div>
             </div>
             <div class="col l7 hide-on-med-and-down">
-                <img src="../images/Banner 4.jpg" alt="" style="max-width:100%; height:auto;  ">
+                <img src="../images/uniform.jpg" alt="" style="max-width:100%; height:auto;  ">
             </div>
         </div>
 
@@ -231,12 +231,6 @@ We cater to all kinds of uniform needs.
     <div class="white" style="margin-top:1%; padding-top:4%">
         <?php require '../headerandfooter/footer.php'; ?>
     </div>
-    <script type="text/javascript">
-        jQuery(window).load(function() {
-            jQuery(".hameid-loader-overlay").fadeIn(500);
-        });
-
-    </script>
 </body>
 
 </html>
