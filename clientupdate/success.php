@@ -7,6 +7,6 @@
   <body>
     <h1>SUCCESS FULLY ENTERED DATA</h1>
 
-      <a href="index.php"><button type="button" name="button"> NEW ENTRY</button></a>
+      <a href="index.html"><button type="button" name="button"> NEW ENTRY</button></a>
   </body>
 </html>

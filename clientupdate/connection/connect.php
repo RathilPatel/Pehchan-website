@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","root","sundaY05@","Pehchan");
+$con = mysqli_connect("localhost","root","","Pehchan");
 // $_SESSION['username'] = $usr;
 
 if(!$con) {
