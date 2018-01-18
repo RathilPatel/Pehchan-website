@@ -14,10 +14,10 @@
         <ul class="side-nav" id="mobile-demo">
             <li><a href="index.php">Home</a></li>
             <li>
-                <ul class="collapsible collapsible-accordion">
-                    <li>
-                        <a class="collapsible-header waves-effect waves-blue" style="margin-left:15px" >Products</a>
-                        <div class="collapsible-body" style="margin-left:20px">
+<!--                <ul class="collapsible collapsible-accordion">-->
+<!--                    <li>-->
+                        <a href="product.php" class="collapsible-header waves-effect waves-blue" style="margin-left:15px" >Products</a>
+                        <!--<div class="collapsible-body" style="margin-left:20px">
                             <ul>
                                 <li><a href="javascript:round()" class="waves-effect waves-blue" >T-Shirts</a></li>
                                 <li><a class="waves-effect waves-blue" href="#">Corporate Gifting</a> </li>
@@ -25,9 +25,9 @@
                                 <li><a class="waves-effect waves-blue" href="#">IT Products</a> </li>
                                 <li><a class="waves-effect waves-blue" href="#">Uniforms</a> </li>
                             </ul>
-                        </div>
-                    </li>
-                </ul>
+                        </div>-->
+<!--                    </li>-->
+<!--                </ul>-->
             </li>
             <li><a href="nnm.php">NNM<span class="new badge"></span></a></li>
             <li><a href="contact.php">Contact</a></li>

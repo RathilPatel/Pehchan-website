@@ -40,13 +40,13 @@
         <?php require 'navbar.php'; ?>
     </div>
 
-    <div class="white hide-on-med-and-down">
+    <div>
         <div class="section" style="min-height: 400px; padding-top:5%;">
-            <div class="row">
+            <div class="row" >
                 <div class="col l4 offset-s1 s10 animated slideInLeft" style="margin-bottom:5%;">
                     <div class="red lighten-4" style="height:100%; padding:10px 10px 10px 10px;">
                         <div class="white-text">
-                            <img src="../images/page1_icon1.png" alt=" Page Icon 1" class="pageicon hide-on-med-and-down">
+                            <img src="../images/page1_icon1.png" alt=" Page Icon 1" class="pageicon">
                         </div>
                         <div class="black-text flow-text pageicondetail" style="align-item">
                             <h4 class="grey-text text-darken-3"> CUSTOMISED TSHIRTS AND UNIFORMS</h4>
@@ -92,7 +92,7 @@
 
         </div>
     </div>
-    <div class="white hide-on-large-only">
+    <!--<div class="white hide-on-large-only">
         <div class="section" style="min-height: 300px; padding-top:5%;">
             <div class="row">
                 <div class="col l4 offset-s1 s10 animated slideInLeft" style="margin-bottom:25%; margin-top:15%; ">
@@ -143,7 +143,7 @@
 
         </div>
     </div>
-
+-->
     <div class="white hide-on-med-and-down" style="margin-top:1%; padding-top:5%; ">
         <div class="row">
             <div class="col l7 hide-on-med-and-down">
@@ -226,8 +226,26 @@ We cater to all kinds of uniform needs.
                 <img src="../images/uniform.jpg" alt="" style="max-width:100%; height:auto;  ">
             </div>
         </div>
-
     </div>
+
+    <div class="white hide-on-large-only" style="margin-top:1%; padding-top:5%;">
+        <div class="row" style=" padding-right:-5%;">
+            <div class="col s6">
+                <img src="../images/formal.jpg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
+            </div>
+
+            <div class="col s5">
+                <img src="../images/gift1.jpg" class="img-responsive" alt="formals" style="height:300px; width:100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s6">
+                <img src="../images/formal.jpg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
+            </div>
+        </div>
+    </div>
+
     <div class="white" style="margin-top:1%; padding-top:4%">
         <?php require '../headerandfooter/footer.php'; ?>
     </div>
