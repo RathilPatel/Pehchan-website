@@ -10,7 +10,7 @@ if(!$con) {
 if (isset($_POST['Unsubscribe'])) {
 	$email = $_POST['email'];
 
-	$query = "update mailer set status = 'unsubscribed' where email = '$email'";
+	$query = "update Company_Contact_Data set status = 'unsubscribed' where email = '$email'";
 	mysqli_query($con, $query);
 	echo "You have Successfully unsubscribed.";
 }
