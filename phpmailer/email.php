@@ -2,9 +2,9 @@
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "Pehchan";
+	$username = "mypenynj";
+	$password = "y3UrhUPBD64x";
+	$dbname = "mypenynj_pehchan";
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
 
