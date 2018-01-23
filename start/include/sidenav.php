@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-        <a class="nav-link" href="Dashboard.html">
+        <a class="nav-link" href="Dashboard.php">
           <i class="fa fa-fw fa-dashboard"></i>
           <span class="nav-link-text">Dashboard</span>
         </a>
@@ -26,9 +26,9 @@
           <li>
             <a href="deleteuser.php">Delete User</a>
           </li>
-          <!-- <li>
-            <a href="searchclient.php">modify Users</a>
-          </li> -->
+          <li>
+            <a href="changepassword.php">Change Password</a>
+          </li>
         </ul>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
@@ -45,18 +45,6 @@
           </li>
         </ul>
       </li>
-      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-        <a class="nav-link" href="client_form.php">
-          <i class="fa fa-fw fa-area-chart"></i>
-          <span class="nav-link-text">Add Clients</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-        <a class="nav-link" href="tables.html">
-          <i class="fa fa-fw fa-table"></i>
-          <span class="nav-link-text">Tables</span>
-        </a>
-      </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
         <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
           <i class="fa fa-fw fa-wrench"></i>
@@ -64,7 +52,7 @@
         </a>
         <ul class="sidenav-second-level collapse" id="collapseComponents">
           <li>
-            <a href="client_form.php">Add Client</a>
+            <a href="addClient.php">Add Client</a>
           </li>
           <li>
             <a href="searchclient.php">Search client</a>

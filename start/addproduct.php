@@ -55,7 +55,7 @@
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Description</label>
-              <textarea class="form-control" type="text" name="password" value="" placeholder="Password">
+              <textarea class="form-control" type="password" name="password" value="" placeholder="Describe the product "></textarea>
 
               <!-- <input  id="exampleInputPassword1" name="exampleInputPassword1" type="password" placeholder="Password"> -->
             </div>

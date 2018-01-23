@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require 'include/headerandfooter/header.php' ?>
+<?php require 'include/headerandfooter/header.php'; ?>
+<title>Inventory Management</title>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
@@ -11,36 +12,29 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Products</a>
+          <a href="#">Users</a>
         </li>
-        <li class="breadcrumb-item active">Search Product</li>
+        <li class="breadcrumb-item active">Change Password</li>
       </ol>
 
       <div class="card mb-3">
         <div class="card-header">
-          <!-- <i class="fa fa-area-chart"></i> -->
-           Enter Product To search
-        </div>
+          <i class="fa fa-area-chart"></i> Change Password</div>
         <div class="card-body">
-          <form action="function/login.php" method="post">
+          <form action="function/changepassword-func.php" method="post">
             <div class="form-group">
-              <label for="exampleInputEmail1">Username</label>
-              <input class="form-control" type="text" name="username" value="" placeholder="Username">
-              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="exampleInputPassword1">Current Password</label>
               <input class="form-control" type="password" name="password" value="" placeholder="Password">
-
-              <!-- <input  id="exampleInputPassword1" name="exampleInputPassword1" type="password" placeholder="Password"> -->
             </div>
             <div class="form-group">
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> Remember Password</label>
-              </div>
+              <label for="exampleInputPassword1">New Password</label>
+              <input class="form-control" type="password" name="password" value="" placeholder="Password">
             </div>
-              <input type="submit" class="btn btn-primary btn-block" name="submit" value="Login" class="btn-login">
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm New Password</label>
+              <input class="form-control" type="password" name="password" value="" placeholder="Password">
+            </div>
+              <input type="submit" class="btn btn-primary btn-block" name="submit" value="Change Password" class="btn-login">
             <!-- <a class="btn btn-primary btn-block" href="#">Login</a> -->
             <div id="add_err"></div>
           <!-- <canvas id="myAreaChart" width="100%" height="30"></canvas> -->

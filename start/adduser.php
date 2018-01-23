@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require 'include/headerandfooter/header.php' ?>
+<?php require 'include/headerandfooter/header.php'; ?>
+<title>Inventory Management</title>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
@@ -11,28 +12,41 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Products</a>
+          <a href="#">Users</a>
         </li>
-        <li class="breadcrumb-item active">Search Product</li>
+        <li class="breadcrumb-item active">Add User</li>
       </ol>
 
       <div class="card mb-3">
         <div class="card-header">
-          <!-- <i class="fa fa-area-chart"></i> -->
-           Enter Product To search
-        </div>
+          <i class="fa fa-area-chart"></i> Area Chart Example</div>
         <div class="card-body">
           <form action="function/login.php" method="post">
             <div class="form-group">
-              <label for="exampleInputEmail1">Username</label>
-              <input class="form-control" type="text" name="username" value="" placeholder="Username">
-              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+              <label for="exampleInputEmail1">First Name</label>
+              <input class="form-control" type="text" name="fname" placeholder="First name" >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Last Name</label>
+              <input class="form-control" type="text" name="lname" placeholder="Last name" >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input class="form-control" type="text" name="email" placeholder="E-mail" >
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
               <input class="form-control" type="password" name="password" value="" placeholder="Password">
-
-              <!-- <input  id="exampleInputPassword1" name="exampleInputPassword1" type="password" placeholder="Password"> -->
+            </div>
+            <div class="form-group">
+              <p>
+                <input class="with-gap" name="group1" type="radio" id="test1"  />
+                <label for="test1">Admin</label>
+              </p>
+              <p>
+                <input class="with-gap" name="group1" type="radio" id="test3"  />
+                <label for="test3">Employee</label>
+              </p>
             </div>
             <div class="form-group">
               <div class="form-check">
