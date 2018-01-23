@@ -1,6 +1,6 @@
 <nav>
     <div class="nav-wrapper black white-text">
-        <a href="#!" class="brand-logo hide-on-large-only"> <img src="../images/Pehchanlogowhite.gif" alt="Pehchan Reflect Your Identity" style="height:50px; width:180px;"> </a>
+        <a href="index.php" class="brand-logo hide-on-large-only"> <img src="../images/Pehchanlogowhite.gif" alt="Pehchan Reflect Your Identity" style="height:50px; width:180px;"> </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <ul class="hide-on-med-and-down ">
             <li><a href="index.php">Home</a></li>

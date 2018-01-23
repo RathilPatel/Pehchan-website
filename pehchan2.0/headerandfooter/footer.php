@@ -50,8 +50,8 @@
                   <h5 class="black-text">Talk to us!</h5>
                   <hr>
                   <ul>
-                      <li><a class="black-text" href="#!">+91 982 031 0177</a></li>
-                      <li><a class="black-text" href="#!">+91 961 961 0177</a></li>
+                      <li><a class="black-text" href="#!">+91 98203 10177</a></li>
+                      <li><a class="black-text" href="#!">+91 96196 10177</a></li>
                       <li><a class="black-text" href="#!">surbhi@mypehchan.com</a></li>
                       <li><a class="black-text" href="#!">deep@mypehchan.com</a></li>
                       <li><a class="black-text" href="#!">sales@mypehchan.com</a></li>

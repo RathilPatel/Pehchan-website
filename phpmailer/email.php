@@ -2,9 +2,9 @@
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
 	$servername = "localhost";
-	$username = "mypenynj";
-	$password = "y3UrhUPBD64x";
-	$dbname = "mypenynj_pehchan";
+	$username = "root";
+	$password = "";
+	$dbname = "Pehchan";
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -12,11 +12,11 @@
     	die("Connection failed: " . $conn->connect_error);
 	}
 	//echo "Connected successfully";
-	$category = $_POST['category'];
+	//$category = $_POST['category'];
 
 	//$attachment = $_FILES['attachment']['tmp_name'];
-	$attachment = 'Pehchan_catalog.pdf';
-    $attachment1 = 'ThankYou.jpg';
+	$attachment = '/home/shyamal/Downloads/Pehchan_catalog.pdf';
+    $attachment1 = '/home/shyamal/Downloads/ThankYou.jpg';
 
 	$query = "select email from Company_Contact_Data WHERE Company_Name = 'Pehchan'";
 	$result = $conn->query($query);
@@ -32,9 +32,9 @@
 		$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 		try {
 		    //Server settings
-		    //$mail->SMTPDebug = 1;                                 // Enable verbose debug output
+		    $mail->SMTPDebug = 1;                                 // Enable verbose debug output
 		    $mail->isSMTP();                                      // Set mailer to use SMTP
-		    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+		    $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
 		    $mail->SMTPAuth = true;                               // Enable SMTP authentication
 		    $mail->Username = 'sales@mypehchan.com';                 // SMTP username
 		    $mail->Password = 'pehchan06';                           // SMTP password
@@ -44,13 +44,12 @@
 		    //Recipients
 		    $mail->setFrom('sales@mypehchan.com', 'Deep Sett');
 		    $mail->addAddress($email);
-            $file_to_attach = $_FILES['attachment']['tmp_name'];
+            //$file_to_attach = $_FILES['attachment']['tmp_name'];
             /*$filename=$_FILES['attachment']['name'];
             $mail->AddAttachment($file_to_attach , $filename);*/
             $mail->AddAttachment($attachment);
             $mail->AddAttachment($attachment1);
 
-		    /*$body = "<p><strong>Dear Student,</strong><br><br> This notice is regarding regular practicals that will be starting from second week of December i.e <b>11th December 2017</b>All practicals are important. So, its compulsory for all management students to attend the practicals which will be having internal marks that will be added in your semester assessments.<br><br><b>Notice:</b><br>Only those students will be allowed to attend the practicals, those who will be having <b>100%</b> attendance in lectures. So, kindly please attend the lectures.<br><br>Thanks & Regards<br>NMIMS GLOBAL ACCESS SCHOOL FOR CONTINUING EDUCATION<br><br><br><br><b>This is machine generated email. Please do not reply to the message.</b></p>";*/
 
             $body = "<p><strong>Dear Sir,<br><br>
 
