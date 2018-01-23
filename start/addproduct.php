@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require 'include/headerandfooter/header.php'; ?>
-<title>Inventory Management</title>
+<?php require 'include/headerandfooter/header.php' ?>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
@@ -12,34 +11,73 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
+          <a href="#">Products</a>
         </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
+        <li class="breadcrumb-item active">Add Product</li>
       </ol>
 
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-area-chart"></i> Area Chart Example</div>
+          <!-- <i class="fa fa-area-chart"></i> -->
+          Fill Product Information
+        </div>
         <div class="card-body">
           <form action="function/login.php" method="post">
             <div class="form-group">
-              <label for="exampleInputEmail1">Username</label>
-              <input class="form-control" type="text" name="username" value="" placeholder="Username">
+              <label for="exampleInputEmail1">Product Code</label>
+              <input class="form-control" type="text" name="username" value="" placeholder="Eg:AAA-AAA-000-AA">
               <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input class="form-control" type="password" name="password" value="" placeholder="Password">
+              <label for="exampleInputEmail1">Product Name</label>
+              <input class="form-control" type="text" name="username" value="" placeholder="Product Name">
+              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">GSM</label>
+              <input class="form-control" type="text" name="username" value="" placeholder="GSM">
+              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">MOQ(Minimum Order Quantity)</label>
+              <input class="form-control" type="text" name="username" value="" placeholder="MOQ">
+              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Price(Rs.)</label>
+              <input class="form-control" type="text" name="username" value="" placeholder="Cost Price">
+              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Sample Price</label>
+              <input class="form-control" type="text" name="username" value="" placeholder="sample product price">
+              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Description</label>
+              <textarea class="form-control" type="text" name="password" value="" placeholder="Password">
 
               <!-- <input  id="exampleInputPassword1" name="exampleInputPassword1" type="password" placeholder="Password"> -->
             </div>
+            <div class="form-group">
+    <label>Upload Image</label>
+    <div class="input-group">
+        <span class="input-group-btn">
+            <span class="btn btn-default btn-file">
+                Browse… <input type="file" id="imgInp">
+            </span>
+        </span>
+        <!-- <input type="text" class="form-control" readonly> -->
+    </div>
+    <img id='img-upload'/>
+</div>
             <div class="form-group">
               <div class="form-check">
                 <label class="form-check-label">
                   <input class="form-check-input" type="checkbox"> Remember Password</label>
               </div>
             </div>
-              <input type="submit" class="btn btn-primary btn-block" name="submit" value="Login" class="btn-login">
+              <input type="submit" class="btn btn-primary btn-block" name="submit" value="Submit" class="btn-login">
             <!-- <a class="btn btn-primary btn-block" href="#">Login</a> -->
             <div id="add_err"></div>
           <!-- <canvas id="myAreaChart" width="100%" height="30"></canvas> -->

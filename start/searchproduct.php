@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require 'include/headerandfooter/header.php'; ?>
-<title>Inventory Management</title>
+<?php require 'include/headerandfooter/header.php' ?>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
@@ -12,14 +11,16 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
+          <a href="#">Products</a>
         </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
+        <li class="breadcrumb-item active">Search Product</li>
       </ol>
 
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-area-chart"></i> Area Chart Example</div>
+          <!-- <i class="fa fa-area-chart"></i> -->
+           Enter Product To search
+        </div>
         <div class="card-body">
           <form action="function/login.php" method="post">
             <div class="form-group">

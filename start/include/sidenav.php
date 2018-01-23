@@ -12,36 +12,36 @@
         </a>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-          <i class="fa fa-fw fa-wrench"></i>
+        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseUserComponents" data-parent="#exampleAccordion">
+          <i class="fa fa-fw fa-user-o"></i>
           <span class="nav-link-text">Users</span>
         </a>
-        <ul class="sidenav-second-level collapse" id="collapseComponents">
+        <ul class="sidenav-second-level collapse" id="collapseUserComponents">
           <li>
-            <a href="client_form.php">Add User</a>
+            <a href="adduser.php">Add User</a>
           </li>
           <li>
-            <a href="searchclient.php">Search Users</a>
+            <a href="searchuser.php">Search Users</a>
           </li>
           <li>
-            <a href="searchclient.php">Delete User</a>
+            <a href="deleteuser.php">Delete User</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="searchclient.php">modify Users</a>
-          </li>
+          </li> -->
         </ul>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-          <i class="fa fa-fw fa-wrench"></i>
+        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseProductComponents" data-parent="#exampleAccordion">
+          <i class="fa fa-fw fa-dropbox"></i>
           <span class="nav-link-text">Products</span>
         </a>
-        <ul class="sidenav-second-level collapse" id="collapseComponents">
+        <ul class="sidenav-second-level collapse" id="collapseProductComponents">
           <li>
-            <a href="client_form.php">Add Products</a>
+            <a href="addproduct.php">Add Products</a>
           </li>
           <li>
-            <a href="searchclient.php">Search Products</a>
+            <a href="searchproduct.php">Search Products</a>
           </li>
         </ul>
       </li>
