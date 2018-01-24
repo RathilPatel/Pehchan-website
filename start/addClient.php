@@ -21,15 +21,15 @@
         <div class="card-header"> <i class="fa fa-area-chart"></i>Add Client Information</div>
         <div class="card-body">
           <form action="function/addclientfunc.php" method="post">
-              <div class="form-group">
+              <!-- <div class="form-group">
               <label for="sel1">Type of Client:</label>
               <select class="form-control" id="sel1" name="tos">
                 <option value="customer">Customer</option>
                 <option value="distributor">Distributor</option>
                 <option value="reseller">Reseller</option>
-                <!-- <option></option> -->
+                <option></option>
               </select>
-            </div>
+            </div> -->
 
           <div class="form-group">
               <label for="exampleInputEmail1">Name*</label>
