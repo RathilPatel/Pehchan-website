@@ -22,7 +22,7 @@
           Fill Product Information
         </div>
         <div class="card-body">
-          <form action="function/login.php" method="post">
+          <form action="function/addproduct-func.php" method="post">
             <div class="form-group">
               <label for="exampleInputEmail1">Product Code</label>
               <input class="form-control" type="text" name="username" value="" placeholder="Eg:AAA-AAA-000-AA">
