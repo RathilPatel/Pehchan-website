@@ -4,12 +4,12 @@ require '../include/dbh.php';
         $pcode = $_POST['pcode'];
         $pname = $_POST['pname'];
         $gsm = $_POST['gsm'];
-        $mou = $_POST['mou'];
+        $moq = $_POST['moq'];
         $oprice = $_POST['oprice'];
         $sprice = $_POST['sprice'];
         $pdesc = $_POST['pdesc'];
-    if(isset($_POST['submitproduct'])) {
-        $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
+    if(isset($_POST['submit'])) {
+$file = addslashes(file_get_contents($_FILES['image']['tmp_name']));
         if (is_writable($file)) {
             echo 'The file is writable';
         }
@@ -24,8 +24,18 @@ require '../include/dbh.php';
 
 
                 $sql = "INSERT INTO `Products`(`product_id`, `product_name`, `description`, `image`, `sampleprice`, `mou`, `price`, `gsm`)
-                       VALUES ("$pcode","$pname","$pdesc","$image","$pdesc","$file","$sprice","$mou","$oprice","$gsm")";
-        if(mysqli_query($con, $sql)) {
+                       VALUES ('$pcode','$pname','$pdesc','$file','$sprice','$moq','$oprice','$gsm')";
+        $result = mysqli_query($con, $sql);
+        $count = mysqli_affected_rows($con);
+        
+        if($count == 1){
+            header("Location: ../addproduct.php");
         }
+        
+        
+        
     }
+else{
+    echo 'failed to detect submit buttom';
+}
 ?>

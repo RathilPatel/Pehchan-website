@@ -34,6 +34,7 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
 </head>
 
 <body class="bg-dark">
+
   <div class="container">
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Login</div>
@@ -41,14 +42,12 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
         <form action="function/login.php" method="post">
           <div class="form-group">
             <label for="exampleInputEmail1">Username</label>
-            <input class="form-control" type="text" name="username" value="" placeholder="Username">
-            <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+            <input class="form-control" type="text" name="username" value="" placeholder="Username" required>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input class="form-control" type="password" name="password" value="" placeholder="Password">
+            <input class="form-control" type="password" name="password" value="" placeholder="Password" required>
 
-            <!-- <input  id="exampleInputPassword1" name="exampleInputPassword1" type="password" placeholder="Password"> -->
           </div>
           <div class="form-group">
             <div class="form-check">
@@ -57,7 +56,6 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
             </div>
           </div>
             <input type="submit" class="btn btn-primary btn-block" name="submit" value="Login" class="btn-login">
-          <!-- <a class="btn btn-primary btn-block" href="#">Login</a> -->
           <div id="add_err"></div>
         </form>
         <div class="text-center">
@@ -73,23 +71,7 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/script.js"></script>
-  <!-- <script type="text/javascript">
+   <script type="text/javascript">
 
-  $(document).ready(function(){
-      $("#loginButton").click(function(){
-        var str1 = $("#exampleInputEmail1").serialize();
-        var str2 =$("#exampleInputPassword1").serialize();
-        var str = str1+str2;
-        $.ajax({
-          url:"login.php",
-          data:'str',
-          error: function(xhr){
-                      alert("An Error Occured:  "+xhr.status+ " " + xhr.statusText);
-                  }
-        });
-      });
-      });
-  </script> -->
 </body>
-
 </html>
