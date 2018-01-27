@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-
+<style>
+    .imgtext {
+      position: absolute;
+      top: 260px;
+      background: rgba(0, 0, 0, 0.4);
+      color: #f1f1f1;
+      width: 100%;
+    }
+</style>
 <head>
     <meta charset="utf-8">
     <title>Pehchan-Corporate Gifting & Customised Tshirts</title>
@@ -153,40 +161,45 @@ We cater to all kinds of uniform needs.
     </div>
     <div class="white hide-on-large-only" style="margin-top:1%; padding-top:5%;">
         <div class="row" style=" padding-right:-5%;">
+        <div class="center">
             <div class="col s6">
                 <a href="./product.php?type=formal">
-                    <img src="../images/formal.jpg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
-                </a>
-                <a href="./product.php?type=formal">
-                    <p style="padding-left:10px; color:black; font-size:18px; ">Formals</p>
+                    <div class="imgtext" style="font-size:18px; position: relative; width: 100%;">
+                        Formals
+                    </div>
+                    <img src="../images/formal (9).jpg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
                 </a>
             </div>
+
             <div class="col s6">
                 <a href="./product.php?type=gifts">
+                    <div class="imgtext" style="font-size:18px; position: relative; width: 100%;">
+                        Gifting
+                    </div>
                     <img src="../images/gift1.jpg" class="img-responsive" alt="formals" style="height:300px; width:100%">
-                </a>
-                <a href="./product.php?type=gifts">
-                    <p style="padding-left:10px; color:black; font-size:18px; ">Gifting</p>
                 </a>
             </div>
         </div>
+        </div>
         <div class="row">
+        <div class="center">
             <div class="col s6">
                 <a href="./product.php?type=uniforms">
-                    <img src="../images/hosp%20(61).jpg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
-                </a>
-                <a href="./product.php?type=uniforms">
-                    <p style="padding-left:10px; color:black; font-size:18px; ">Uniforms</p>
+                    <div class="imgtext" style="font-size:18px; position: relative; width: 100%;">
+                        Uniforms
+                    </div>
+                    <img src="../images/hosp (61).jpg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
                 </a>
             </div>
             <div class="col s6">
-                <a href="./product.php?type=promotionalgift">
-                    <img src="../images/promotionalgifts.jpg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
-                </a>
-                <a href="./product.php?type=promotionalgift">
-                    <p style="padding-left:10px; color:black; font-size:18px;">Merchandise</p>
+                <a href="./product.php?type=jackets">
+                <div class="imgtext" style="font-size:18px; position: relative; width: 100%;">
+                        Jackets
+                    </div>
+                    <img src="../images/bl_185090_a.jpeg" class="img-responsive" alt="formals" style="height:300px; width:100%;">
                 </a>
             </div>
+        </div>
         </div>
     </div>
     <div class="white" style="margin-top:1%; padding-top:4%">

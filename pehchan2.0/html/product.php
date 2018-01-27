@@ -8,10 +8,8 @@
     <meta charset="utf-8">
     <title>Product</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <?php require '../headerandfooter/header.php'; ?>
 </head>
-
 <body>
     <?php require 'navbar.php'; ?>
     <?php require 'productnav.php';?>
@@ -71,10 +69,11 @@
             $("#content").load("leather.php");
             $("#content").load("stationary.php");s
         }
+        else if (type == "jackets") {
+            $("#content").load("jackets.php");
+        }
         else {
             $("#content").load("producthome.html");
-
-
             function round() {
                 $("#content").load("round.php");
             }
