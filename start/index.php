@@ -34,6 +34,15 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
 </head>
 
 <body class="bg-dark">
+<?php session_start(); 
+          define("someUnguessableVariable", "anotherUnguessableVariable");
+
+          if(isset($_SESSION['username']) && $_SESSION['username'] != ''){
+            header ("Location: Dashboard.php");
+            exit;
+            }
+else{
+    ?>
 
   <div class="container">
     <div class="card card-login mx-auto mt-5">
@@ -49,17 +58,10 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
             <input class="form-control" type="password" name="password" value="" placeholder="Password" required>
 
           </div>
-          <div class="form-group">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember Password</label>
-            </div>
-          </div>
             <input type="submit" class="btn btn-primary btn-block" name="submit" value="Login" class="btn-login">
           <div id="add_err"></div>
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="register.html">Register an Account</a>
           <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
         </div>
       </div>
@@ -72,6 +74,6 @@ document.getElementById("error_message_on_login").innerHTML = "username/password
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/script.js"></script>
    <script type="text/javascript">
-
+<?php } ?>
 </body>
 </html>
