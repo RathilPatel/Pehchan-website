@@ -33,11 +33,8 @@
     <div class="row">
         <div class="col l12">
             <div id="content" style="y-overflow:auto;">
-
             </div>
-
         </div>
-
     </div>
     <?php require '../headerandfooter/footer.php'; ?>
     <script type="text/javascript">
