@@ -1,3 +1,4 @@
+<?php session_start();?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
   <a class="navbar-brand" href="Dashboard.php">Inventory Management</a> <span><?php echo "HI," . $_SESSION['username'] . " ";?></span>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,6 +18,7 @@
           <span class="nav-link-text">Users</span>
         </a>
         <ul class="sidenav-second-level collapse" id="collapseUserComponents">
+            <?php if($_SESSION['role'] == 'admin'){ ?>
           <li>
             <a href="adduser.php">Add User</a>
           </li>
@@ -26,6 +28,8 @@
           <li>
             <a href="deleteuser.php">Delete User</a>
           </li>
+
+            <?php }?>
           <li>
             <a href="changepassword.php">Change Password</a>
           </li>

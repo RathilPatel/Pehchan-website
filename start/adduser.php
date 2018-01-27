@@ -19,9 +19,9 @@
 
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-area-chart"></i> Area Chart Example</div>
+          <i class="fa fa-area-chart"></i> Area User Details</div>
         <div class="card-body">
-          <form action="function/login.php" method="post">
+          <form action="function/adduser-func.php" method="post">
             <div class="form-group">
               <label for="exampleInputEmail1">First Name</label>
               <input class="form-control" type="text" name="fname" placeholder="First name" >
@@ -40,21 +40,15 @@
             </div>
             <div class="form-group">
               <p>
-                <input class="with-gap" name="group1" type="radio" id="test1"  />
+                <input class="with-gap" name="role" type="radio" id="test1"  value="admin"/>
                 <label for="test1">Admin</label>
               </p>
               <p>
-                <input class="with-gap" name="group1" type="radio" id="test3"  />
+                <input class="with-gap" name="role" type="radio" id="test3"  value="employee"/>
                 <label for="test3">Employee</label>
               </p>
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> Remember Password</label>
-              </div>
-            </div>
-              <input type="submit" class="btn btn-primary btn-block" name="submit" value="Login" class="btn-login">
+              <input type="submit" class="btn btn-primary btn-block" name="submit" value="submit" class="btn-login">
             <!-- <a class="btn btn-primary btn-block" href="#">Login</a> -->
             <div id="add_err"></div>
           <!-- <canvas id="myAreaChart" width="100%" height="30"></canvas> -->

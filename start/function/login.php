@@ -13,9 +13,13 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
         $count = mysqli_num_rows($result);
 
 
+
         if ($count == 1) {
               session_start();
             $_SESSION['username'] = $username;
+             while($row = $result->fetch_assoc()) {
+             $_SESSION['role'] = $row['Role'];
+        }
 
             if(isset($_SESSION['username'])) {
                 //$sDate = date("Y-m-d H:i:s");
@@ -26,7 +30,7 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
 
         }
         else {
-            header('Location: ../index.php');
+            header('Location: ../index.php?Login Failed');
             $Credentials = false;
             $errors[] = "Invalid Login Credentials.";
         }
