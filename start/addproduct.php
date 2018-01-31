@@ -25,7 +25,25 @@
           <form action="function/addproduct-func.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <label for="exampleInputEmail1">Product Code</label>
-              <input class="form-control" type="text" name="pcode" value="" placeholder="Eg:AAA-AAA-000-AA">
+                <div class="input-group">
+                    <select name="c1">
+                        <option value="LL">LL</option>
+                        <option value="RR">RR</option>
+                    </select>
+                    <select name="c2">
+                        <option value="CN">C3</option>
+                        <option value="CN">C2</option>
+                        <option value="CN">C1</option>
+                    </select>
+                    <select name="c3">
+                        <option value="CN">CA</option>
+                        <option value="CN">CB</option>
+                        <option value="CN">CC</option>
+                    </select>
+                    <input type="text" class="form-control" name="c4">
+                    <input type="text" class="form-control" name="c5">
+                </div>
+                    <!--              <input class="form-control" type="text" name="pcode" value="" placeholder="Eg:AAA-AAA-000-AA">-->
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Product Name</label>
