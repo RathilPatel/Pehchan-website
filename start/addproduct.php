@@ -1,7 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <?php require 'include/headerandfooter/header.php' ?>
+
+<!--
+<script>
+    $(document).ready(function() {
+        $(document).on('keydown','#pname', function() {
+            $("#pname").autocomplete( {
+                source: function(request, response) {
+                    $.ajax( {
+                        url: "getdetails.php",
+                        type: 'post',
+                        dataType: 'json',
+                        data: {
+                            search: request.term, request:1
+                        },
+                        success: function(data) {
+                            response(data);
+                        }
+                    });
+                },
+
+                select: function(event, ui) {
+                    $(this).val(ui.item.Product_Name);
+                    var pname = ui.item.value;
+                    $.ajax({
+                        url: 'getdetails.php',
+                        type: 'post',
+                        data: {pname:pname,request:2},
+                        dataType: 'json',
+                        success: function(response){
+                            var len = response.length;
+                            if(len > 0) {
+                                var
+                            }
+                        }
+                    })
+                }
+            })
+        })
+    })
+</script>
+-->
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
@@ -27,30 +67,49 @@
               <label for="exampleInputEmail1">Product Code</label>
                 <div class="input-group">
                     <select name="c1">
-                        <option value="LL">LL</option>
-                        <option value="RR">RR</option>
+                        <option value="LL">JC - Jackets</option>
+                        <option value="RR">RR - Round Neck</option>
+                        <option value="SS">SS - Sweat Shirts</option>
+                        <option value="HO">HO - Hoodie</option>
+                        <option value="CC">CC - Chinese Collar</option>
+                        <option value="SH">SH - Shirts</option>
+                        <option value="UN">UN - Uniform</option>
+                        <option value="OT">OT - Other</option>
                     </select>
                     <select name="c2">
-                        <option value="CN">C3</option>
-                        <option value="CN">C2</option>
-                        <option value="CN">C1</option>
+                        <option value="RR">RR</option>
+                        <option value="BC">BC</option>
+                        <option value="TS">TS</option>
+                        <option value="JV">JV</option>
+                        <option value="EM">EM</option>
+                        <option value="RT">RT</option>
+                        <option value="IR">IR</option>
+                        <option value="OT">OT-Other</option>
                     </select>
                     <select name="c3">
-                        <option value="CN">CA</option>
-                        <option value="CN">CB</option>
-                        <option value="CN">CC</option>
+                        <option value="PC">PC - Poly Cotton</option>
+                        <option value="DF">DF - Dry Fit</option>
+                        <option value="SP">SP - Super Poly</option>
+                        <option value="IM">IM - Imported</option>
+                        <option value="CL">CL - Cotton Lycra</option>
+                        <option value="MP">MP - Micro Poly</option>
+                        <option value="PP">PP - Pure Polyster</option>
+                        <option value="CG">CG - Cotton Gabardine </option>
+                        <option value="FJ">Fleece Jackets</option>
+                        <option value="EX">EX - Exclusive</option>
+                        <option value="OT">OT - Other</option>
                     </select>
-                    <input type="text" class="form-control" name="c4">
-                    <input type="text" class="form-control" name="c5">
+                    <input type="text" class="form-control" name="c4" maxlength="3">
+                    <input type="number" class="form-control" name="c5" maxlength="4" min="0">
                 </div>
                     <!--              <input class="form-control" type="text" name="pcode" value="" placeholder="Eg:AAA-AAA-000-AA">-->
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Product Name</label>
-              <input class="form-control" type="text" name="pname" value="" placeholder="Product Name">
+              <input class="form-control" type="text" name="pname" id="pname" value="" placeholder="Product Name">
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">GSM</label>
+              <label for="exampleInputEmail1">Remarks</label>
               <input class="form-control" type="text" name="gsm" value="" placeholder="GSM">
             </div>
             <div class="form-group">
@@ -87,7 +146,5 @@
             </form>
           </div>
         </div>
-      
-        
-            <?php require 'include/headerandfooter/footer.php' ?>
+<?php require 'include/headerandfooter/footer.php' ?>
 
