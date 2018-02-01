@@ -95,12 +95,12 @@
                         <option value="MP">MP - Micro Poly</option>
                         <option value="PP">PP - Pure Polyster</option>
                         <option value="CG">CG - Cotton Gabardine </option>
-                        <option value="FJ">Fleece Jackets</option>
+                        <option value="FJ">FJ - Fleece Jackets</option>
                         <option value="EX">EX - Exclusive</option>
                         <option value="OT">OT - Other</option>
                     </select>
                     <input type="text" class="form-control" name="c4" maxlength="3">
-                    <input type="number" class="form-control" name="c5" maxlength="4" min="0">
+                    <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4">
                 </div>
                     <!--              <input class="form-control" type="text" name="pcode" value="" placeholder="Eg:AAA-AAA-000-AA">-->
             </div>
