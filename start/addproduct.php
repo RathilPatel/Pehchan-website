@@ -67,8 +67,9 @@
               <label for="exampleInputEmail1">Product Code</label>
                 <div class="input-group">
                     <select name="c1">
-                        <option value="LL">JC - Jackets</option>
-                        <option value="RR">RR - Round Neck</option>
+                        <option value="JC">JC - Jackets</option>
+                        <option value="PN">PN - Polo Neck</option>
+                        <option value="RN">RN - Round Neck</option>
                         <option value="SS">SS - Sweat Shirts</option>
                         <option value="HO">HO - Hoodie</option>
                         <option value="CC">CC - Chinese Collar</option>
@@ -80,7 +81,7 @@
                         <option value="RR">RR</option>
                         <option value="BC">BC</option>
                         <option value="TS">TS</option>
-                        <option value="JV">JV</option>
+                        <option value="YV">YV</option>
                         <option value="EM">EM</option>
                         <option value="RT">RT</option>
                         <option value="IR">IR</option>
@@ -88,6 +89,7 @@
                     </select>
                     <select name="c3">
                         <option value="PC">PC - Poly Cotton</option>
+                        <option value="CN">CN - 100% Cotton</option>
                         <option value="DF">DF - Dry Fit</option>
                         <option value="SP">SP - Super Poly</option>
                         <option value="IM">IM - Imported</option>
@@ -99,8 +101,10 @@
                         <option value="EX">EX - Exclusive</option>
                         <option value="OT">OT - Other</option>
                     </select>
-                    <input type="text" class="form-control" name="c4" maxlength="3">
-                    <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4">
+                    <!-- <input type="text" class="form-control" name="c4" maxlength="3"> -->
+                    <input type="text" class="form-control" name="c5" maxlength="4">
+
+                    <!-- <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4"> -->
                 </div>
                     <!--              <input class="form-control" type="text" name="pcode" value="" placeholder="Eg:AAA-AAA-000-AA">-->
             </div>
@@ -142,9 +146,8 @@
 </div>
 
               <input type="submit" class="btn btn-primary btn-block" name="submit" value="Submit" class="btn-login">
-              
+
             </form>
           </div>
         </div>
 <?php require 'include/headerandfooter/footer.php' ?>
-
