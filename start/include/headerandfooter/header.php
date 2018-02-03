@@ -14,10 +14,12 @@
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
   <link href="js/jquery-ui.min.css" type="text/css" rel="stylesheet">
   <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/sb-admin.js" type="text/javascript"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>  -->
 </head>
