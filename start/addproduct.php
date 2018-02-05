@@ -1,48 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require 'include/headerandfooter/header.php' ?>
-
-<!--
-<script>
-    $(document).ready(function() {
-        $(document).on('keydown','#pname', function() {
-            $("#pname").autocomplete( {
-                source: function(request, response) {
-                    $.ajax( {
-                        url: "getdetails.php",
-                        type: 'post',
-                        dataType: 'json',
-                        data: {
-                            search: request.term, request:1
-                        },
-                        success: function(data) {
-                            response(data);
-                        }
-                    });
-                },
-
-                select: function(event, ui) {
-                    $(this).val(ui.item.Product_Name);
-                    var pname = ui.item.value;
-                    $.ajax({
-                        url: 'getdetails.php',
-                        type: 'post',
-                        data: {pname:pname,request:2},
-                        dataType: 'json',
-                        success: function(response){
-                            var len = response.length;
-                            if(len > 0) {
-                                var
-                            }
-                        }
-                    })
-                }
-            })
-        })
-    })
-</script>
--->
-
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
 <?php require 'include/sidenav.php'; ?>
@@ -114,8 +72,32 @@
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Remarks</label>
-              <input class="form-control" type="text" name="gsm" value="" placeholder="GSM">
-            </div>
+              <input class="form-control" type="text" name="gsm" id="remark" value="" placeholder="GSM, Knit, Yarn">
+                <!--<input list="remarks" class="form-control" type="text" name="gsm" placeholder="GSM, Knit, Yarn">
+                <datalist id="remarks">
+                    <option value="150, Sinker-Single Jersey, Micro Polyester-Dry Fit"></option>
+                    <option value="180, Matte - Mesh, Micro Polyester-Dry Fit"></option>
+                    <option value="180, Single Jersey, Micro Polyester-Dry Fit"></option>
+                    <option value="160, Single Jersey, Micro Polyester-Dry Fit"></option>
+                    <option value="180, Nirmal Knit, Micro Polyester-Dry Fit"></option>
+                    <option value="180, Sinker, 100% Cotton"></option>
+                    <option value="220, Honeycombed, 100% Cotton"></option>
+                    <option value="210, Thick Pick, 100% Polo"></option>
+                    <option value="235, Honeycomb, 100% Cotton"></option>
+                    <option value="240, Airtex Polo, 100% Cotton"></option>
+                    <option value="240, Honeycomb, 100% Cotton"></option>
+                    <option value="260, Honeycomb, 100% Cotton"></option>
+                    <option value="240, Double Merserised, 100% Cotton"></option>
+                    <option value="190, Matte-Honeycomb, Polyester Cotton"></option>
+                    <option value="210, Matte-Honeycomb, Polyester Cotton"></option>
+                    <option value="250, Matte-Honeycomb, Cotton Polyester"></option>
+                    <option value="240, Matte-Pique, Polyester Cotton"></option>
+                    <option value="330, Brushed Fleece Inside, Cotton Fleece"></option>
+                    <option value="360, Brushed Fleece Inside, 100% Cotton"></option>
+                    <option value="330, Brushed Fleece Inside, 100% Cotton"></option>
+                    <option value="360, Brushed Fleece Inside, Super Poly"></option>
+                </datalist>
+-->            </div>
             <div class="form-group">
               <label for="exampleInputEmail1">MOQ(Minimum Order Quantity)</label>
               <input class="form-control" type="text" name="moq" value="" placeholder="MOQ">
@@ -144,24 +126,106 @@
     </div>
     <img id='img-upload'/>
 </div>
-
               <input type="submit" class="btn btn-primary btn-block" name="submit" value="Submit" class="btn-login">
-
             </form>
           </div>
         </div>
         <script>
-        $(document).ready(function(){
-                $(function(){
-var games = ["Baseball","Tennis","Golf","Cricket","Football","Hockey","Badminton","Volleyball","Boxing","Kabaddi","Chess","Long Jump","High Jump","Racing","Handball","Swimming","Wrestling"];
-
-$("#pname").autocomplete({
-source: games
-});
-
-});
-
-    
-});
+            function changeInput() {
+                var pname = document.getElementById("pname").value;
+                if(pname == "Olive" || "olive") {
+                    var remark = "150, Sinker-Single Jersey, Micro Polyester-Dry Fit";
+                    //document.getElementById("remark").value = remark;
+                }
+                else if(pname == "Umber" || "umber") {
+                    var remark = "180, Matte - Mesh, Micro Polyester-Dry Fit";
+                }
+                else if(pname == "Gold" || "gold") {
+                    var remark = "180, Single Jersey, Micro Polyester-Dry Fit";
+                }
+                else if(pname == "Orcher" || "orcher") {
+                    var remark = "160, Single Jersey, Micro Polyester-Dry Fit";
+                }
+                else if(pname == "Olive- " || "olive-") {
+                    var remark = "150, Sinker-Single Jersey, Micro Polyester-Dry Fit";
+                }
+                else if(pname == "Umber-" || "umber-") {
+                    var remark = "150, Sinker-Single Jersey, Micro Polyester-Dry Fit";
+                }
+                else if(pname == "Tan" || "tan") {
+                    var remark = "180, Nirmal Knit, Micro Polyester-Dry Fit";
+                }
+                else if(pname == "Bronze" || "bronze") {
+                    var remark = "180, Sinker, 100% Cotton";
+                }
+                else if(pname == "Sepia" || "sepia") {
+                    var remark = "200, Sinker, 100% Cotton";
+                }
+                else if(pname == "Champange" || "champange") {
+                    var remark = "180, Sinker, 100% Cotton";
+                }
+                else if(pname == "Copper" || "copper") {
+                    var remark = "220, Honeycombed, 100% Cotton";
+                }
+                else if(pname == "Ruby" || "ruby") {
+                    var remark = "210, Thick Pick, 100% Polo";
+                }
+                else if(pname == "Crimson" || "crimson") {
+                    var remark = "235, Honeycomb, 100% Cotton";
+                }
+                else if(pname == "Magenta" || "magenta") {
+                    var remark = "240, Airtex Polo, 100% Cotton";
+                }
+                else if(pname == "Plum" || "plum") {
+                    var remark = "240, Honeycomb, 100% Cotton";
+                }
+                else if(pname == "Fuchsia" || "fuchsia") {
+                    var remark = "260, Honeycomb, 100% Cotton";
+                }
+                else if(pname == "Marine" || "marine") {
+                    var remark = "240, Double Merserised, 100% Cotton";
+                }
+                else if(pname == "Lilac" || "lilac") {
+                    var remark = "190, Matte-Honeycomb, Polyester Cotton";
+                }
+                else if(pname == "Coral" || "coral") {
+                    var remark = "210, Matte-Honeycomb, Polyester Cotton";
+                }
+                else if(pname == "Cyan" || "cyan") {
+                    var remark = "250, Matte-Honeycomb, Cotton Polyester";
+                }
+                else if(pname == "Yorkshire" || "yorkshire") {
+                    var remark = "240, Matte-Pique, Polyester Cotton";
+                }
+                else if(pname == "Azurre" || "azurre") {
+                    var remark = "330, Brushed Fleece Inside, Cotton Fleece";
+                }
+                else if(pname == "Aqua" || "aqua") {
+                    var remark = "330, Brushed Fleece Inside, Cotton Fleece";
+                }
+                else if(pname == "Emerald" || "emerald") {
+                    var remark = "360, Brushed Fleece Inside, 100% Cotton";
+                }
+                else if(pname == "Jade" || "jade") {
+                    var remark = "360, Brushed Fleece Inside, 100% Cotton";
+                }
+                else if(pname == "Mauve-126" || "mauve-126") {
+                    var remark = "330, Brushed Fleece Inside, 100% Cotton";
+                }
+                else if(pname == "Silver-124" || "silver-124") {
+                    var remark = "360, Brushed Fleece Inside, Super Poly";
+                }
+                else {
+                    var remark = "invalid";
+                }
+                document.getElementById("remark").value = remark;
+            }
+            var pname = document.getElementById("pname");
+            pname.onchange = function() {
+                changeInput();
+            }
+            pname.onkeyup = function() {
+                changeInput();
+            }
         </script>
 <?php require 'include/headerandfooter/footer.php' ?>

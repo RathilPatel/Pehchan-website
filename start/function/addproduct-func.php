@@ -36,7 +36,7 @@ mysqli_query($con,$sql1);
 
             mysqli_query($con,$insert_image);
 
-$sql2="INSERT INTO `Product`(`Product_id`, `Product_Name`, `Description`, `Product_Image`, `Sample_price`, `MOQ`, `Product_Price`, `GSM`) VALUES ('$pcode','$pname','$pdesc','$imagetmp','$sprice','$moq','$oprice','$gsm')";
+$sql2="INSERT INTO `Product`(`Product_id`, `Product_Name`, `Description`, `Product_Image`, `Sample_price`, `MOQ`, `Product_Price`, `Remarks`) VALUES ('$pcode','$pname','$pdesc','$imagetmp','$sprice','$moq','$oprice','$gsm')";
         mysqli_query($con, $sql2);
         $count = mysqli_affected_rows($con);
 
