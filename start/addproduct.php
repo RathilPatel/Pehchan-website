@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require 'include/headerandfooter/header.php' ?>
+<?php 
+require "include/headerandfooter/header.php"
+?>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navigation-->
@@ -25,7 +27,8 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Product Code</label>
                             <div class="input-group">
-                                <select name="c1">
+                                <select name="c1" onchange="showUser(this.value)">
+                                     <option value="">Select a type:</option>
                         <option value="JC">JC - Jackets</option>
                         <option value="PN">PN - Polo Neck</option>
                         <option value="RN">RN - Round Neck</option>
@@ -61,7 +64,8 @@
                         <option value="EX">EX - Exclusive</option>
                         <option value="OT">OT - Other</option>
                     </select>
-                                <!-- <input type="text" class="form-control" name="c4" maxlength="3"> -->
+
+                                <input type="text" class="form-control" name="c4" maxlength="3">
                                 <input type="text" class="form-control" name="c5" maxlength="4">
                                 <!-- <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4"> -->
                             </div>
@@ -70,7 +74,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Product Name</label>
                             <input class="form-control" type="text" name="pname" id="pname" value="" placeholder="Product Name">
-<!--
+                            <!--
                             <datalist id="productname">
                                 <option value="Indigo (Red)"></option>
                                 <option value="Coal (Red)"></option>
@@ -82,31 +86,6 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Remarks</label>
                             <input class="form-control" type="text" name="gsm" id="remark" placeholder="GSM, Knit, Yarn">
-                            <!--
-                <datalist id="remarks">
-                    <option value="150, Sinker-Single Jersey, Micro Polyester-Dry Fit"></option>
-                    <option value="180, Matte - Mesh, Micro Polyester-Dry Fit"></option>
-                    <option value="180, Single Jersey, Micro Polyester-Dry Fit"></option>
-                    <option value="160, Single Jersey, Micro Polyester-Dry Fit"></option>
-                    <option value="180, Nirmal Knit, Micro Polyester-Dry Fit"></option>
-                    <option value="180, Sinker, 100% Cotton"></option>
-                    <option value="220, Honeycombed, 100% Cotton"></option>
-                    <option value="210, Thick Pick, 100% Polo"></option>
-                    <option value="235, Honeycomb, 100% Cotton"></option>
-                    <option value="240, Airtex Polo, 100% Cotton"></option>
-                    <option value="240, Honeycomb, 100% Cotton"></option>
-                    <option value="260, Honeycomb, 100% Cotton"></option>
-                    <option value="240, Double Merserised, 100% Cotton"></option>
-                    <option value="190, Matte-Honeycomb, Polyester Cotton"></option>
-                    <option value="210, Matte-Honeycomb, Polyester Cotton"></option>
-                    <option value="250, Matte-Honeycomb, Cotton Polyester"></option>
-                    <option value="240, Matte-Pique, Polyester Cotton"></option>
-                    <option value="330, Brushed Fleece Inside, Cotton Fleece"></option>
-                    <option value="360, Brushed Fleece Inside, 100% Cotton"></option>
-                    <option value="330, Brushed Fleece Inside, 100% Cotton"></option>
-                    <option value="360, Brushed Fleece Inside, Super Poly"></option>
-                </datalist>
--->
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">MOQ(Minimum Order Quantity)</label>
@@ -141,10 +120,31 @@
                 </div>
             </div>
             <script>
+                function showUser(str) {
+                    if (str == "") {
+                        document.getElementById("c4").value;
+                        return;
+                    } else {
+                        if (window.XMLHttpRequest) {
+                            // code for IE7+, Firefox, Chrome, Opera, Safari
+                            xmlhttp = new XMLHttpRequest();
+                        } else {
+                            // code for IE6, IE5
+                            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                        }
+                        xmlhttp.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                                document.getElementById("c4").innerHTML = this.responseText;
+                            }
+                        };
+                        xmlhttp.open("GET", "getserial.php?serial=" + str, true);
+                        xmlhttp.send();
+                    }
+                }
+
                 function changeInput() {
                     var pname = document.getElementById("pname").value;
                     var remark = "";
-
                     if (pname == "Olive" || pname == "olive") {
                         remark = "150, Sinker-Single Jersey, Micro Polyester-Dry Fit";
                         document.getElementById("remark").value = remark;
@@ -230,11 +230,10 @@
                     }
                     //console.log("remark:"+remark);
                 }
-
-
                 var pname = document.getElementById("pname");
                 pname.onkeyup = function() {
                     changeInput();
                 }
+
             </script>
             <?php require 'include/headerandfooter/footer.php' ?>
