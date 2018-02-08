@@ -27,7 +27,7 @@ require "include/headerandfooter/header.php"
                         <div class="form-group">
                             <label for="exampleInputEmail1">Product Code</label>
                             <div class="input-group">
-                                <select name="c1" onchange="showUser(this.value)">
+                                <select name="c1" id="c1">
                                      <option value="">Select a type:</option>
                         <option value="JC">JC - Jackets</option>
                         <option value="PN">PN - Polo Neck</option>
@@ -65,7 +65,7 @@ require "include/headerandfooter/header.php"
                         <option value="OT">OT - Other</option>
                     </select>
 
-                                <input type="text" class="form-control" name="c4" maxlength="3">
+                                <input type="text" class="form-control" name="c4" id="c4" maxlength="3" onchange="showUser(this.value)">
                                 <input type="text" class="form-control" name="c5" maxlength="4">
                                 <!-- <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4"> -->
                             </div>
@@ -73,15 +73,38 @@ require "include/headerandfooter/header.php"
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Product Name</label>
-                            <input class="form-control" type="text" name="pname" id="pname" value="" placeholder="Product Name">
-                            <!--
+                            <input list="productname" class="form-control" type="text" name="pname" id="pname" value="" placeholder="Product Name">
                             <datalist id="productname">
-                                <option value="Indigo (Red)"></option>
-                                <option value="Coal (Red)"></option>
-                                <option value="Crimson (Yellow)"></option>
-                                <option value="Aqua"></option>
+                                <option value="Indigo"></option>
+                                <option value="Coal"></option>
+                                <option value="Crimson"></option>
+                                <option value="Umber"></option>
+                                <option value="Coral"></option>
+                                <option value="Cyan"></option>
+                                <option value="Yorkshire"></option>
+                                <option value="Azurre"></option>
+                                <option value="Jade"></option>
+                                <option value="Rose"></option>
+                                <option value="Team 1"></option>
+                                <option value="Emerald"></option>
+                                <option value="Coffee"></option>
+                                <option value="Lilac"></option>
+                                <option value="Marine"></option>
+                                <option value="Fuchsia"></option>
+                                <option value="Plum"></option>
+                                <option value="Magenta"></option>
+                                <option value="Ruby"></option>
+                                <option value="Bronze"></option>
+                                <option value="Tan"></option>
+                                <option value="Ocher"></option>
+                                <option value="Gold"></option>
+                                <option value="Olive"></option>
+                                <option value="Sepia"></option>
+                                <option value="Junior"></option>
+                                <option value="Champange"></option>
+
                             </datalist>
--->
+
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Remarks</label>
@@ -120,27 +143,21 @@ require "include/headerandfooter/header.php"
                 </div>
             </div>
             <script>
-                function showUser(str) {
-                    if (str == "") {
-                        document.getElementById("c4").value;
-                        return;
-                    } else {
-                        if (window.XMLHttpRequest) {
-                            // code for IE7+, Firefox, Chrome, Opera, Safari
-                            xmlhttp = new XMLHttpRequest();
-                        } else {
-                            // code for IE6, IE5
-                            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                $('#c1').change(function() {
+                    var serial = $(this).val();
+                    $.ajax({
+                        type : "GET",
+                        dataType: 'json',
+                        url : "getserial.php",
+                        data : {id:serial},
+                        success :function(data) {
+                            var result = $.json_decode(data);
+//                            var result = $.parseJSON(data);
+                            var ss=result.serial;
+                            document.getElementById('#c4').innerHTML = ss;
                         }
-                        xmlhttp.onreadystatechange = function() {
-                            if (this.readyState == 4 && this.status == 200) {
-                                document.getElementById("c4").innerHTML = this.responseText;
-                            }
-                        };
-                        xmlhttp.open("GET", "getserial.php?serial=" + str, true);
-                        xmlhttp.send();
-                    }
-                }
+                    })
+                })
 
                 function changeInput() {
                     var pname = document.getElementById("pname").value;
@@ -224,6 +241,36 @@ require "include/headerandfooter/header.php"
                         document.getElementById("remark").value = remark;
                     } else if (pname == "Silver-124" || pname == "silver-124") {
                         var remark = "360, Brushed Fleece Inside, Super Poly";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Indigo" || pname == "indigo") {
+                        var remark = "260, Ring-Spun Cotton, 100% Cotton";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Rose" || pname == "rose") {
+                        var remark = "250, Fine-matte, 97% Combed Cotton with 3% Lycra";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Coal" || pname == "coal") {
+                        var remark = "280, Ring-Spun Cotton, 100% Cotton";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Coffee" || pname == "coffee") {
+                        var remark = "220, 100% Cotton Inside, 100% Poly Outside";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Team 1" || pname == "team 1") {
+                        var remark = "160, Organic Pique, 100% Cotton";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Team 2" || pname == "team 2") {
+                        var remark = "170, Organic Ringer Tshirt, 100% Cotton";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Team 3" || pname == "team 3") {
+                        var remark = "170, Organic Raglan, 100% Cotton";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Junior 1" || pname == "junior 1") {
+                        var remark = "200, Organic Pique, 100% Cotton";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Junior 2" || pname == "junior 2") {
+                        var remark = "170, Organic Raglan, 100% Cotton";
+                        document.getElementById("remark").value = remark;
+                    } else if (pname == "Junior 3" || pname == "junior 3") {
+                        var remark = "170, Organic Cotton, 100% Cotton";
                         document.getElementById("remark").value = remark;
                     } else {
                         var remark = "invalid";
