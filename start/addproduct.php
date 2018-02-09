@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
+<?php
 require "include/headerandfooter/header.php"
 ?>
+<script type="text/javascript">
+function showSerial(str) {
+    if (str == "") {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("c4").value = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","getserial.php?q="+str,true);
+        xmlhttp.send();
+    }
+}
 
+</script>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navigation-->
     <?php require 'include/sidenav.php'; ?>
@@ -27,7 +50,7 @@ require "include/headerandfooter/header.php"
                         <div class="form-group">
                             <label for="exampleInputEmail1">Product Code</label>
                             <div class="input-group">
-                                <select name="c1" id="c1">
+                                <select name="c1" id="c1" onchange="showSerial(this.value)">
                                      <option value="">Select a type:</option>
                         <option value="JC">JC - Jackets</option>
                         <option value="PN">PN - Polo Neck</option>
@@ -65,7 +88,7 @@ require "include/headerandfooter/header.php"
                         <option value="OT">OT - Other</option>
                     </select>
 
-                                <input type="text" class="form-control" name="c4" id="c4" maxlength="3" onchange="showUser(this.value)">
+                                <input type="text" class="form-control" name="c4" id="c4" maxlength="3" ">
                                 <input type="text" class="form-control" name="c5" maxlength="4">
                                 <!-- <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4"> -->
                             </div>
@@ -151,10 +174,11 @@ require "include/headerandfooter/header.php"
                         url : "getserial.php",
                         data : {id:serial},
                         success :function(data) {
-                            var result = $.json_decode(data);
+                          var res = data[1];
+                            // var result = $.json_decode(data);
 //                            var result = $.parseJSON(data);
-                            var ss=result.serial;
-                            document.getElementById('#c4').innerHTML = ss;
+                            // var ss=result.serial;
+                            document.getElementById('#c4').innerHTML = res;
                         }
                     })
                 })

@@ -1,37 +1,42 @@
 <html>
 <head>
-      <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    </head>
+<script>
+function showUser(str) {
+   if (str == "") {
+       document.getElementById("txtHint").innerHTML = "";
+       return;
+   } else {
+       if (window.XMLHttpRequest) {
+           // code for IE7+, Firefox, Chrome, Opera, Safari
+           xmlhttp = new XMLHttpRequest();
+       } else {
+           // code for IE6, IE5
+           xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+       }
+       xmlhttp.onreadystatechange = function() {
+           if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("txtHint").innerHTML = this.responseText;
+           }
+       };
+       xmlhttp.open("GET","getuser.php?q="+str,true);
+       xmlhttp.send();
+   }
+}
+</script>
+</head>
 <body>
-    
-     <div class="row">
-    <div class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-            <input type="text" id="autocomplete-input" class="autocomplete">
-          <label for="autocomplete-input">Autocomplete</label>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-    <script>
-       $('input.autocomplete').autocomplete({
-    data: {
-      "Apple": null,
-      "Microsoft": null,
-      "Google": 'https://placehold.it/250x250'
-    },
-    limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
-    onAutocomplete: function(val) {
-      // Callback function when value is autcompleted.
-    },
-    minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
-  });
-    </script>
-    </body>
+
+<form>
+<select name="users" onchange="showUser(this.value)">
+ <option value="">Select a person:</option>
+ <option value="JC">Peter Griffin</option>
+ <option value="2">Lois Griffin</option>
+ <option value="3">Joseph Swanson</option>
+ <option value="4">Glenn Quagmire</option>
+ </select>
+</form>
+<br>
+<div id="txtHint"><b>Person info will be listed here...</b></div>
+
+</body>
 </html>
