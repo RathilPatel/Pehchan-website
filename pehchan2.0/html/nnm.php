@@ -9,7 +9,7 @@
     <style media="screen">
       body{
         background: url("../images/fashion.jpg");
-        background-repeat:no-repeat;
+        background-repeat:repeat;
   background-size:cover;
 
 
@@ -30,7 +30,7 @@
   </head>
   <body>
 <?php require 'navbar.php'; ?>
-<div class=" col s12 animated slideInDown coming ">
+<div class=" col l12 animated slideInDown coming ">
     <img src="" alt="">
    <h1><span>Coming Soon</span> </h1>
      <form class="" action="notify.php" method="post">

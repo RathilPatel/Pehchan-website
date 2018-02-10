@@ -3,7 +3,7 @@
 
                   <!-- <h1>ADDING PRODUCT</h1> -->
                   <div class="">
-                    <form class="" action="Dashboard.php" method="POST" enctype="multipart/form-data">
+                    <form class="" action="<?php adding_products(); ?>" method="POST" enctype="multipart/form-data">
                       <div class="row">
                          <div class="input-field col s6">
                            <input id="product_code" type="text" name="pcode" class="validate" required>

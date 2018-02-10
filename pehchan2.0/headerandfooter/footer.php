@@ -14,7 +14,7 @@
         <div class="center">
             <div class="col l4 s12">
               <div class="row">
-                <div class="col l10">
+                <div class="col l10 s12">
                   <h5 class="black-text">Address</h5>
                   <hr>
                   <ul>
@@ -27,8 +27,8 @@
               </div>
               <div>
             </div>
-            <div class="col l3 12">
-              <div class="col l12 offset-l2">
+            <div class="col l3 s12 ">
+              <div class="col l12 offset-l2    s12 ">
                 <h5 class="black-text">Important Links</h5>
                 <hr>
 
@@ -46,7 +46,7 @@
             </div>
             <div class="col l3 offset-l1 s12">
               <div class="row">
-                <div class="col l12 offset-l4">
+                <div class="col l12 offset-l4 s12">
                   <h5 class="black-text">Talk to us!</h5>
                   <hr>
                   <ul>

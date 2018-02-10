@@ -28,7 +28,7 @@
     <?php require 'headerandfooter/header.php'; ?>
   </head>
   <body>
-
+<?php require '../Function/user.php' ?>
 
     <div class="row">
       <div class="col l3">
