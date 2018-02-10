@@ -7,7 +7,7 @@ require "include/headerandfooter/header.php"
         function showSerial(str) {
 
             if (str == "") {
-                document.getElementById("c4").value = 0;
+                document.getElementById("c4").value = "not product selected";
                 return;
             } else {
 
@@ -40,7 +40,7 @@ require "include/headerandfooter/header.php"
                     <li class="breadcrumb-item">
                         <a href="#">Products</a>
                     </li>
-                    <li class="breadcrumb -item active">Add Product</li>
+                    <li class="breadcrumb-item active">Add Product</li>
                 </ol>
 
                 <div class="card mb-3">
