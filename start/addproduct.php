@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-require "include/headerandfooter/header.php"
+require "include/headerandfooter/header.php";
+require 'include/session.php';  
 ?>
     <script type="text/javascript">
         function showSerial(str) {

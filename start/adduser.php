@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require 'include/headerandfooter/header.php'; ?>
+<?php require 'include/headerandfooter/header.php'; require 'include/session.php'; ?>
 <title>Inventory Management</title>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
