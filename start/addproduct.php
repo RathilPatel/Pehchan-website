@@ -5,10 +5,12 @@ require "include/headerandfooter/header.php"
 ?>
 <script type="text/javascript">
 function showSerial(str) {
+
     if (str == "") {
         document.getElementById("txtHint").innerHTML = "";
         return;
     } else {
+
         if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -18,7 +20,7 @@ function showSerial(str) {
         }
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("c4").value = this.responseText;
+                document.getElementById("c4").innerHTML = this.responseText;
             }
         };
         xmlhttp.open("GET","getserial.php?q="+str,true);
@@ -37,7 +39,7 @@ function showSerial(str) {
                 <li class="breadcrumb-item">
                     <a href="#">Products</a>
                 </li>
-                <li class="breadcrumb-item active">Add Product</li>
+                <li class="breadcrumb -item active">Add Product</li>
             </ol>
 
             <div class="card mb-3">
@@ -88,7 +90,8 @@ function showSerial(str) {
                         <option value="OT">OT - Other</option>
                     </select>
 
-                                <input type="text" class="form-control" name="c4" id="c4" maxlength="3" ">
+                        <span id="c4">Current serial</span>
+                                <!-- <input type="text" class="form-control" name="c4" id="c4" maxlength="3"   > -->
                                 <input type="text" class="form-control" name="c5" maxlength="4">
                                 <!-- <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4"> -->
                             </div>
