@@ -16,7 +16,7 @@
 
 	//$attachment = $_FILES['attachment']['tmp_name'];
 	$attachment = '/home/shyamal/Downloads/Pehchan_catalog.pdf';
-    $attachment1 = '/home/shyamal/Downloads/ThankYou.jpg';
+    //$attachment1 = '/home/shyamal/Downloads/ThankYou.jpg';
 
 	$query = "select email from Company_Contact_Data WHERE Company_Name = 'Pehchan'";
 	$result = $conn->query($query);
@@ -48,10 +48,12 @@
             /*$filename=$_FILES['attachment']['name'];
             $mail->AddAttachment($file_to_attach , $filename);*/
             $mail->AddAttachment($attachment);
-            $mail->AddAttachment($attachment1);
+            //$mail->AddAttachment($attachment1);
 
+            $mail->AddEmbeddedImage('ThankYou.jpg', 'thankyou');
+            $body = '<h1>Test 1 of PHPMailer html</h1>'.'<p>This is a test picture: <img src=\"cid:thankyou\" style="height:300px; width:300px"></p>';
 
-            $body = "<p><strong>Dear Sir,<br><br>
+  /*          $body = "<p><p><strong>Dear Sir,<br><br>
 
       They Say some Days of a Professional Journey are Meaningful, but you have made our Journey Memorable & Fulfilling every day, with your Support and Patronage. For those that have been associated with us for years, to those that interacted with us for the first time, All we can say with Great Gratitude is THANK YOU!!!</strong>
       <br><br>
@@ -74,7 +76,7 @@ GSTIN: 27AGQPJ6274M1ZL
 <p style='color:red'>Email us at :</p> deep@mypehchan.com <br><br> Visit us on www.mypehchan.com <br>OR connect with us via<br>
 Facebook : https://www.facebook.com/MYPEHCHAN
 <br><br><a href = 'http://www.testing.mypehchan.com/mailer/unsubscribe.html'>Unsubscribe</a>
-";
+<p>";*/
 
 		    //Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
