@@ -51,39 +51,35 @@
             //$mail->AddAttachment($attachment1);
 
             $mail->AddEmbeddedImage('ThankYou.jpg', 'thankyou');
-            $body = '<h1>Test 1 of PHPMailer html</h1>'.'<p>This is a test picture: <img src=\"cid:thankyou\" style="height:300px; width:300px"></p>';
+            //$body = '<h1>Test 1 of PHPMailer html</h1>'.'<p>This is a test picture: <img src="cid:thankyou" style="height:300px; width:300px"></p>';
+		$body = "<p>
+		      <p><strong>Dear Sir,<br><br>
 
-  /*          $body = "<p><p><strong>Dear Sir,<br><br>
+		    They Say some Days of a Professional Journey are Meaningful, but you have made our Journey Memorable & Fulfilling every day, with your Support and Patronage. For those that have been associated with us for years, to those that interacted with us for the first time, All we can say with Great Gratitude is THANK YOU!!!</strong>
+		            <br><br> Please find attached our Apparel Catalog. Also soon we would be sending you our Compressed Product Catalog, as well us our regular Gifting Offerings. <br><br><br> Regards,
+		            <br>
+		            <br>
+		            <img src='cid:thankyou' style='height:500px; width:500px;'>
+		            <strong>Deep Sett
+		<br><br>
+		PEHCHAN
+		</strong><br> Room No. 4, Ground Floor,<br> Behind Dr. Farooqui's (Same Compound)<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank, Bandra West<br> Mumbai - 400 050<br>
+		            <strong>
+		Mobile: +91 98203 10177<br>
+		GSTIN: 27AGQPJ6274M1ZL
+		</strong>
+		            <br><br>
+		            <p style='color:red'>Email us at :</p> deep@mypehchan.com <br><br> Visit us on www.mypehchan.com <br>OR connect with us via<br> Facebook : https://www.facebook.com/MYPEHCHAN
+		            <br><br><a href='http://www.testing.mypehchan.com/mailer/unsubscribe.html'>Unsubscribe</a>
+		            <p>";
 
-      They Say some Days of a Professional Journey are Meaningful, but you have made our Journey Memorable & Fulfilling every day, with your Support and Patronage. For those that have been associated with us for years, to those that interacted with us for the first time, All we can say with Great Gratitude is THANK YOU!!!</strong>
-      <br><br>
-      Please find attached our Apparel Catalog. Also soon we would be sending you our Compressed Product Catalog, as well us our regular Gifting Offerings. <br><br><br>
-Regards,<br>
-<strong>Deep Sett
-<br><br>
-PEHCHAN
-</strong><br>
-Room No. 4, Ground Floor,<br>
-Behind Dr. Farooqui's (Same Compound)<br>
-St. Martin Road, Off Turner Road,<br>
-Near Royal China and Union Bank, Bandra West<br>
-Mumbai - 400 050<br>
-<strong>
-Mobile: +91 98203 10177<br>
-GSTIN: 27AGQPJ6274M1ZL
-</strong>
-<br><br>
-<p style='color:red'>Email us at :</p> deep@mypehchan.com <br><br> Visit us on www.mypehchan.com <br>OR connect with us via<br>
-Facebook : https://www.facebook.com/MYPEHCHAN
-<br><br><a href = 'http://www.testing.mypehchan.com/mailer/unsubscribe.html'>Unsubscribe</a>
-<p>";*/
-
-		    //Content
+		//$body = file_get_contents('body.html');
+ 		    //Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
 		    $mail->Subject = 'Thank you For Visiting Pehchan at Corporate Gifts Exhibition 2018';
 
 		    $mail->Body = $body;
-            //$mail->AltBody = '<a href = "http://www.testing.mypehchan.com/unsubscribe.html">Unsubscribe</a>';
+
 
 		    //$mail->Body    = 'Test<br><br> <a href = "http://www.testing.mypehchan.com/unsubscribe.html">Unsubscribe</a>';
 //ftp://mypenynj@ftp.mypehchan.com/199.188.200.59/mailer/unsubscribe.html

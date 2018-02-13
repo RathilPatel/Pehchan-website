@@ -14,5 +14,5 @@ if (isset($_POST['Unsubscribe'])) {
 	mysqli_query($con, $query);
 	echo "You have Successfully unsubscribed.";
 }
-	
+
 ?>
