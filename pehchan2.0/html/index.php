@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Pehchan-Corporate Gifting & Customised Tshirts</title>
+    <meta name="description" content="Pehchan is one stop solution for your apparels,uniform,corporate gifting,customised Tshirts,Compressed Tshirts">
+    <meta name="keywords" content="customised Tshirts,Uniforms,Compressed Tshirts,Corporate gifting ">
+    <meta name="author" content="rathil patel, shyamal makwana">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php require '../headerandfooter/header.php'; ?>

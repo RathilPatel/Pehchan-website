@@ -7,6 +7,7 @@
         <li onclick="window.open('https://www.instagram.com/mypehchan/','_blank')"><a class="btn-floating pink"><i class="material-icons fa fa-instagram"></i></a></li>
         <li onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><a class="btn-floating indigo darken-3"><i class="material-icons fa fa-facebook-official"></i></a></li>
         <li onclick="window.open('https://twitter.com/mypehchan','_blank')"><a class="btn-floating blue"><i class="material-icons fa fa-twitter"></i></a></li>
+
     </ul>
 </div>
 <footer class="page-footer grey lighten-3">
@@ -36,7 +37,7 @@
                     <li><a class="black-text" href="about.php">All Products</a></li>
                     <li><a class="black-text" href="#!">Download Catalog</a></li>
                     <li><a class="black-text" href="#!">Facebook</a></li>
-                    <li><a class="black-text" href="#!">Twitter</a></li>
+                    <li><a class="black-text" href="https://twitter.com/mypehchan" class="twitter-follow-button" data-show-count="false" >Twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  </li>
                     <li><a class="black-text" href="#!">Instagram</a></li>
                     <li><a class="black-text" href="#!">Pinterest</a></li>
 
