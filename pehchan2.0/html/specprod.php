@@ -29,13 +29,13 @@ require '../database/connect.php';
        <?php
        $cat = $_GET['category'];
 
-       $sql= "SELECT * from webprod";
+       $sql= "SELECT * from webprod where `category`='$cat'";
        $result = mysqli_query($con,$sql);
        while($row = mysqli_fetch_array($result)){
 
         ?>
        <div class="col-lg-4 col-sm-6 text-center mb-4">
-         <img class="rounded-circle img-fluid d-block mx-auto" src="data:image;base64,'.$row[1]." alt=<?php echo $row[0];?>>
+         <img class="rounded-circle img-fluid d-block mx-auto" src="data:image/jpeg;base64,';.base64_encode($row['image']).';" alt=<?php echo $row[0];?>>
          <h3> <?php echo $row[2]; ?>
            <!-- <small>Job Title</small> -->
          </h3>
