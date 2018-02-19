@@ -33,23 +33,13 @@ require '../database/connect.php';
        $result = mysqli_query($con,$sql);
        while($row = mysqli_fetch_array($result)){
 
-        ?>
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/office.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><? echo $row[2];?><i class="material-icons right">more_vert</i></span>
-            <!-- <p><a href="#">This is a link</a></p> -->
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4"><?php echo $row[2];?><i class="material-icons right">close</i></span>
-            <p><?php echo $row['3']; ?></p>
-          </div>
-        </div>
-       <?php
 
-     }
+        echo ' <div class="col-lg-4 col-sm-6 text-center mb-4">
+          // <img class="rounded-circle img-fluid d-block mx-auto" src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" alt= '.$row[0].'
+          <h4> '.$row[2].'  </h4>
+          <p>'.$row[3].'</p>
+        </div>'
+      }
      mysqli_close($con);
      ?>
 
@@ -59,14 +49,24 @@ require '../database/connect.php';
   </body>
 </html>
 
-<div class="col-lg-4 col-sm-6 text-center mb-4">
-  <img class="rounded-circle img-fluid d-block mx-auto" src="data:image/jpeg;base64,';.base64_encode($row['image']).';" alt=<?php echo $row[0];?>>
-  <h3> <?php echo $row[2]; ?>
-    <!-- <small>Job Title</small> -->
-  </h3>
-  <p><?php echo $row[3];  ?></p>
-</div>
 
 
+
+  <!-- <div class="col s4">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="images/office.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+        <p></p>
+      </div>
+    </div>
+
+  </div> -->
 <!--
 -->
