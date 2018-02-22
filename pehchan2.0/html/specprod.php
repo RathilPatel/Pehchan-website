@@ -32,13 +32,13 @@ require '../database/connect.php';
        $sql= "SELECT * from webprod where `category`='$cat'";
        $result = mysqli_query($con,$sql);
        while($row = mysqli_fetch_array($result)){
-
-
-        echo ' <div class="col-lg-4 col-sm-6 text-center mb-4">
-          // <img class="rounded-circle img-fluid d-block mx-auto" src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" alt= '.$row[0].'
-          <h4> '.$row[2].'  </h4>
-          <p>'.$row[3].'</p>
-        </div>'
+?>
+           <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="data:image/jpeg;base64,<?php echo base64_encode($row['image']) ?>" alt=" <?php echo $row['title']?>">
+           <h5><?php echo $row['title']; ?></h5>
+          <p> <?php echo $row['description']; ?></p>
+        </div>
+        <?php
       }
      mysqli_close($con);
      ?>
