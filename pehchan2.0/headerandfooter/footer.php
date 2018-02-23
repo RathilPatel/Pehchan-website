@@ -21,7 +21,6 @@
                   <ul>
                       <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>
                   </ul>
-
                 </div>
               </div>
 
@@ -51,11 +50,11 @@
                   <h5 class="black-text">Talk to us!</h5>
                   <hr>
                   <ul>
-                      <li><a class="black-text" href="#!">+91 982 031 0177</a></li>
-                      <li><a class="black-text" href="#!">+91 961 961 0177</a></li>
-                      <li><a class="black-text" href="#!">surbhi@mypehchan.com</a></li>
-                      <li><a class="black-text" href="#!">deep@mypehchan.com</a></li>
-                      <li><a class="black-text" href="#!">sales@mypehchan.com</a></li>
+                      <li><a class="black-text" href="tel:+919820310177">+91 982 031 0177</a></li>
+                      <li><a class="black-text" href="tel:+919619610177">+91 961 961 0177</a></li>
+                      <li><a class="black-text" href="mailto:surbhi@mypehchan.com">surbhi@mypehchan.com</a></li>
+                      <li><a class="black-text" href="mailto:deep@mypehchan.com">deep@mypehchan.com</a></li>
+                      <li><a class="black-text" href="mailto:sales@mypehchan.com">sales@mypehchan.com</a></li>
                   </ul>
                 </div>
 
