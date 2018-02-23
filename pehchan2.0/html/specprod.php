@@ -34,7 +34,7 @@ require '../database/connect.php';
        while($row = mysqli_fetch_array($result)){
 ?>
            <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="data:image/jpeg;base64,<?php echo base64_encode($row['image']) ?>" alt=" <?php echo $row['title']?>">
+          <img class=" img-fluid d-block mx-auto" style="height:200px; width:200px;" src="data:image/jpeg;base64,<?php echo base64_encode($row['image']) ?>" alt=" <?php echo $row['title']?>">
            <h5><?php echo $row['title']; ?></h5>
           <p> <?php echo $row['description']; ?></p>
         </div>
