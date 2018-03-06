@@ -57,13 +57,10 @@
                       <li><a class="black-text" href="mailto:sales@mypehchan.com">sales@mypehchan.com</a></li>
                   </ul>
                 </div>
-
               </div>
-
             </div>
         </div>
     </div>
-
     <div class="row">
 
         <div class="col l10 offset-l1 s12  black-text animated slideInUp">
