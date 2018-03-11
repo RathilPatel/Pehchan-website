@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 require "include/headerandfooter/header.php";
-require 'include/session.php';
+require 'include/session.php';  
 ?>
     <script type="text/javascript">
         function showSerial(str) {
@@ -304,7 +304,7 @@ require 'include/session.php';
                             var remark = "170, Organic Cotton, 100% Cotton";
                             document.getElementById("remark").value = remark;
                         }else if (pname == "Copper" || pname == "copper") {
-                            remark = "220, Honeycomb, 100 %Cotton";
+                            remark = "220, Honeycomb  , 100 %Cotton";
                             document.getElementById("remark").value = remark;
                         } else {
                             var remark = "invalid";
