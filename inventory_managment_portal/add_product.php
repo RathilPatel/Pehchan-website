@@ -57,8 +57,6 @@
                        </div>
         <div class="alert alert-error"><?= $_SESSION['message'] ?></div>
                       <input type="submit" name="submitproduct" value="submit" id="submit" class="waves-effect waves-light btn">
-
-
                     </form>
 
                   </div>
