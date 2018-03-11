@@ -7,7 +7,7 @@ $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_array($con);
 $row = $result->fetch_assoc();
   $res1 =  $row['curr_serial'];
-  echo $res1 + 1;
+  echo $res1;
 // echo $row;
 
 console.log($row);

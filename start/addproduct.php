@@ -29,7 +29,6 @@ require "include/headerandfooter/header.php"
         }
 
     </script>
-
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
         <!-- Navigation-->
         <?php require 'include/sidenav.php'; ?>
@@ -53,7 +52,7 @@ require "include/headerandfooter/header.php"
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Product Code</label>
                                 <div class="input-group">
-                                    <select name="c1" id="c1" onchange="showSerial(this.value)">
+                                    <select name="c1" id="c1" onchange="showSerial(this.value)" class="form-control">
                                      <option value="">Select a type:</option>
                         <option value="JC">JC - Jackets</option>
                         <option value="PN">PN - Polo Neck</option>
@@ -65,7 +64,7 @@ require "include/headerandfooter/header.php"
                         <option value="UN">UN - Uniform</option>
                         <option value="OT">OT - Other</option>
                     </select>
-                                    <select name="c2">
+                                    <select name="c2" class="form-control">
                         <option value="RR">RR</option>
                         <option value="BC">BC</option>
                         <option value="TS">TS</option>
@@ -76,7 +75,7 @@ require "include/headerandfooter/header.php"
                         <option value="KG">KG</option>
                         <option value="OT">OT-Other</option>
                     </select>
-                                    <select name="c3">
+                                    <select name="c3" class="form-control">
                         <option value="PC">PC - Poly Cotton</option>
                         <option value="CN">CN - 100% Cotton</option>
                         <option value="DF">DF - Dry Fit</option>
