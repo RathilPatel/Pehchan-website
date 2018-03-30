@@ -7,7 +7,6 @@
         <li onclick="window.open('https://www.instagram.com/mypehchan/','_blank')"><a class="btn-floating pink"><i class="material-icons fa fa-instagram"></i></a></li>
         <li onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><a class="btn-floating indigo darken-3"><i class="material-icons fa fa-facebook-official"></i></a></li>
         <li onclick="window.open('https://twitter.com/mypehchan','_blank')"><a class="btn-floating blue"><i class="material-icons fa fa-twitter"></i></a></li>
-
     </ul>
 </div>
 <footer class="page-footer grey lighten-3">
@@ -21,6 +20,7 @@
                   <ul>
                       <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>
                   </ul>
+
                 </div>
               </div>
 
@@ -35,10 +35,10 @@
                 <ul>
                     <li><a class="black-text" href="about.php">All Products</a></li>
                     <li><a class="black-text" href="#!">Download Catalog</a></li>
-                    <li><a class="black-text" href="#!">Facebook</a></li>
-                    <li><a class="black-text" href="https://twitter.com/mypehchan" class="twitter-follow-button" data-show-count="false" >Twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  </li>
-                    <li><a class="black-text" href="#!">Instagram</a></li>
-                    <li><a class="black-text" href="#!">Pinterest</a></li>
+                    <li><a class="black-text" href="https://www.facebook.com/MYPEHCHAN/">Facebook</a></li>
+                    <li><a class="black-text" href="https://twitter.com/mypehchan">Twitter</a></li>
+                    <li><a class="black-text" href="https://www.instagram.com/mypehchan/">Instagram</a></li>
+                    <li><a class="black-text" href="https://in.pinterest.com/mypehchan/pins/">Pinterest</a></li>
 
                 </ul>
 
@@ -50,21 +50,24 @@
                   <h5 class="black-text">Talk to us!</h5>
                   <hr>
                   <ul>
-                      <li><a class="black-text" href="tel:+919820310177">+91 982 031 0177</a></li>
-                      <li><a class="black-text" href="tel:+919619610177">+91 961 961 0177</a></li>
-                      <li><a class="black-text" href="mailto:surbhi@mypehchan.com">surbhi@mypehchan.com</a></li>
-                      <li><a class="black-text" href="mailto:deep@mypehchan.com">deep@mypehchan.com</a></li>
-                      <li><a class="black-text" href="mailto:sales@mypehchan.com">sales@mypehchan.com</a></li>
+                      <li><a class="black-text" href="#!">+91 98203 10177</a></li>
+                      <li><a class="black-text" href="#!">+91 96196 10177</a></li>
+                      <li><a class="black-text" href="#!">surbhi@mypehchan.com</a></li>
+                      <li><a class="black-text" href="#!">deep@mypehchan.com</a></li>
+                      <li><a class="black-text" href="#!">sales@mypehchan.com</a></li>
                   </ul>
                 </div>
+
               </div>
+
             </div>
         </div>
     </div>
+
     <div class="row">
 
         <div class="col l10 offset-l1 s12  black-text animated slideInUp">
-            <span class="contactme">Contact Us!</span> <a href="https://tawk.to/chat/5a03f432bb0c3f433d4c8168/default/?$_tawk_popout=true" class="btn black whitw-text">DROP US A MESSAGE</a>
+            <span class="contactme">Contact Us!</span> <a href="https://tawk.to/chat/5a7eb6b14b401e45400cd56d/default/?$_tawk_popout=true" class="btn black whitw-text">DROP US A MESSAGE</a>
 
 
         </div>
@@ -82,17 +85,14 @@
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-    (function() {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/5a03f432bb0c3f433d4c8168/default';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5a7eb6b14b401e45400cd56d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
 <!--End of Tawk.to Script-->

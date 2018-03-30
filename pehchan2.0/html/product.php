@@ -7,15 +7,9 @@
 <head>
     <meta charset="utf-8">
     <title>Product</title>
-    <meta name="description" content="Pehchan is one stop solution for your apparels,uniform,corporate gifting,customised Tshirts,Compressed Tshirts">
-    <meta name="keywords" content="customised Tshirts,Uniforms,Compressed Tshirts,Corporate gifting ">
-    <meta name="author" content="rathil patel, shyamal makwana">
-
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require '../headerandfooter/header.php'; ?>
 </head>
-
 <body>
     <?php require 'navbar.php'; ?>
     <?php require 'productnav.php';?>
@@ -37,29 +31,10 @@
     <div class="row">
         <div class="col l12">
             <div id="content" style="y-overflow:auto;">
-
             </div>
-
         </div>
-
     </div>
     <?php require '../headerandfooter/footer.php'; ?>
-    <!-- <script>
-        function getDataFromUrl(urlWithContent) {
-            // jQuery async request
-            $.ajax({
-                url: urlWithContent,
-                dataType: "html",
-                success: function(data) {
-                    return $('#content').html(data);
-                },
-                error: function(e) {
-                    alert('Error: ' + e);
-                }
-            });
-        }
-
-    </script>-->
     <script type="text/javascript">
         var getUrlParameter = function getUrlParameter(sParam) {
             var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -94,10 +69,11 @@
             $("#content").load("leather.php");
             $("#content").load("stationary.php");s
         }
+        else if (type == "jackets") {
+            $("#content").load("jackets.php");
+        }
         else {
             $("#content").load("producthome.html");
-
-
             function round() {
                 $("#content").load("round.php");
             }

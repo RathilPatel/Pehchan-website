@@ -1,15 +1,15 @@
 <nav>
     <div class="nav-wrapper black white-text">
-        <a href="#!" class="brand-logo hide-on-large-only"> <img src="../images/Pehchanlogowhite.gif" alt="Pehchan Reflect Your Identity" style="height:50px; width:180px;"> </a>
+        <a href="index.php" class="brand-logo hide-on-large-only"> <img src="../images/Pehchanlogowhite.gif" alt="Pehchan Reflect Your Identity" style="height:50px; width:180px;"> </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <ul class="hide-on-med-and-down ">
             <li><a href="index.php">Home</a></li>
             <li><a href="product.php" id="product" class="dropdown-link" data-activates="products">Products</a></li>
-            <li><a href="nnm.php">NNM<span class="new badge white black-text"></span></a></li>
+      
             <li><a href="contact.php">Contact</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
-            <li><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
+            <li><i class="fa fa-download" aria-hidden="true"></i><a href="../pehchan-catalouge.pdf" class="right">Download Brochure</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
             <li><a href="index.php">Home</a></li>
@@ -29,9 +29,9 @@
 <!--                    </li>-->
 <!--                </ul>-->
             </li>
-            <li><a href="nnm.php">NNM<span class="new badge"></span></a></li>
+            <!--<li><a href="nnm.php">NNM<span class="new badge"></span></a></li>-->
             <li><a href="contact.php">Contact</a></li>
-            <li class="hide-on-med-and-down"><i class="fa fa-download" aria-hidden="true"></i><a href="#" class="right">Download Brochure</a></li>
+	    <li><i class="fa fa-download" aria-hidden="true"></i><a href="../pehchan-catalouge.pdf" class="left">Download Brochure</a></li>
             <li class="black-text hide-on-med-and-down" onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</li>
             <li class="back-text hide-on-med-and-down"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a>Instagram </li>
         </ul>

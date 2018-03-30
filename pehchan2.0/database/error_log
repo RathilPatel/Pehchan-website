@@ -1,0 +1,4 @@
+[26-Dec-2017 03:38:30 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mypenynj/199.188.200.59/lol/database/connect.php on line 2
+[09-Jan-2018 06:38:52 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mypenynj/199.188.200.59/lol/database/connect.php on line 2
+[09-Jan-2018 07:05:24 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mypenynj/199.188.200.59/lol/database/connect.php on line 2
+[09-Jan-2018 12:52:35 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mypenynj/199.188.200.59/lol/database/connect.php on line 2
