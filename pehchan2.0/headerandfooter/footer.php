@@ -7,6 +7,7 @@
         <li onclick="window.open('https://www.instagram.com/mypehchan/','_blank')"><a class="btn-floating pink"><i class="material-icons fa fa-instagram"></i></a></li>
         <li onclick="window.open('https://www.facebook.com/MYPEHCHAN/','_blank')"><a class="btn-floating indigo darken-3"><i class="material-icons fa fa-facebook-official"></i></a></li>
         <li onclick="window.open('https://twitter.com/mypehchan','_blank')"><a class="btn-floating blue"><i class="material-icons fa fa-twitter"></i></a></li>
+
     </ul>
 </div>
 <footer class="page-footer grey lighten-3">
@@ -14,29 +15,28 @@
         <div class="center">
             <div class="col l4 s12">
               <div class="row">
-                <div class="col l10">
+                <div class="col l10 s12">
                   <h5 class="black-text">Address</h5>
                   <hr>
                   <ul>
                       <p class="black-text">Room No. 4, Ground Floor, <br>Behind Dr. Farooqui's (Same Compound),<br> St. Martin Road, Off Turner Road,<br> Near Royal China and Union Bank,<br> Bandra West. Mumbai - 400 050</p>
                   </ul>
-
                 </div>
               </div>
 
               </div>
               <div>
             </div>
-            <div class="col l3 12">
-              <div class="col l12 offset-l2">
+            <div class="col l3 s12 ">
+              <div class="col l12 offset-l2    s12 ">
                 <h5 class="black-text">Important Links</h5>
                 <hr>
 
                 <ul>
                     <li><a class="black-text" href="about.php">All Products</a></li>
                     <li><a class="black-text" href="#!">Download Catalog</a></li>
-                    <li><a class="black-text" href="#!">Facebook</a></li>
-                    <li><a class="black-text" href="#!">Twitter</a></li>
+                    <li><a class="black-text" href="https://www.facebook.com/MYPEHCHAN/">Facebook</a></li>
+                    <li><a class="black-text" href="https://twitter.com/mypehchan" class="twitter-follow-button" data-show-count="false" >Twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  </li>
                     <li><a class="black-text" href="#!">Instagram</a></li>
                     <li><a class="black-text" href="#!">Pinterest</a></li>
 
@@ -46,15 +46,15 @@
             </div>
             <div class="col l3 offset-l1 s12">
               <div class="row">
-                <div class="col l12 offset-l4">
+                <div class="col l12 offset-l4 s12">
                   <h5 class="black-text">Talk to us!</h5>
                   <hr>
                   <ul>
-                      <li><a class="black-text" href="#!">+91 982 031 0177</a></li>
-                      <li><a class="black-text" href="#!">+91 961 961 0177</a></li>
-                      <li><a class="black-text" href="#!">surbhi@mypehchan.com</a></li>
-                      <li><a class="black-text" href="#!">deep@mypehchan.com</a></li>
-                      <li><a class="black-text" href="#!">sales@mypehchan.com</a></li>
+                      <li><a class="black-text" href="tel:+919820310177">+91 982 031 0177</a></li>
+                      <li><a class="black-text" href="tel:+919619610177">+91 961 961 0177</a></li>
+                      <li><a class="black-text" href="mailto:surbhi@mypehchan.com">surbhi@mypehchan.com</a></li>
+                      <li><a class="black-text" href="mailto:deep@mypehchan.com">deep@mypehchan.com</a></li>
+                      <li><a class="black-text" href="mailto:sales@mypehchan.com">sales@mypehchan.com</a></li>
                   </ul>
                 </div>
 
