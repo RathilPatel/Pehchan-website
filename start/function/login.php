@@ -27,7 +27,6 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
                 mysqli_query($con, $sql);
                 header('Location: ../Dashboard.php?user=$username');
             }
-
         }
         else {
             header('Location: ../index.php?Login Failed');
