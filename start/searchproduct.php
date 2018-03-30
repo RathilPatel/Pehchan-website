@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require 'include/headerandfooter/header.php'; require 'include/session.php'; ?>
+<?php require 'include/headerandfooter/header.php'; require 'include/dbh.php'; require 'include/session.php'; ?>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
@@ -16,37 +16,50 @@
         <li class="breadcrumb-item active">Search Product</li>
       </ol>
 
-      <div class="card mb-3">
-        <div class="card-header">
-          <!-- <i class="fa fa-area-chart"></i> -->
-           Enter Product To search
+       
+
+
+    <div class="container" >
+
+      <div class="row">
+       <?php
+   
+       $sql= "SELECT * from Product";
+       $result = mysqli_query($con,$sql);
+       while($row = mysqli_fetch_array($result)){
+?>
+           <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class=" img-fluid d-block mx-auto" style="height:200px; width:200px;" src="data:image/jpeg;base64,<?php echo base64_encode($row['Product_Image']) ?>" alt=" <?php echo $row['Product_id']?>">
+           <h5><?php echo $row['Product_id']; ?></h5>
+          <p> <?php echo $row['Description']; ?></p>
         </div>
-        <div class="card-body">
-          <form action="function/login.php" method="post">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Username</label>
-              <input class="form-control" type="text" name="username" value="" placeholder="Username">
-              <!-- <input  id="exampleInputEmail1" name="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input class="form-control" type="password" name="password" value="" placeholder="Password">
+        <?php
+      }
+     mysqli_close($con);
+     ?>
 
-              <!-- <input  id="exampleInputPassword1" name="exampleInputPassword1" type="password" placeholder="Password"> -->
-            </div>
-            <div class="form-group">
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> Remember Password</label>
-              </div>
-            </div>
-              <input type="submit" class="btn btn-primary btn-block" name="submit" value="Login" class="btn-login">
+    </div>
+<div>
+	         <?php require 'include/headerandfooter/footer.php'?>
 
-            </form>
-          </div>
-        <!-- <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div> -->
-      </div>
-      <!-- Icon Cards-->
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
-          <?php require 'include/headerandfooter/footer.php'?>
+  </body>
+</html>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       

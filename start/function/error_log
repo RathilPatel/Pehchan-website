@@ -1,0 +1,7 @@
+[01-Feb-2018 09:31:26 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mypenynj/inventory.mypehchan.com/include/dbh.php on line 2
+[01-Feb-2018 09:52:50 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 21
+[04-Feb-2018 11:58:43 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
+[05-Feb-2018 09:40:36 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
+[06-Feb-2018 02:17:53 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
+[06-Feb-2018 23:55:26 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
+[07-Feb-2018 02:59:36 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
