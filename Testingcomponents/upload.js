@@ -1,0 +1,15 @@
+$(document).ready(function(){
+$('#image_file').on('change',function(){
+$('#upload_form').ajaxForm({
+target:'#uploaded_images_preview',
+beforeSubmit:function(e){
+$('.file_uploading').show();
+},
+success:function(e){
+$('.file_uploading').hide();
+},
+error:function(e){
+}
+}).submit();
+});
+});

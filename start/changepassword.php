@@ -21,18 +21,16 @@
         <div class="card-header">
           <i class="fa fa-area-chart"></i> Change Password</div>
         <div class="card-body">
-          <form action="function/changepassword-func.php" method="post">
-            <div class="form-group">
-              <label for="exampleInputPassword1">Current Password</label>
-              <input class="form-control" type="password" name="oldpassword" value="" placeholder="Password">
-            </div>
+        	<span id="msg"></span>
+          <form action="" method="post">
+       
             <div class="form-group">
               <label for="exampleInputPassword1">New Password</label>
-              <input class="form-control" type="password" name="newpassword" value="" placeholder="Password">
+              <input class="form-control" type="password" name="newpassword" id="newpassword" value="" placeholder="Password" required>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Confirm New Password</label>
-              <input class="form-control" type="password" name="conpassword" value="" placeholder="Password">
+              <input class="form-control" type="password" name="conpassword" id="conpassword" value="" placeholder="Password" required>
             </div>
               <input type="submit" class="btn btn-primary btn-block" name="submit" value="Change Password" class="btn-login">
             <!-- <a class="btn btn-primary btn-block" href="#">Login</a> -->
@@ -42,4 +40,31 @@
         </div>
         <!-- <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div> -->
       </div>
+      
+      
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("form").submit(function(){
+            //  var oldpassword =$("#oldpassword").val();
+var newpassword=$("#newpassword").val();
+var conpassword=$("#conpassword").val();
+var datastring = "newpassword="+newpassword+"&conpassword="+conpassword;
+
+              $.ajax({
+          type: "POST",
+          url: "function/changepassword-func.php",
+          data: datastring,
+          success: function(data) {
+		//$("#msg").html("Password Change Successful");
+          alert(data);
+          },
+          error: function (err) {
+        		alert(err);
+          }
+      });
+
+              });
+
+        });
+      </script>
         <?php require 'include/headerandfooter/footer.php';?>

@@ -5,3 +5,27 @@
 [06-Feb-2018 02:17:53 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
 [06-Feb-2018 23:55:26 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
 [07-Feb-2018 02:59:36 America/New_York] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 33
+[11-Mar-2018 01:39:15 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 5
+[11-Mar-2018 01:39:15 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 9
+[11-Mar-2018 01:39:15 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 19
+[11-Mar-2018 01:50:49 America/New_York] PHP Notice:  Undefined index: image_id in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 39
+[11-Mar-2018 01:50:49 America/New_York] PHP Notice:  Undefined index:  in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 40
+[11-Mar-2018 03:34:39 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 97
+[11-Mar-2018 03:38:39 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/mypenynj/inventory.mypehchan.com/function/addproduct-func.php on line 100
+[05-Apr-2018 06:17:15 America/New_York] PHP Notice:  Undefined index: image_id in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 39
+[05-Apr-2018 06:17:15 America/New_York] PHP Notice:  Undefined index:  in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 40
+[05-Apr-2018 08:00:27 America/New_York] PHP Notice:  Undefined index: image_id in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 39
+[05-Apr-2018 08:00:27 America/New_York] PHP Notice:  Undefined index:  in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 40
+[05-Apr-2018 09:32:23 America/New_York] PHP Notice:  Undefined index: image_id in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 39
+[05-Apr-2018 09:32:23 America/New_York] PHP Notice:  Undefined index:  in /home/mypenynj/inventory.mypehchan.com/function/action.php on line 40
+[06-Apr-2018 00:18:33 America/New_York] PHP Parse error:  syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 504
+[06-Apr-2018 00:19:05 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 512
+[06-Apr-2018 01:14:33 America/New_York] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 2665768 bytes) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 22
+[06-Apr-2018 01:19:32 America/New_York] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 21
+[06-Apr-2018 01:39:34 America/New_York] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 46
+[06-Apr-2018 01:43:05 America/New_York] PHP Parse error:  syntax error, unexpected 'Product_Image' (T_STRING) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 46
+[06-Apr-2018 01:44:30 America/New_York] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 46
+[06-Apr-2018 01:46:04 America/New_York] PHP Parse error:  syntax error, unexpected 'Product_Image' (T_STRING) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 46
+[06-Apr-2018 01:49:14 America/New_York] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 2665820 bytes) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 46
+[06-Apr-2018 01:51:32 America/New_York] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 2665782 bytes) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 46
+[06-Apr-2018 01:52:36 America/New_York] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 2665782 bytes) in /home/mypenynj/inventory.mypehchan.com/function/searchproduct-func.php on line 46

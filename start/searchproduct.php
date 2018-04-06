@@ -16,34 +16,79 @@
         <li class="breadcrumb-item active">Search Product</li>
       </ol>
 
-       
+             <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Data Table Example</div>
+        <div class="card-body">
+          <div class="table-responsive">
+          
+                           <div id="user_data">
 
-
-    <div class="container" >
-
-      <div class="row">
-       <?php
-   
-       $sql= "SELECT * from Product";
-       $result = mysqli_query($con,$sql);
-       while($row = mysqli_fetch_array($result)){
-?>
-           <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class=" img-fluid d-block mx-auto" style="height:200px; width:200px;" src="data:image/jpeg;base64,<?php echo base64_encode($row['Product_Image']) ?>" alt=" <?php echo $row['Product_id']?>">
-           <h5><?php echo $row['Product_id']; ?></h5>
-          <p> <?php echo $row['Description']; ?></p>
+      			 </div>
+            
+            </table>
+          </div>
         </div>
-        <?php
-      }
-     mysqli_close($con);
-     ?>
+  
+      </div>
 
-    </div>
-<div>
+  
+      </div>
+
+
+      <script>
+      $(document).ready(function(){
+
+       fetch_data();
+
+       function fetch_data()
+       {
+        var action = "fetch";
+        $.ajax({
+         url:"function/searchproduct-func.php",
+         method:"POST",
+         data:{action:action},
+         success:function(data)
+         {
+          $('#user_data').html(data);
+         }
+        })
+       }
+
+       $(document).on('click', '.delete', function(){
+        var Product_id = $(this).attr("id");
+        var action = "delete";
+        if(confirm("Are you sure you want to Delete this Product?"))
+        {
+         $.ajax({
+          url:"function/searchproduct-func.php",
+          method:"POST",
+          data:{Product_id:Product_id, action:action},
+          success:function(data)
+          {
+           alert(data);
+           fetch_data();
+          }
+         })
+        }
+        else
+        {
+         return false;
+        }
+       });
+       
+       $(document).on('click','.edit',function(){
+       	var Product_id = $(this).attr("id");
+       	var action = "edit";
+       	
+       	window.location.href = "addproduct.php?Product_id="+Product_id+"&action="+action;
+  
+       });
+      });
+      </script>
 	         <?php require 'include/headerandfooter/footer.php'?>
 
-  </body>
-</html>
+
 
       
       

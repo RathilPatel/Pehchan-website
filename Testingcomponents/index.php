@@ -9,10 +9,10 @@
  <body>
   <br /><br />
   <div class="container" style="width:900px;">
-   <h3 align="center">Ajax Image Insert Update Delete in Mysql Database using PHP</h3>
+   <h3 align="center">User Database</h3>
    <br />
    <div align="right">
-    <button type="button" name="add" id="add" class="btn btn-success">Add</button>
+    <!-- <button type="button" name="add" id="add" class="btn btn-success">Add</button> -->
    </div>
    <br />
    <div id="image_data">
@@ -22,7 +22,7 @@
  </body>
 </html>
 
-<div id="imageModal" class="modal fade" role="dialog">
+<!-- <div id="imageModal" class="modal fade" role="dialog">
  <div class="modal-dialog">
   <div class="modal-content">
    <div class="modal-header">
@@ -44,7 +44,7 @@
    </div>
   </div>
  </div>
-</div>
+</div> -->
 
 <script>
 $(document).ready(function(){
@@ -60,7 +60,7 @@ $(document).ready(function(){
    data:{action:action},
    success:function(data)
    {
-    $('#image_data').html(data);
+    $('#user_data').html(data);
    }
   })
  }
@@ -72,42 +72,7 @@ $(document).ready(function(){
   $('#action').val('insert');
   $('#insert').val("Insert");
  });
- $('#image_form').submit(function(event){
-  event.preventDefault();
-  var image_name = $('#image').val();
-  if(image_name == '')
-  {
-   alert("Please Select Image");
-   return false;
-  }
-  else
-  {
-   var extension = $('#image').val().split('.').pop().toLowerCase();
-   if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
-   {
-    alert("Invalid Image File");
-    $('#image').val('');
-    return false;
-   }
-   else
-   {
-    $.ajax({
-     url:"action.php",
-     method:"POST",
-     data:new FormData(this),
-     contentType:false,
-     processData:false,
-     success:function(data)
-     {
-      alert(data);
-      fetch_data();
-      $('#image_form')[0].reset();
-      $('#imageModal').modal('hide');
-     }
-    });
-   }
-  }
- });
+
  $(document).on('click', '.update', function(){
   $('#image_id').val($(this).attr("id"));
   $('#action').val("update");
@@ -118,7 +83,7 @@ $(document).ready(function(){
  $(document).on('click', '.delete', function(){
   var image_id = $(this).attr("id");
   var action = "delete";
-  if(confirm("Are you sure you want to remove this image from database?"))
+  if(confirm("Are you sure you want to remove this user from database?"))
   {
    $.ajax({
     url:"action.php",
@@ -137,4 +102,4 @@ $(document).ready(function(){
   }
  });
 });
-</script> 
+</script>

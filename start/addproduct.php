@@ -28,10 +28,37 @@ require 'include/session.php';
                 xmlhttp.send();
             }
         }
+        
+        function checkforedit(){
+ 
+ 	var c1 = document.getElementById("c1").value;
+ 	var c2 = document.getElementById("c2").value;
+ 	var c3 = document.getElementById("c3").value;
+ 	var c4 = document.getElementById("c4").value;
+ 	var c5 = document.getElementById("c5").value;
+ 	
+ 	
+ 		if(c1 == "" || c2 =="" || c3=="" || c4=="" || c5==""){
+ 		
+ 		}
+ 		else{
+ 			var product_id = c1+"-"+c2+"-"+c3+"-"+c4+"-"+c5;
+ 			if(confirm("do you want to edit the product: "+product_id)){
+ 			
+ 			
+ 			}	
+ 		}
+ 	
+ 	
+
+        
+        }
+    
+        
 
     </script>
 
-    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <body  class="fixed-nav sticky-footer bg-dark" id="page-top">
         <!-- Navigation-->
         <?php require 'include/sidenav.php'; ?>
         <div class="content-wrapper">
@@ -66,7 +93,7 @@ require 'include/session.php';
                         <option value="UN">UN - Uniform</option>
                         <option value="OT">OT - Other</option>
                     </select>
-                                    <select name="c2">
+                                    <select name="c2" id="c2">
                         <option value="RR">RR</option>
                         <option value="BC">BC</option>
                         <option value="TS">TS</option>
@@ -77,7 +104,7 @@ require 'include/session.php';
                         <option value="KG">KG</option>
                         <option value="OT">OT-Other</option>
                     </select>
-                                    <select name="c3">
+                                    <select name="c3" id="c3">
                         <option value="PC">PC - Poly Cotton</option>
                         <option value="CN">CN - 100% Cotton</option>
                         <option value="DF">DF - Dry Fit</option>
@@ -91,8 +118,8 @@ require 'include/session.php';
                         <option value="EX">EX - Exclusive</option>
                         <option value="OT">OT - Other</option>
                     </select>
-                                    <input type="text" placeholder="serial" class="form-control" name="c4" id="c4" maxlength="3" readonly>
-                                    <input type="text" class="form-control" name="c5" maxlength="4">
+                                    <input type="text" placeholder="serial" class="form-control" name="c4" id="c4" maxlength="3" onblur="checkforedit()">
+                                    <input type="text" class="form-control" name="c5" maxlength="4" id="c5" onblur= "checkforedit()">
                                     <!--                                <span id="c4">Current serial</span>-->
                                     <!-- <input class="form-control" name="c5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "4"> -->
                                 </div>

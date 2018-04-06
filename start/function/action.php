@@ -1,12 +1,14 @@
 <?php
 //action.php
+require '../include/dbh.php';
+
 if(isset($_POST["action"]))
 {
- $connect = mysqli_connect("localhost", "root", "sundaY05@", "pehchan");
+
  if($_POST["action"] == "fetch")
  {
   $query = "SELECT `Username`, `email`, `Role` FROM Inventory_login";
-  $result = mysqli_query($connect, $query);
+  $result = mysqli_query($con, $query);
   $output = '
    <table class="table table-bordered table-striped">
     <tr>
@@ -36,9 +38,9 @@ if(isset($_POST["action"]))
 
  if($_POST["action"] == "delete")
  {
-  $query = "DELETE FROM tbl_images WHERE id = '".$_POST["image_id"]."'";
+ 
   $query = "DELETE FROM `Inventory_login` WHERE Username = '".$_POST["Username"]."'";
-  if(mysqli_query($connect, $query))
+  if(mysqli_query($con, $query))
   {
    echo 'User Deleted from Database';
   }

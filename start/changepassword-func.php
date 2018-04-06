@@ -1,14 +1,14 @@
-<?php 
+<?php
     require '../include/dbh.php';
 
-    
-  
+
+
             $oldpass = $_POST['oldpassword'];
             $newpass = $_POST['newpassword'];
             $conpass = $_POST['conpassword'];
             $oldpassmd5 = md5($oldpass);
-            $newpassmd5 = md5($newpass);    
-            
+            $newpassmd5 = md5($newpass);
+
             if($newpass == $conpass){
                 session_start();
                 $user=$_SESSION['username'];
@@ -16,13 +16,14 @@
                 $result = mysqli_query($con,$sql);
                 $count = mysqli_affected_rows($con);
                 if($count == 1){
-                header("Location: ../changpassword.php?status= success");                    
+                    $data = "succes changing password";
+                    echo json_encode(data);
+                // header("Location: ../changpassword.php?status= success");
                 }
 
             }
             else{
-                header("Location: ../changepassword.php?status= new password doesnot match");
+              $data = "failed in updating password";
+              echo json_encode(data);
+                // header("Location: ../changepassword.php?status= new password doesnot match");
             }
-
-
-
