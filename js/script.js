@@ -89,6 +89,9 @@ $(document).ready(function () {
 
 });
 
-
+function TestMethod(){
+    console.log("Get Here to see if the filter button was clicked and entered the Test Method!");
+}
+documnent.getElementByClassName("filter-button").addEventListener("click", TestMethod);
 
 document.addEventListener('contextmenu', event => event.preventDefault());
