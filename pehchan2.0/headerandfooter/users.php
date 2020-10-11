@@ -105,3 +105,20 @@ function register($fname,$lname,$faname,$moname,$address,$pincode,$email,$pno,$g
 				 			    VALUES ('$fname','$lname','$faname','$moname','$address','$pincode','$email','$pno','$gno','$type','$password')")
 }
 */
+
+	
+	function user_id_from _username($username,$type){
+	$username=sanitize($username);
+	$type=sanitize($type);
+	if($type == 1){
+	return mysql_result(mysqli_query("SELECT `username` FROM `student` where `username`='$username'"),0,'username');
+	}
+	elseif($type == 2){
+			return mysql_result(mysqli_query("SELECT `username` FROM `teacher` where `username`='$username'"),0,'username');
+	}
+	elseif($type == 0){
+			return mysql_result(mysqli_query("SELECT `username` FROM `admin` where `username`='$username'"),0,'username');
+
+	}
+
+}
